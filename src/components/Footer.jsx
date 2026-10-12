@@ -71,7 +71,6 @@ export default function Footer() {
 
       <div className="site-footer__bottom">
         <div className="container site-footer__bottom-inner">
-          <p>&copy; VConnect Holidays. All Right Reserved {CURRENT_YEAR}.</p>
           <div className="site-footer__socials">
             {SOCIALS.map(({ icon: Icon, label }) => (
               <a key={label} href="#top" aria-label={label} className="site-footer__social">
@@ -79,6 +78,7 @@ export default function Footer() {
               </a>
             ))}
           </div>
+          <p>&copy; VConnect Holidays. All Right Reserved {CURRENT_YEAR}.</p>
         </div>
       </div>
     </footer>

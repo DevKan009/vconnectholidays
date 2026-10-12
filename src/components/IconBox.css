@@ -77,3 +77,13 @@
   background: var(--color-bg-soft);
   border-color: var(--color-bg-soft);
 }
+
+@media (max-width: 640px) {
+  .icon-box--horizontal {
+    flex-direction: column;
+  }
+
+  .icon-box--horizontal .icon-box__icon {
+    margin-bottom: 22px;
+  }
+}
