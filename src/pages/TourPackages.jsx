@@ -4,7 +4,6 @@ import SectionHeading from '../components/SectionHeading'
 import PackageCard from '../components/PackageCard'
 import TestimonialSlider from '../components/TestimonialSlider'
 import Button from '../components/Button'
-import BlogTeaser from '../components/BlogTeaser'
 import { tourPackages, packagesTestimonials } from '../data/content'
 import bannerImg from '../assets/images/tourpackages-banner.jpg'
 import './TourPackages.css'
@@ -31,7 +30,7 @@ export default function TourPackages() {
           <SectionHeading
             before="Amazing Reviews From Our"
             highlight="Travelers"
-            description="Read some interesting reviews and experiences from travelers about Their Travels With Us"
+            description="Read authentic experiences and reviews from happy travelers about their journeys with us."
             light
           />
           <TestimonialSlider items={packagesTestimonials} />
@@ -43,21 +42,10 @@ export default function TourPackages() {
           <h2>
             Take An Adventure To Our Featured <span className="accent">Destinations,</span> Contact Us Now!
           </h2>
-          <p>We provides the best experience for you, contact us now to get attractive promotions from us.</p>
+          <p>We provide the best experiences for you, contact us now to plan your dream vacation.</p>
           <Button to="/contact" variant="outline-dark">
             Contact Us
           </Button>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            before="Read Our Latest Blog &amp;"
-            highlight="Articles"
-            description="Following is a detailed blog article on our Tours and travel topics"
-          />
-          <BlogTeaser />
         </div>
       </section>
     </>

@@ -28,7 +28,6 @@ Built with **React 19**, **Vite 8**, and **React Router 7**, the website deliver
 - 📊 **Animated Stat Counters**: Highlight milestones (25k+ Happy Travelers, 100+ Destinations, 7+ Years in Business).
 - 📱 **Fully Responsive Experience**: Tailored layouts for mobile, tablet, and desktop with a slide-out hamburger navigation drawer.
 - ✉️ **Inquiry & Contact Form**: Validated contact forms with instant feedback, interactive social links, and physical office details.
-- 📝 **Travel Blog & Articles**: Dynamic blog routing (`/blog` and `/blog/:slug`) for travel stories and guides.
 - 🎯 **SEO & UX Focused**: Dynamic document titles (`usePageTitle`), smooth `ScrollToTop` upon page navigation, and semantic HTML5.
 
 ---
@@ -42,8 +41,6 @@ Built with **React 19**, **Vite 8**, and **React Router 7**, the website deliver
 | `/destination` | **Destinations** | Comprehensive catalogue of dream international & domestic destinations |
 | `/tour-packages` | **Tour Packages** | Complete list of curated packages with pricing and durations |
 | `/contact` | **Contact** | Inquiry form, office address in Indore, direct email, phone numbers, and socials |
-| `/blog` | **Blog** | Travel guides, news, and vacation tips |
-| `/blog/:slug` | **Blog Post** | Individual article reader page |
 | `*` | **404 Not Found** | Custom styled error page with redirect to home |
 
 ---
@@ -86,8 +83,6 @@ vconnect2/
 │   │   └── usePageTitle.js # Dynamic document title hook
 │   ├── pages/              # Route views
 │   │   ├── About.jsx
-│   │   ├── Blog.jsx
-│   │   ├── BlogPost.jsx
 │   │   ├── Contact.jsx
 │   │   ├── Destination.jsx
 │   │   ├── Home.jsx

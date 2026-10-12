@@ -7,8 +7,6 @@ import About from './pages/About'
 import Destination from './pages/Destination'
 import TourPackages from './pages/TourPackages'
 import Contact from './pages/Contact'
-import Blog from './pages/Blog'
-import BlogPost from './pages/BlogPost'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -23,8 +21,6 @@ export default function App() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/tour-packages" element={<TourPackages />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

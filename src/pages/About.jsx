@@ -34,7 +34,7 @@ export default function About() {
         <div className="container about-intro__grid">
           <div>
             <h1 className="about-intro__title">
-              VConnect Holidays The Best And Most Experienced Travel Agent In The World{' '}
+              VConnect Holidays — Delivering Bespoke Journeys &amp; Authentic Experiences{' '}
               <span className="accent">Since 2018.</span>
             </h1>
 

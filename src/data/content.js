@@ -18,6 +18,9 @@ import testiPrakhar from '../assets/images/about-img1.jpeg'
 import testiMohak from '../assets/images/testi-mohak.jpeg'
 import testiSunil from '../assets/images/testi-fff.avif'
 import testiLucy from '../assets/images/testi-generic-woman.jpg'
+import testiAnanya from '../assets/images/testi-ananya.jpg'
+import testiRahul from '../assets/images/testi-rahul.jpg'
+import testiRajesh from '../assets/images/testi-rajesh.jpg'
 
 import gallery1 from '../assets/images/gallery-1.jpg'
 import gallery2 from '../assets/images/gallery-2.jpg'
@@ -119,43 +122,92 @@ export const tourPackages = [
 export const testimonials = {
   shachi: {
     name: 'Shachi & Samyak',
-    role: 'Our traveler',
+    role: 'Honeymoon Travelers',
     image: testiShachi,
     quote:
       'Our honeymoon in Bali was absolutely magical, all thanks to Vanita Di, Gurbani, and the amazing team! Everything was perfectly planned—flights, hotel bookings, a beautiful itinerary, and stunning properties. The transfers were seamless, and your prompt support throughout made the entire trip completely stress-free. Thank you so much for making our honeymoon so memorable!',
   },
+  ananya: {
+    name: 'Ananya Sharma',
+    role: 'Solo & Leisure Traveler',
+    image: testiAnanya,
+    quote:
+      'Traveling solo to Vietnam felt daunting at first, but VConnect Holidays planned everything down to the finest detail. From private airport pickups to boutique heritage stays in Hanoi and the Halong Bay cruise, every detail was handled flawlessly. Having 24/7 on-trip assistance gave me complete peace of mind throughout my trip.',
+  },
+  rahul: {
+    name: 'Rahul & Sneha Kapoor',
+    role: 'Honeymoon Travelers',
+    image: testiRahul,
+    quote:
+      'Our Seychelles getaway was pure paradise! The beach villa recommendations, private island catamaran cruise, and candle-lit sunset dining arrangements exceeded all expectations. Everything went smoothly without a single hiccup. Thank you for making our honeymoon truly extraordinary!',
+  },
+  rajesh: {
+    name: 'Rajesh Singhal',
+    role: 'Family Vacation',
+    image: testiRajesh,
+    quote:
+      'We booked a 7-day UAE tour for our entire extended family, from grandparents to toddlers. The team arranged spacious private vehicles, skip-the-line passes for attractions in Abu Dhabi and Dubai, and comfortable pacing that suited everyone. Highly professional and dependable!',
+  },
   prakhar: {
     name: 'Prakhar Agarwal',
-    role: 'Our traveler',
+    role: 'Family Traveler',
     image: testiPrakhar,
     quote:
       'This was the perfect Europe vacation for our family! The itinerary was balanced with fun activities for the kids and relaxation for us. The hotel choices were fantastic, with amenities to keep everyone happy. We’re already planning our next trip!',
   },
   mohak: {
     name: 'Mohak & Aashi',
-    role: 'Our traveler',
+    role: 'Couples Vacation',
     image: testiMohak,
     quote:
-      'I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations. Thank you once again for your dedication, patience, and professionalism. We’re so grateful for your help in making this trip so special, and we look forward to planning our next adventure with you!',
+      'I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations.',
+  },
+  kavita: {
+    name: 'Dr. Kavita & Vikram Mehta',
+    role: 'Anniversary Trip',
+    image: testiLucy,
+    quote:
+      'We had only two weeks to plan our 10th anniversary trip to Finland and Scandinavia. VConnect Holidays expedited our visas effortlessly and booked us into the most magical glass igloo in Rovaniemi. Watching the Northern Lights from our bed was a dream fulfilled!',
   },
   sunil: {
     name: 'Sunil Shrivastav',
-    role: 'Our traveler',
+    role: 'Corporate & Leisure Traveler',
     image: testiSunil,
     quote:
-      'Planning corporate travel is usually a hassle, but this time it was seamless. The team organized everything from flights to meeting rooms, leaving me free to focus on my work. Exceptional service!',
+      'Planning corporate retreats and international travel is usually a hassle, but this time it was seamless. The team organized everything from flights to meeting rooms and weekend city excursions, leaving me free to focus on work. Exceptional service!',
   },
   lucy: {
     name: 'Lucy Anderson',
-    role: 'Our traveler',
+    role: 'Adventure Enthusiast',
     image: testiLucy,
     quote:
-      'What an adrenaline rush! From zip-lining through the rainforest to white-water rafting, this adventure package was amazing. The guides were friendly and very knowledgeable about the local wildlife!',
+      'What an adrenaline rush! From zip-lining through the rainforest to white-water rafting, this adventure package was amazing. The guides were friendly, certified, and very knowledgeable about the local culture and wildlife!',
   },
 }
 
-export const homeTestimonials = [testimonials.shachi, testimonials.prakhar, testimonials.mohak]
-export const packagesTestimonials = [testimonials.shachi, testimonials.prakhar, testimonials.sunil, testimonials.lucy]
+export const homeTestimonials = [
+  testimonials.shachi,
+  testimonials.ananya,
+  testimonials.rahul,
+  testimonials.rajesh,
+  testimonials.prakhar,
+  testimonials.mohak,
+  testimonials.kavita,
+  testimonials.sunil,
+  testimonials.lucy,
+]
+
+export const packagesTestimonials = [
+  testimonials.rahul,
+  testimonials.ananya,
+  testimonials.rajesh,
+  testimonials.shachi,
+  testimonials.prakhar,
+  testimonials.mohak,
+  testimonials.kavita,
+  testimonials.sunil,
+  testimonials.lucy,
+]
 
 export const homeFaqs = [
   {
@@ -252,16 +304,6 @@ export const aboutStats = {
   destinations: 100,
   years: 7,
 }
-
-export const blogPosts = [
-  {
-    slug: 'hello-world',
-    title: 'Hello world!',
-    category: 'Uncategorized',
-    date: 'May 8, 2025',
-    excerpt: 'Welcome to WordPress. This is your first post. Edit or delete it, then start writing!',
-  },
-]
 
 export const contactInfo = {
   address: '408, Apollo Premier, Vijay Nagar Square, Indore',

@@ -28,7 +28,7 @@ export default function Hero() {
 
       <div className="container hero__content">
         <div className="hero__heading-block">
-          <span className="hero__badge">#1 The Best Travel Agency</span>
+          <span className="hero__badge">Trusted Travel Specialist • Since 2018</span>
           <h1>
             Unlock The Wonders Of The <span className="accent">World</span> With VConnect Holidays
           </h1>

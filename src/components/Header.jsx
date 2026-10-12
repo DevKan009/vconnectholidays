@@ -5,11 +5,11 @@ import logoWhite from '../assets/images/logo-white.png'
 import './Header.css'
 
 const NAV_LINKS = [
+  { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Destination', to: '/destination' },
   { label: 'Tour Packages', to: '/tour-packages' },
   { label: 'Contact', to: '/contact' },
-  { label: 'Blog', to: '/blog' },
 ]
 
 export default function Header() {
@@ -44,6 +44,7 @@ export default function Header() {
             <NavLink
               key={link.to}
               to={link.to}
+              end={link.to === '/'}
               className={({ isActive }) => `site-header__link ${isActive ? 'is-active' : ''}`}
             >
               {link.label}
@@ -85,7 +86,12 @@ export default function Header() {
         </div>
         <nav className="mobile-menu__nav" aria-label="Mobile">
           {NAV_LINKS.map((link) => (
-            <NavLink key={link.to} to={link.to} onClick={() => setMenuOpen(false)}>
+            <NavLink
+              key={link.to}
+              to={link.to}
+              end={link.to === '/'}
+              onClick={() => setMenuOpen(false)}
+            >
               {link.label}
             </NavLink>
           ))}

@@ -77,7 +77,7 @@ export default function Home() {
           </div>
           <div className="about-teaser__content">
             <h2>
-              VConnect Holidays World&rsquo;s Best Travel Agency <span className="accent">Since 2018.</span>
+              Your Trusted Partner For Curated Vacations &amp; Seamless Travel <span className="accent">Since 2018.</span>
             </h2>
             <div className="about-teaser__pair">
               <img src={aboutImg2} alt="VConnect Holidays couple travellers" />
@@ -134,7 +134,7 @@ export default function Home() {
           <SectionHeading
             before="Amazing Reviews From Our"
             highlight="Travelers"
-            description="Read some interesting reviews and experiences from travelers about Their Travels With Us"
+            description="Read authentic experiences and reviews from happy travelers who explored the world with us."
             light
           />
           <TestimonialSlider items={homeTestimonials} />

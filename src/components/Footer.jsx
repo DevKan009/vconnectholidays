@@ -29,6 +29,7 @@ export default function Footer() {
         <div className="site-footer__col">
           <h4>Quick Links</h4>
           <ul>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/destination">Destination</Link></li>
             <li><Link to="/tour-packages">Packages</Link></li>
