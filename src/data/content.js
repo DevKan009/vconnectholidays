@@ -34,14 +34,11 @@ import team3 from '../assets/images/team-3.jpg'
 import team4 from '../assets/images/team-4.jpg'
 
 // Homepage "Discover Your Next Dream Destination" cards.
-// Note: on the live reference site, the Abu Dhabi and Finland cards show
-// mismatched sub-labels ("Thailand" / "Singapore") - this is preserved
-// faithfully from the source rather than silently corrected. See report.
 export const homeDestinations = [
-  { title: 'Abu Dhabi', subtitle: 'Thailand', image: destAbuDhabi },
+  { title: 'Abu Dhabi', subtitle: 'Middle East', image: destAbuDhabi },
   { title: 'Vietnam', subtitle: 'Southeast Asia', image: destVietnam },
   { title: 'Sri Lanka', subtitle: 'South Asia', image: destSriLanka },
-  { title: 'Finland', subtitle: 'Singapore', image: destFinland },
+  { title: 'Finland', subtitle: 'Northern Europe', image: destFinland },
   { title: 'Switzerland', subtitle: 'Europe', image: destSwitzerland },
   { title: 'Fiji Island', subtitle: 'South Pacific Ocean', image: destFiji },
 ]
@@ -109,7 +106,7 @@ export const homePackages = [
 ]
 
 export const tourPackages = [
-  { title: 'Vietnam', subtitle: '7 Days Holiday In Vietnam', price: 'From : RS. 1,01,000', duration: '7 Days 6 Night', image: pkgThailand },
+  { title: 'Vietnam', subtitle: '7 Days Holiday In Vietnam', price: 'From : RS. 1,01,000', duration: '7 Days 6 Night', image: destVietnam },
   { title: 'Thailand', subtitle: '7 Days Holiday In Thailand', price: 'From : Rs. 78,300', duration: '6 Days 5 Night', image: pkgPhuket },
   { title: 'Singapore', subtitle: 'Explore Singapore 7-Day Tour', price: 'From : Rs. 97,800', duration: '7 Days 6 Night', image: pkgSingapore },
   { title: 'Indonesia', subtitle: '7 - Days Tour Exploring Bali', price: 'From : Rs. 79,000', duration: '7 Days 6 Night', image: pkgBali },
