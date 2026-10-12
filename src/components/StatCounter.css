@@ -1,0 +1,33 @@
+.stat-counter {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat__value {
+  font-family: var(--font-accent);
+  font-size: 44px;
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.stat__label {
+  font-size: 15px;
+  color: var(--color-body);
+}
+
+@media (max-width: 640px) {
+  .stat-counter {
+    gap: 32px;
+  }
+
+  .stat__value {
+    font-size: 34px;
+  }
+}

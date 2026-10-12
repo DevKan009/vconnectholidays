@@ -1,0 +1,320 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - link [ref=f1e6] [cursor=pointer]:
+        - /url: /
+        - img "VConnect Holidays" [ref=f1e7]
+      - navigation "Primary" [ref=f1e8]:
+        - link "About" [ref=f1e9] [cursor=pointer]:
+          - /url: /about
+        - link "Destination" [ref=f1e10] [cursor=pointer]:
+          - /url: /destination
+        - link "Tour Packages" [ref=f1e11] [cursor=pointer]:
+          - /url: /tour-packages
+        - link "Contact" [ref=f1e12] [cursor=pointer]:
+          - /url: /contact
+        - link "Blog" [ref=f1e13] [cursor=pointer]:
+          - /url: /blog
+      - search [ref=f1e14]:
+        - searchbox "Search" [ref=f1e15]
+        - button "Search" [ref=f1e16] [cursor=pointer]
+    - generic [ref=f1e19]:
+      - generic [ref=f1e20]:
+        - link [ref=f1e21] [cursor=pointer]:
+          - /url: /
+          - img "VConnect Holidays" [ref=f1e22]
+        - button "Close menu" [ref=f1e23] [cursor=pointer]
+      - navigation "Mobile" [ref=f1e26]:
+        - link "About" [ref=f1e27] [cursor=pointer]:
+          - /url: /about
+        - link "Destination" [ref=f1e28] [cursor=pointer]:
+          - /url: /destination
+        - link "Tour Packages" [ref=f1e29] [cursor=pointer]:
+          - /url: /tour-packages
+        - link "Contact" [ref=f1e30] [cursor=pointer]:
+          - /url: /contact
+        - link "Blog" [ref=f1e31] [cursor=pointer]:
+          - /url: /blog
+      - search [ref=f1e32]:
+        - searchbox "Search" [ref=f1e33]
+        - button "Search" [ref=f1e34] [cursor=pointer]
+  - main [ref=f1e37]:
+    - generic [ref=f1e43]:
+      - generic [ref=f1e44]: "#1 The Best Travel Agency"
+      - heading "Unlock The Wonders Of The World With VConnect Holidays" [level=1] [ref=f1e45]
+      - paragraph [ref=f1e46]: Welcome to VConnect Holidays, a premier tour and travel agency committed to transforming your travel dreams into reality.
+      - link "Explore Now" [ref=f1e47] [cursor=pointer]:
+        - /url: /destination
+    - generic [ref=f1e52]:
+      - generic [ref=f1e53]:
+        - heading "Discover Your Next Dream Destination" [level=2] [ref=f1e54]
+        - paragraph [ref=f1e55]: Here are some of the most visited destinations by tourists in 2025.
+      - generic [ref=f1e56]:
+        - generic [ref=f1e59]:
+          - generic [ref=f1e60]:
+            - heading "Abu Dhabi" [level=3] [ref=f1e61]
+            - paragraph [ref=f1e62]: Thailand
+          - link "Explore Abu Dhabi" [ref=f1e63] [cursor=pointer]:
+            - /url: /destination
+        - generic [ref=f1e68]:
+          - generic [ref=f1e69]:
+            - heading "Vietnam" [level=3] [ref=f1e70]
+            - paragraph [ref=f1e71]: Southeast Asia
+          - link "Explore Vietnam" [ref=f1e72] [cursor=pointer]:
+            - /url: /destination
+        - generic [ref=f1e77]:
+          - generic [ref=f1e78]:
+            - heading "Sri Lanka" [level=3] [ref=f1e79]
+            - paragraph [ref=f1e80]: South Asia
+          - link "Explore Sri Lanka" [ref=f1e81] [cursor=pointer]:
+            - /url: /destination
+        - generic [ref=f1e86]:
+          - generic [ref=f1e87]:
+            - heading "Finland" [level=3] [ref=f1e88]
+            - paragraph [ref=f1e89]: Singapore
+          - link "Explore Finland" [ref=f1e90] [cursor=pointer]:
+            - /url: /destination
+        - generic [ref=f1e95]:
+          - generic [ref=f1e96]:
+            - heading "Switzerland" [level=3] [ref=f1e97]
+            - paragraph [ref=f1e98]: Europe
+          - link "Explore Switzerland" [ref=f1e99] [cursor=pointer]:
+            - /url: /destination
+        - generic [ref=f1e104]:
+          - generic [ref=f1e105]:
+            - heading "Fiji Island" [level=3] [ref=f1e106]
+            - paragraph [ref=f1e107]: South Pacific Ocean
+          - link "Explore Fiji Island" [ref=f1e108] [cursor=pointer]:
+            - /url: /destination
+    - generic [ref=f1e112]:
+      - generic [ref=f1e113]:
+        - heading "Exclusive Tour & Travel Packages" [level=2] [ref=f1e114]
+        - paragraph [ref=f1e115]: Here are some of our Exclusive Tour Packages highlighting the unique aspects of each place.
+      - generic [ref=f1e116]:
+        - generic [ref=f1e117]:
+          - link "Book Now" [ref=f1e119] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e120]:
+            - generic [ref=f1e121]: Bali
+            - heading "Bali - 06 Nights,07 Days" [level=3] [ref=f1e124]
+            - paragraph [ref=f1e125]: "Package cost : INR 83500 per head."
+            - paragraph [ref=f1e126]: 7 Days 6 Night
+        - generic [ref=f1e127]:
+          - link "Book Now" [ref=f1e129] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e130]:
+            - generic [ref=f1e131]: Abu Dhabi
+            - heading "Abu Dhabi - 04 Nights, 05 Days" [level=3] [ref=f1e134]
+            - paragraph [ref=f1e135]: Connect for Package
+            - paragraph [ref=f1e136]: 5 Days 4 Night
+        - generic [ref=f1e137]:
+          - link "Book Now" [ref=f1e139] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e140]:
+            - generic [ref=f1e141]: Singapore
+            - heading "Singapore - 04 Nights, 05 Days" [level=3] [ref=f1e144]
+            - paragraph [ref=f1e145]: Connect for Package
+            - paragraph [ref=f1e146]: 5 Days 4 Night
+        - generic [ref=f1e147]:
+          - link "Book Now" [ref=f1e149] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e150]:
+            - generic [ref=f1e151]: Thailand
+            - heading "Thailand - 6 Nights, 7 Days" [level=3] [ref=f1e154]
+            - paragraph [ref=f1e155]: Connect for Package
+            - paragraph [ref=f1e156]: 7 Days 6 Night
+        - generic [ref=f1e157]:
+          - link "Book Now" [ref=f1e159] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e160]:
+            - generic [ref=f1e161]: Thailand
+            - heading "Phuket & Krabi" [level=3] [ref=f1e164]
+            - paragraph [ref=f1e165]: Package Cost INR 42,999
+            - paragraph [ref=f1e166]: Connect for Package details*
+        - generic [ref=f1e167]:
+          - link "Book Now" [ref=f1e169] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e170]:
+            - generic [ref=f1e171]: Seychelles
+            - heading "Seychelles - 6 Nights, 7 Days" [level=3] [ref=f1e174]
+            - paragraph [ref=f1e175]: Connect for Package
+            - paragraph [ref=f1e176]: 7 Days 6 Night
+        - generic [ref=f1e177]:
+          - link "Book Now" [ref=f1e179] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=f1e180]:
+            - generic [ref=f1e181]: South Korea
+            - heading "4 Days Tour Exploring Temples In Korea" [level=3] [ref=f1e184]
+            - paragraph [ref=f1e185]: Connect for Package
+            - paragraph [ref=f1e186]: 4 Days 3 Night
+        - generic [ref=f1e187]:
+          - generic [ref=f1e188]: Explore The World
+          - heading "We Have Many Other Holiday Tour Packages" [level=3] [ref=f1e189]
+          - paragraph [ref=f1e190]: Connect with us and let’s plan it your way
+          - link "All Packages" [ref=f1e191] [cursor=pointer]:
+            - /url: /tour-packages
+    - generic [ref=f1e196]:
+      - generic [ref=f1e197]:
+        - img "VConnect Holidays travellers group" [ref=f1e198]
+        - img "VConnect Holidays travellers" [ref=f1e200]
+      - generic [ref=f1e201]:
+        - heading "VConnect Holidays World’s Best Travel Agency Since 2018." [level=2] [ref=f1e202]
+        - paragraph [ref=f1e203]: At The VConnect Holidays, our foundation is built upon a steadfast commitment to excellence, a visionary approach to travel, a clear mission, and a set of deeply ingrained values. Our commitment drives every aspect of our operations, ensuring that every traveler’s experience exceeds expectations. From meticulously curated itineraries to personalized customer service, we spare no effort in delivering unforgettable journeys.
+        - link "Discover More" [ref=f1e204] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=f1e208]:
+          - generic [ref=f1e209]:
+            - generic [ref=f1e210]: 0 K+
+            - generic [ref=f1e211]: Happy Traveller
+          - generic [ref=f1e212]:
+            - generic [ref=f1e213]: 0 +
+            - generic [ref=f1e214]: Travel Destinations
+          - generic [ref=f1e215]:
+            - generic [ref=f1e216]: 0 +
+            - generic [ref=f1e217]: Year Of Service
+    - generic [ref=f1e219]:
+      - generic [ref=f1e220]:
+        - heading "Why Choose VConnect Holidays?" [level=2] [ref=f1e221]
+        - paragraph [ref=f1e222]: At VConnect Holidays, we pride ourselves on providing exceptional travel experiences that go beyond just a booking. Here are the reasons why travelers trust us for their adventures
+      - generic [ref=f1e223]:
+        - generic [ref=f1e224]:
+          - heading "Expert Guidance" [level=3] [ref=f1e228]
+          - paragraph [ref=f1e229]: Our experienced travel experts ensure every detail of your trip is perfect.
+        - generic [ref=f1e230]:
+          - heading "Best Price Guarantee" [level=3] [ref=f1e234]
+          - paragraph [ref=f1e235]: We offer value-for-money packages without compromising on quality.
+        - generic [ref=f1e236]:
+          - heading "Sustainable Travel Practices" [level=3] [ref=f1e240]
+          - paragraph [ref=f1e241]: We support eco-friendly tourism to preserve the environment & local communities.
+    - generic [ref=f1e243]:
+      - generic [ref=f1e244]:
+        - heading "Amazing Reviews From Our Travelers" [level=2] [ref=f1e245]
+        - paragraph [ref=f1e246]: Read some interesting reviews and experiences from travelers about Their Travels With Us
+      - generic [ref=f1e247]:
+        - generic [ref=f1e248]:
+          - article [ref=f1e249]:
+            - paragraph [ref=f1e252]: Our honeymoon in Bali was absolutely magical, all thanks to Vanita Di, Gurbani, and the amazing team! Everything was perfectly planned—flights, hotel bookings, a beautiful itinerary, and stunning properties. The transfers were seamless, and your prompt support throughout made the entire trip completely stress-free. Thank you so much for making our honeymoon so memorable!
+            - generic [ref=f1e253]:
+              - img "Shachi & Samyak" [ref=f1e254]
+              - generic [ref=f1e255]:
+                - strong [ref=f1e256]: Shachi & Samyak
+                - text: Our traveler
+          - article [ref=f1e257]:
+            - paragraph [ref=f1e260]: This was the perfect Europe vacation for our family! The itinerary was balanced with fun activities for the kids and relaxation for us. The hotel choices were fantastic, with amenities to keep everyone happy. We’re already planning our next trip!
+            - generic [ref=f1e261]:
+              - img "Prakhar Agarwal" [ref=f1e262]
+              - generic [ref=f1e263]:
+                - strong [ref=f1e264]: Prakhar Agarwal
+                - text: Our traveler
+          - article [ref=f1e265]:
+            - paragraph [ref=f1e268]: I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations. Thank you once again for your dedication, patience, and professionalism. We’re so grateful for your help in making this trip so special, and we look forward to planning our next adventure with you!
+            - generic [ref=f1e269]:
+              - img "Mohak & Aashi" [ref=f1e270]
+              - generic [ref=f1e271]:
+                - strong [ref=f1e272]: Mohak & Aashi
+                - text: Our traveler
+        - generic [ref=f1e273]:
+          - button "Previous testimonials" [ref=f1e274] [cursor=pointer]
+          - button "Next testimonials" [ref=f1e277] [cursor=pointer]
+    - generic [ref=f1e281]:
+      - generic [ref=f1e282]:
+        - heading "Explore Our Photo Gallery" [level=2] [ref=f1e283]
+        - paragraph [ref=f1e284]: Every photo we take captures beauty, culture, adventure and experience.
+      - generic [ref=f1e285]:
+        - img "VConnect Holidays travel moment" [ref=f1e286]
+        - img "VConnect Holidays travel moment" [ref=f1e287]
+        - img "VConnect Holidays travel moment" [ref=f1e288]
+        - img "VConnect Holidays travel moment" [ref=f1e289]
+        - img "VConnect Holidays travel moment" [ref=f1e290]
+        - img "VConnect Holidays travel moment" [ref=f1e291]
+        - img "VConnect Holidays travel moment" [ref=f1e292]
+        - img "VConnect Holidays travel moment" [ref=f1e293]
+    - generic [ref=f1e295]:
+      - generic [ref=f1e296]:
+        - heading "Frequently Asked Questions" [level=2] [ref=f1e297]
+        - paragraph [ref=f1e298]: provides important details and answers to frequently asked questions
+      - generic [ref=f1e299]:
+        - generic [ref=f1e300]:
+          - button "Why should I book with VConnect Holidays instead of booking online myself?" [expanded] [ref=f1e301] [cursor=pointer]
+          - paragraph [ref=f1e306]: While online portals offer options, we offer peace of mind and expertise. With us, you get a dedicated travel expert who customizes your trip to your preferences, handles all the complex logistics, and provides 24/7 on-trip support. We save you time, prevent common travel mistakes, and often have access to better deals and arrangements.
+        - generic [ref=f1e307]:
+          - button "What types of holiday packages do you offer?" [ref=f1e308] [cursor=pointer]
+          - paragraph [ref=f1e312]: We offer a wide range of packages to suit every traveler, including romantic honeymoon getaways, fun-filled family vacations, adventurous trips, relaxing beach holidays, cultural tours, and more. We specialize in destinations across India like Himachal, Kerala, and Goa, as well as international hotspots like Dubai, Maldives, Thailand, and Europe.
+        - generic [ref=f1e313]:
+          - button "Can you create a custom tour package for me?" [ref=f1e314] [cursor=pointer]
+          - paragraph [ref=f1e318]: Absolutely! Customization is our specialty. If you have a specific destination or travel plan in mind, our experts will work with you to design a tailor-made itinerary that fits your interests, timeline, and budget perfectly.
+        - generic [ref=f1e319]:
+          - button "What if I face an issue during my trip? Is there someone I can contact?" [ref=f1e320] [cursor=pointer]
+          - paragraph [ref=f1e324]: Yes! When you book with us, you are never alone. You will be provided with a dedicated contact number for our on-trip support team, which is available 24/7 to assist you with any emergencies or issues you may face during your vacation.
+        - generic [ref=f1e325]:
+          - button "When will I receive my flight tickets, hotel vouchers, and other travel documents?" [ref=f1e326] [cursor=pointer]
+          - paragraph [ref=f1e330]: You will receive all your travel documents, including e-tickets, hotel confirmation vouchers, and a detailed day-by-day itinerary, via email well before your departure date, typically after the final payment has been cleared.
+    - generic [ref=f1e332]:
+      - heading "Take An Adventure To Our Featured Destinations, Contact Us Now!" [level=2] [ref=f1e333]
+      - paragraph [ref=f1e334]: Your perfect escape with tailored travel services, ensuring every detail of your dream vacation
+      - link "Contact Us" [ref=f1e335] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=f1e339]:
+    - generic [ref=f1e340]:
+      - generic [ref=f1e341]:
+        - img "VConnect Holidays" [ref=f1e342]
+        - generic [ref=f1e343]:
+          - heading "Our Newsletter" [level=4] [ref=f1e344]
+          - generic [ref=f1e345]:
+            - generic [ref=f1e346]:
+              - textbox "Email address" [ref=f1e347]:
+                - /placeholder: Your email address
+              - button "Subscribe" [ref=f1e348] [cursor=pointer]
+            - status [ref=f1e349]
+      - generic [ref=f1e350]:
+        - heading "Quick Links" [level=4] [ref=f1e351]
+        - list [ref=f1e352]:
+          - listitem [ref=f1e353]:
+            - link "About" [ref=f1e354] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f1e355]:
+            - link "Destination" [ref=f1e356] [cursor=pointer]:
+              - /url: /destination
+          - listitem [ref=f1e357]:
+            - link "Packages" [ref=f1e358] [cursor=pointer]:
+              - /url: /tour-packages
+          - listitem [ref=f1e359]:
+            - link "FAQ" [ref=f1e360] [cursor=pointer]:
+              - /url: /#faq
+          - listitem [ref=f1e361]:
+            - link "Contact" [ref=f1e362] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=f1e363]:
+        - heading "Support" [level=4] [ref=f1e364]
+        - list [ref=f1e365]:
+          - listitem [ref=f1e366]: Help Center
+          - listitem [ref=f1e367]: Booking
+          - listitem [ref=f1e368]: Privacy Policy
+          - listitem [ref=f1e369]: Terms & Conditions
+          - listitem [ref=f1e370]: Online Supports
+      - generic [ref=f1e371]:
+        - heading "Contact Info" [level=4] [ref=f1e372]
+        - list [ref=f1e373]:
+          - listitem [ref=f1e374]:
+            - generic [ref=f1e375]: Address
+            - text: 408, Apollo Premier, Vijay Nagar Square, Indore
+          - listitem [ref=f1e378]:
+            - generic [ref=f1e379]: Email
+            - link "Vanita@Vconnectholidays.Com" [ref=f1e382] [cursor=pointer]:
+              - /url: mailto:Vanita@Vconnectholidays.Com
+          - listitem [ref=f1e383]:
+            - generic [ref=f1e384]: Phone
+            - text: 73540 46384 | 93990 90152
+    - generic [ref=f1e388]:
+      - paragraph [ref=f1e389]: © VConnect Holidays. All Right Reserved 2026.
+      - generic [ref=f1e390]:
+        - link "Facebook" [ref=f1e391] [cursor=pointer]:
+          - /url: "#top"
+        - link "Twitter" [ref=f1e394] [cursor=pointer]:
+          - /url: "#top"
+        - link "Youtube" [ref=f1e397] [cursor=pointer]:
+          - /url: "#top"
+        - link "Telegram-plane" [ref=f1e400] [cursor=pointer]:
+          - /url: "#top"
+        - link "Instagram" [ref=f1e403] [cursor=pointer]:
+          - /url: "#top"

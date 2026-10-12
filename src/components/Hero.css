@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  min-height: 820px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 1.4s ease, transform 7s ease;
+}
+
+.hero__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.55) 0%, rgba(20, 20, 20, 0.25) 45%, rgba(20, 20, 20, 0.75) 100%);
+}
+
+.hero__content {
+  position: relative;
+  padding-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero__heading-block {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.hero__badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  border: 0.8px solid rgba(255, 255, 255, 0.27);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 15px;
+}
+
+.hero__heading-block h1 {
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.hero__heading-block h1 .accent {
+  color: var(--color-light-gray);
+}
+
+.hero__footer-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hero__footer-row p {
+  max-width: 480px;
+  text-align: left;
+  color: var(--color-light-gray);
+  font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 680px;
+  }
+
+  .hero__content {
+    gap: 40px;
+  }
+
+  .hero__heading-block h1 {
+    font-size: 54px;
+  }
+
+  .hero__footer-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 26px;
+  }
+
+  .hero__footer-row p {
+    max-width: 520px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero__heading-block h1 {
+    font-size: 36px;
+  }
+}

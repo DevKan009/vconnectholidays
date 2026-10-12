@@ -1,0 +1,34 @@
+.not-found {
+  padding: 180px 0 140px;
+}
+
+.not-found__inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.not-found__code {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 110px;
+  color: var(--color-gold-start);
+  line-height: 1;
+}
+
+.not-found h1 {
+  font-size: 32px;
+}
+
+.not-found p {
+  margin-bottom: 10px;
+}
+
+.not-found__link {
+  margin-top: 6px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: var(--color-body);
+}

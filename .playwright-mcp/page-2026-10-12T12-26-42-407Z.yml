@@ -1,0 +1,648 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - banner [ref=f3e3]:
+      - generic [ref=f3e6]:
+        - link [ref=f3e9] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f3e10]:
+          - generic:
+            - generic:
+              - button "open-menu":
+                - generic [aria-hidden] [ref=f3e11] [cursor=pointer]: 
+              - generic [ref=f3e12]:
+                - list [ref=f3e14]:
+                  - listitem [ref=f3e15]:
+                    - link "About" [ref=f3e16] [cursor=pointer]:
+                      - /url: https://vconnectholidays.com/about/
+                  - listitem [ref=f3e17]:
+                    - link "Destination" [ref=f3e18] [cursor=pointer]:
+                      - /url: https://vconnectholidays.com/destination/
+                  - listitem [ref=f3e19]:
+                    - link "Tour Packages" [ref=f3e20] [cursor=pointer]:
+                      - /url: https://vconnectholidays.com/tour-packages/
+                  - listitem [ref=f3e21]:
+                    - link "Contact" [ref=f3e22] [cursor=pointer]:
+                      - /url: https://vconnectholidays.com/contact/
+                  - listitem [ref=f3e23]:
+                    - link "Blog" [ref=f3e24] [cursor=pointer]:
+                      - /url: https://vconnectholidays.com/blog/
+                - generic [ref=f3e25]:
+                  - link "Home Link" [ref=f3e27] [cursor=pointer]:
+                    - /url: https://vconnectholidays.com
+                  - button "close-menu":
+                    - img [aria-hidden] [ref=f3e28] [cursor=pointer]
+    - generic [ref=f3e30]:
+      - generic [ref=f3e31]:
+        - generic [ref=f3e33]:
+          - group "1 / 3"
+          - group "2 / 3"
+          - group "3 / 3"
+          - group "1 / 3" [ref=f3e34]
+          - group "2 / 3"
+          - group "3 / 3"
+          - group "1 / 3"
+          - group "2 / 3"
+          - group "3 / 3"
+        - generic [ref=f3e36]:
+          - generic [ref=f3e38]:
+            - heading "#1 The Best Travel Agency" [level=2] [ref=f3e41]
+            - heading "Unlock the Wonders of the World With VConnect Holidays" [level=1] [ref=f3e46]:
+              - text: Unlock the Wonders of the
+              - generic [ref=f3e47]: World
+              - text: With VConnect Holidays
+          - generic [ref=f3e49]:
+            - paragraph [ref=f3e53]: Welcome to VConnect Holidays, a premier tour and travel agency committed to transforming your travel dreams into reality.
+            - link "Explore Now" [ref=f3e58] [cursor=pointer]:
+              - /url: ""
+              - text: Explore Now
+              - generic [aria-hidden] [ref=f3e59]: 淚
+      - generic [ref=f3e61]:
+        - generic [ref=f3e63]:
+          - heading "Discover Your Next Dream Destination" [level=2] [ref=f3e68]:
+            - text: Discover Your Next Dream
+            - generic [ref=f3e69]: Destination
+          - paragraph [ref=f3e72]: Here are some of the most visited destinations by tourists in 2025.
+        - generic [ref=f3e74]:
+          - generic [ref=f3e75]:
+            - generic [ref=f3e82]:
+              - generic [ref=f3e88]:
+                - heading "Abu Dhabi" [level=2] [ref=f3e89]
+                - paragraph [ref=f3e90]: Thailand
+              - link [ref=f3e95] [cursor=pointer]:
+                - /url: ""
+                - generic [aria-hidden] [ref=f3e96]: 
+            - generic [ref=f3e103]:
+              - generic [ref=f3e109]:
+                - heading "Vietnam" [level=2] [ref=f3e110]
+                - paragraph [ref=f3e111]: Southeast Asia
+              - link [ref=f3e116] [cursor=pointer]:
+                - /url: ""
+                - generic [aria-hidden] [ref=f3e117]: 
+          - generic [ref=f3e125]:
+            - generic [ref=f3e131]:
+              - heading "Sri Lanka" [level=2] [ref=f3e132]
+              - paragraph [ref=f3e133]: South Asia
+            - link [ref=f3e138] [cursor=pointer]:
+              - /url: ""
+              - generic [aria-hidden] [ref=f3e139]: 
+        - generic [ref=f3e141]:
+          - generic [ref=f3e149]:
+            - generic [ref=f3e155]:
+              - heading "Finland" [level=2] [ref=f3e156]
+              - paragraph [ref=f3e157]: Singapore
+            - link [ref=f3e162] [cursor=pointer]:
+              - /url: ""
+              - generic [aria-hidden] [ref=f3e163]: 
+          - generic [ref=f3e164]:
+            - generic [ref=f3e171]:
+              - generic [ref=f3e177]:
+                - heading "Switzerland" [level=2] [ref=f3e178]
+                - paragraph [ref=f3e179]: Europe
+              - link [ref=f3e184] [cursor=pointer]:
+                - /url: ""
+                - generic [aria-hidden] [ref=f3e185]: 
+            - generic [ref=f3e192]:
+              - generic [ref=f3e198]:
+                - heading "Fiji Island" [level=2] [ref=f3e199]
+                - paragraph [ref=f3e200]: South Pacific Ocean
+              - link [ref=f3e205] [cursor=pointer]:
+                - /url: ""
+                - generic [aria-hidden] [ref=f3e206]: 
+      - generic [ref=f3e208]:
+        - generic [ref=f3e210]:
+          - heading "Exclusive Tour & Travel Packages" [level=2] [ref=f3e215]:
+            - text: Exclusive Tour & Travel
+            - generic [ref=f3e216]: Packages
+          - generic [ref=f3e217]: Here are some of our Exclusive Tour Packages highlighting the unique aspects of each place.
+        - generic [ref=f3e220]:
+          - generic [ref=f3e221]:
+            - generic [ref=f3e222]:
+              - link "Book Now" [ref=f3e231] [cursor=pointer]:
+                - /url: ""
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e232]: 淚
+              - generic [ref=f3e233]:
+                - list [ref=f3e236]:
+                  - listitem [ref=f3e237]:
+                    - generic [aria-hidden] [ref=f3e239]: 拾
+                    - generic [ref=f3e240]: Bali
+                - list [ref=f3e243]:
+                  - listitem [ref=f3e244]:
+                    - generic [ref=f3e245]: "Package cost : INR 83500 per head."
+                  - listitem [ref=f3e246]:
+                    - generic [ref=f3e247]: 7 Days 6 Night
+            - generic [ref=f3e248]:
+              - link "Book Now" [ref=f3e257] [cursor=pointer]:
+                - /url: ""
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e258]: 淚
+              - generic [ref=f3e259]:
+                - list [ref=f3e262]:
+                  - listitem [ref=f3e263]:
+                    - generic [aria-hidden] [ref=f3e265]: 拾
+                    - generic [ref=f3e266]: Abu Dhabi
+                - list [ref=f3e269]:
+                  - listitem [ref=f3e270]:
+                    - generic [ref=f3e271]: Connect for Package
+                  - listitem [ref=f3e272]:
+                    - generic [ref=f3e273]: 5 Days 4 Night
+          - generic [ref=f3e274]:
+            - generic [ref=f3e275]:
+              - link "Book Now" [ref=f3e284] [cursor=pointer]:
+                - /url: https://vconnectholidays.com/wp-content/uploads/2025/07/SINGAPORE-4N-5D-Ready-1.pdf
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e285]: 淚
+              - generic [ref=f3e286]:
+                - list [ref=f3e289]:
+                  - listitem [ref=f3e290]:
+                    - generic [aria-hidden] [ref=f3e292]: 拾
+                    - generic [ref=f3e293]: Singapore
+                - list [ref=f3e296]:
+                  - listitem [ref=f3e297]:
+                    - generic [ref=f3e298]: Connect for Package
+                  - listitem [ref=f3e299]:
+                    - generic [ref=f3e300]: 5 Days 4 Night
+            - generic [ref=f3e301]:
+              - link "Book Now" [ref=f3e310] [cursor=pointer]:
+                - /url: ""
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e311]: 淚
+              - generic [ref=f3e312]:
+                - list [ref=f3e315]:
+                  - listitem [ref=f3e316]:
+                    - generic [aria-hidden] [ref=f3e318]: 拾
+                    - generic [ref=f3e319]: Thailand
+                - list [ref=f3e322]:
+                  - listitem [ref=f3e323]:
+                    - generic [ref=f3e324]: Connect for Package
+                  - listitem [ref=f3e325]:
+                    - generic [ref=f3e326]: 7 Days 6 Night
+        - generic [ref=f3e327]:
+          - generic [ref=f3e328]:
+            - generic [ref=f3e329]:
+              - link "Book Now" [ref=f3e338] [cursor=pointer]:
+                - /url: ""
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e339]: 淚
+              - generic [ref=f3e340]:
+                - list [ref=f3e343]:
+                  - listitem [ref=f3e344]:
+                    - generic [aria-hidden] [ref=f3e346]: 拾
+                    - generic [ref=f3e347]: Thailand
+                - list [ref=f3e350]:
+                  - listitem [ref=f3e351]:
+                    - generic [ref=f3e352]: Package Cost INR 42,999
+                  - listitem [ref=f3e353]:
+                    - generic [ref=f3e354]: Connect for Package details*
+            - generic [ref=f3e355]:
+              - link "Book Now" [ref=f3e364] [cursor=pointer]:
+                - /url: https://vconnectholidays.com/wp-content/uploads/2025/07/Romantic-Seychelles-Cerf-Island-f.pdf
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e365]: 淚
+              - generic [ref=f3e366]:
+                - list [ref=f3e369]:
+                  - listitem [ref=f3e370]:
+                    - generic [aria-hidden] [ref=f3e372]: 拾
+                    - generic [ref=f3e373]: Seychelles
+                - list [ref=f3e376]:
+                  - listitem [ref=f3e377]:
+                    - generic [ref=f3e378]: Connect for Package
+                  - listitem [ref=f3e379]:
+                    - generic [ref=f3e380]: 7 Days 6 Night
+          - generic [ref=f3e381]:
+            - generic [ref=f3e382]:
+              - link "Book Now" [ref=f3e391] [cursor=pointer]:
+                - /url: ""
+                - text: Book Now
+                - generic [aria-hidden] [ref=f3e392]: 淚
+              - generic [ref=f3e393]:
+                - list [ref=f3e396]:
+                  - listitem [ref=f3e397]:
+                    - generic [aria-hidden] [ref=f3e399]: 拾
+                    - generic [ref=f3e400]: South Korea
+                - list [ref=f3e403]:
+                  - listitem [ref=f3e404]:
+                    - generic [ref=f3e405]: Connect for Package
+                  - listitem [ref=f3e406]:
+                    - generic [ref=f3e407]: 4 Days 3 Night
+            - generic [ref=f3e408]:
+              - generic [ref=f3e409]:
+                - heading "Explore The World" [level=2] [ref=f3e412]
+                - heading "We have many other holiday tour packages" [level=2] [ref=f3e415]
+                - paragraph [ref=f3e418]: Connect with us and let’s plan it your way
+              - link "All Packages" [ref=f3e422] [cursor=pointer]:
+                - /url: https://vconnectholidays.com/tour-packages/
+                - text: All Packages
+                - generic [aria-hidden] [ref=f3e423]: 淚
+      - generic [ref=f3e425]:
+        - heading "VConnect Holidays World's Best Travel Agency Since 2018." [level=2] [ref=f3e432]:
+          - text: VConnect Holidays World's Best Travel Agency
+          - generic [ref=f3e433]: Since 2018.
+        - generic [ref=f3e439]:
+          - generic [ref=f3e443]:
+            - paragraph [ref=f3e446]: At The VConnect Holidays, our foundation is built upon a steadfast commitment to excellence, a visionary approach to travel, a clear mission, and a set of deeply ingrained values. Our commitment drives every aspect of our operations, ensuring that every traveler’s experience exceeds expectations. From meticulously curated itineraries to personalized customer service, we spare no effort in delivering unforgettable journeys.
+            - link "Discover More" [ref=f3e450] [cursor=pointer]:
+              - /url: ""
+              - text: Discover More
+              - generic [aria-hidden] [ref=f3e451]: 淚
+          - generic [ref=f3e452]:
+            - generic [ref=f3e458]:
+              - generic [ref=f3e459]:
+                - text: 0 k
+                - superscript [ref=f3e460]: +
+              - heading "Happy Traveller" [level=2] [ref=f3e461]
+            - generic [ref=f3e467]:
+              - generic [ref=f3e468]:
+                - text: "0"
+                - superscript [ref=f3e469]: +
+              - heading "Travel Destinations" [level=2] [ref=f3e470]
+            - generic [ref=f3e476]:
+              - generic [ref=f3e477]:
+                - text: "0"
+                - superscript [ref=f3e478]: +
+              - heading "Year Of Service" [level=2] [ref=f3e479]
+      - generic [ref=f3e499]:
+        - heading "Why Choose VConnect Holidays?" [level=2] [ref=f3e504]:
+          - text: Why Choose
+          - generic [ref=f3e505]: VConnect Holidays?
+        - paragraph [ref=f3e508]: At VConnect Holidays, we pride ourselves on providing exceptional travel experiences that go beyond just a booking. Here are the reasons why travelers trust us for their adventures
+        - generic [ref=f3e509]:
+          - generic [ref=f3e513]:
+            - generic [aria-hidden] [ref=f3e516]: 流
+            - generic [ref=f3e517]:
+              - heading "Expert Guidance" [level=2] [ref=f3e518]
+              - paragraph [ref=f3e519]: Our experienced travel experts ensure every detail of your trip is perfect.
+          - generic [ref=f3e523]:
+            - generic [aria-hidden] [ref=f3e526]: 渚
+            - generic [ref=f3e527]:
+              - heading "Best Price Guarantee" [level=2] [ref=f3e528]
+              - paragraph [ref=f3e529]: We offer value-for-money packages without compromising on quality.
+          - generic [ref=f3e533]:
+            - generic [aria-hidden] [ref=f3e536]: 署
+            - generic [ref=f3e537]:
+              - heading "Sustainable Travel Practices" [level=2] [ref=f3e538]
+              - paragraph [ref=f3e539]: We support eco-friendly tourism to preserve the environment & local communities.
+      - generic [ref=f3e540]:
+        - generic [ref=f3e542]:
+          - heading "Amazing Reviews From Our Travelers" [level=2] [ref=f3e547]:
+            - text: Amazing Reviews From Our
+            - generic [ref=f3e548]: Travelers
+          - generic [ref=f3e549]: Read some interesting reviews and experiences from travelers about Their Travels With Us
+        - generic [ref=f3e556]:
+          - generic [ref=f3e557]: slide 7 of 4
+          - generic [ref=f3e560]:
+            - generic [ref=f3e562]:
+              - paragraph [ref=f3e564]: I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations. Thank you once again for your dedication, patience, and professionalism. We’re so grateful for your help in making this trip so special, and we look forward to planning our next adventure with you!
+              - list [ref=f3e566]:
+                - listitem [ref=f3e567]:
+                  - generic [aria-hidden] [ref=f3e568]: 
+                - listitem [ref=f3e569]:
+                  - generic [aria-hidden] [ref=f3e570]: 
+                - listitem [ref=f3e571]:
+                  - generic [aria-hidden] [ref=f3e572]: 
+                - listitem [ref=f3e573]:
+                  - generic [aria-hidden] [ref=f3e574]: 
+                - listitem [ref=f3e575]:
+                  - generic [aria-hidden] [ref=f3e576]: 
+              - generic [ref=f3e579]:
+                - strong [ref=f3e580]: Mohak & Aashi
+                - paragraph [ref=f3e581]: Our traveler
+            - generic [ref=f3e583]:
+              - paragraph [ref=f3e585]: "\"What an adrenaline rush! From zip-lining through the rainforest to white-water rafting, this adventure package was amazing. The guides were friendly and very knowledgeable about the local wildlife!\""
+              - list [ref=f3e587]:
+                - listitem [ref=f3e588]:
+                  - generic [aria-hidden] [ref=f3e589]: 
+                - listitem [ref=f3e590]:
+                  - generic [aria-hidden] [ref=f3e591]: 
+                - listitem [ref=f3e592]:
+                  - generic [aria-hidden] [ref=f3e593]: 
+                - listitem [ref=f3e594]:
+                  - generic [aria-hidden] [ref=f3e595]: 
+                - listitem [ref=f3e596]:
+                  - generic [aria-hidden] [ref=f3e597]: 
+              - generic [ref=f3e600]:
+                - strong [ref=f3e601]: Lata & Yogesh
+                - paragraph [ref=f3e602]: Our traveler
+            - generic [ref=f3e604]:
+              - paragraph [ref=f3e606]: Our honeymoon in Bali was absolutely magical, all thanks to Vanita Di, Gurbani, and the amazing team! Everything was perfectly planned—flights, hotel bookings, a beautiful itinerary, and stunning properties. The transfers were seamless, and your prompt support throughout made the entire trip completely stress-free. Thank you so much for making our honeymoon so memorable!
+              - list [ref=f3e609]:
+                - listitem [ref=f3e610]:
+                  - generic [aria-hidden] [ref=f3e611]: 
+                - listitem [ref=f3e612]:
+                  - generic [aria-hidden] [ref=f3e613]: 
+                - listitem [ref=f3e614]:
+                  - generic [aria-hidden] [ref=f3e615]: 
+                - listitem [ref=f3e616]:
+                  - generic [aria-hidden] [ref=f3e617]: 
+                - listitem [ref=f3e618]:
+                  - generic [aria-hidden] [ref=f3e619]: 
+              - generic [ref=f3e622]:
+                - strong [ref=f3e623]: Shachi & Samyak
+                - paragraph [ref=f3e624]: Our traveler
+            - generic [ref=f3e626]:
+              - paragraph [ref=f3e628]: "\"This was the perfect Europe vacation for our family! The itinerary was balanced with fun activities for the kids and relaxation for us. The hotel choices were fantastic, with amenities to keep everyone happy. We’re already planning our next trip!\""
+              - list [ref=f3e630]:
+                - listitem [ref=f3e631]:
+                  - generic [aria-hidden] [ref=f3e632]: 
+                - listitem [ref=f3e633]:
+                  - generic [aria-hidden] [ref=f3e634]: 
+                - listitem [ref=f3e635]:
+                  - generic [aria-hidden] [ref=f3e636]: 
+                - listitem [ref=f3e637]:
+                  - generic [aria-hidden] [ref=f3e638]: 
+                - listitem [ref=f3e639]:
+                  - generic [aria-hidden] [ref=f3e640]: 
+              - generic [ref=f3e643]:
+                - strong [ref=f3e644]: Prakhar Agarwal
+                - paragraph [ref=f3e645]: Our traveler
+            - generic [ref=f3e647]:
+              - paragraph [ref=f3e649]: I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations. Thank you once again for your dedication, patience, and professionalism. We’re so grateful for your help in making this trip so special, and we look forward to planning our next adventure with you!
+              - list [ref=f3e651]:
+                - listitem [ref=f3e652]:
+                  - generic [aria-hidden] [ref=f3e653]: 
+                - listitem [ref=f3e654]:
+                  - generic [aria-hidden] [ref=f3e655]: 
+                - listitem [ref=f3e656]:
+                  - generic [aria-hidden] [ref=f3e657]: 
+                - listitem [ref=f3e658]:
+                  - generic [aria-hidden] [ref=f3e659]: 
+                - listitem [ref=f3e660]:
+                  - generic [aria-hidden] [ref=f3e661]: 
+              - generic [ref=f3e664]:
+                - strong [ref=f3e665]: Mohak & Aashi
+                - paragraph [ref=f3e666]: Our traveler
+            - generic [ref=f3e668]:
+              - paragraph [ref=f3e670]: "\"What an adrenaline rush! From zip-lining through the rainforest to white-water rafting, this adventure package was amazing. The guides were friendly and very knowledgeable about the local wildlife!\""
+              - list [ref=f3e672]:
+                - listitem [ref=f3e673]:
+                  - generic [aria-hidden] [ref=f3e674]: 
+                - listitem [ref=f3e675]:
+                  - generic [aria-hidden] [ref=f3e676]: 
+                - listitem [ref=f3e677]:
+                  - generic [aria-hidden] [ref=f3e678]: 
+                - listitem [ref=f3e679]:
+                  - generic [aria-hidden] [ref=f3e680]: 
+                - listitem [ref=f3e681]:
+                  - generic [aria-hidden] [ref=f3e682]: 
+              - generic [ref=f3e685]:
+                - strong [ref=f3e686]: Lata & Yogesh
+                - paragraph [ref=f3e687]: Our traveler
+            - generic [ref=f3e689]:
+              - paragraph [ref=f3e691]:
+                - text: Our honeymoon in Bali was absolutely magical, all thanks to Vanita Di, Gurbani, and the amazing team! Everything was perfectly planned—flights, hotel bookings, a beautiful itinerary, and stunning properties. The transfers were seamless, and your prompt support throughout made the entire trip completely stress-free. Thank you so much for making our honeymoon so memorable!
+                - img "😍" [ref=f3e692]
+              - list [ref=f3e694]:
+                - listitem [ref=f3e695]:
+                  - generic [aria-hidden] [ref=f3e696]: 
+                - listitem [ref=f3e697]:
+                  - generic [aria-hidden] [ref=f3e698]: 
+                - listitem [ref=f3e699]:
+                  - generic [aria-hidden] [ref=f3e700]: 
+                - listitem [ref=f3e701]:
+                  - generic [aria-hidden] [ref=f3e702]: 
+                - listitem [ref=f3e703]:
+                  - generic [aria-hidden] [ref=f3e704]: 
+              - generic [ref=f3e706]:
+                - generic:
+                  - img "Shachi & Samyak"
+                - generic [ref=f3e707]:
+                  - strong [ref=f3e708]: Shachi & Samyak
+                  - paragraph [ref=f3e709]: Our traveler
+            - generic [ref=f3e711]:
+              - paragraph [ref=f3e713]: "\"This was the perfect Europe vacation for our family! The itinerary was balanced with fun activities for the kids and relaxation for us. The hotel choices were fantastic, with amenities to keep everyone happy. We’re already planning our next trip!\""
+              - list [ref=f3e715]:
+                - listitem [ref=f3e716]:
+                  - generic [aria-hidden] [ref=f3e717]: 
+                - listitem [ref=f3e718]:
+                  - generic [aria-hidden] [ref=f3e719]: 
+                - listitem [ref=f3e720]:
+                  - generic [aria-hidden] [ref=f3e721]: 
+                - listitem [ref=f3e722]:
+                  - generic [aria-hidden] [ref=f3e723]: 
+                - listitem [ref=f3e724]:
+                  - generic [aria-hidden] [ref=f3e725]: 
+              - generic [ref=f3e728]:
+                - strong [ref=f3e729]: Prakhar Agarwal
+                - paragraph [ref=f3e730]: Our traveler
+            - generic [ref=f3e732]:
+              - paragraph [ref=f3e734]: I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations. Thank you once again for your dedication, patience, and professionalism. We’re so grateful for your help in making this trip so special, and we look forward to planning our next adventure with you!
+              - list [ref=f3e736]:
+                - listitem [ref=f3e737]:
+                  - generic [aria-hidden] [ref=f3e738]: 
+                - listitem [ref=f3e739]:
+                  - generic [aria-hidden] [ref=f3e740]: 
+                - listitem [ref=f3e741]:
+                  - generic [aria-hidden] [ref=f3e742]: 
+                - listitem [ref=f3e743]:
+                  - generic [aria-hidden] [ref=f3e744]: 
+                - listitem [ref=f3e745]:
+                  - generic [aria-hidden] [ref=f3e746]: 
+              - generic [ref=f3e749]:
+                - strong [ref=f3e750]: Mohak & Aashi
+                - paragraph [ref=f3e751]: Our traveler
+            - generic [ref=f3e753]:
+              - paragraph [ref=f3e755]: "\"What an adrenaline rush! From zip-lining through the rainforest to white-water rafting, this adventure package was amazing. The guides were friendly and very knowledgeable about the local wildlife!\""
+              - list [ref=f3e757]:
+                - listitem [ref=f3e758]:
+                  - generic [aria-hidden] [ref=f3e759]: 
+                - listitem [ref=f3e760]:
+                  - generic [aria-hidden] [ref=f3e761]: 
+                - listitem [ref=f3e762]:
+                  - generic [aria-hidden] [ref=f3e763]: 
+                - listitem [ref=f3e764]:
+                  - generic [aria-hidden] [ref=f3e765]: 
+                - listitem [ref=f3e766]:
+                  - generic [aria-hidden] [ref=f3e767]: 
+              - generic [ref=f3e770]:
+                - strong [ref=f3e771]: Lata & Yogesh
+                - paragraph [ref=f3e772]: Our traveler
+            - generic [ref=f3e774]:
+              - paragraph [ref=f3e776]: Our honeymoon in Bali was absolutely magical, all thanks to Vanita Di, Gurbani, and the amazing team! Everything was perfectly planned—flights, hotel bookings, a beautiful itinerary, and stunning properties. The transfers were seamless, and your prompt support throughout made the entire trip completely stress-free. Thank you so much for making our honeymoon so memorable!
+              - list [ref=f3e779]:
+                - listitem [ref=f3e780]:
+                  - generic [aria-hidden] [ref=f3e781]: 
+                - listitem [ref=f3e782]:
+                  - generic [aria-hidden] [ref=f3e783]: 
+                - listitem [ref=f3e784]:
+                  - generic [aria-hidden] [ref=f3e785]: 
+                - listitem [ref=f3e786]:
+                  - generic [aria-hidden] [ref=f3e787]: 
+                - listitem [ref=f3e788]:
+                  - generic [aria-hidden] [ref=f3e789]: 
+              - generic [ref=f3e792]:
+                - strong [ref=f3e793]: Shachi & Samyak
+                - paragraph [ref=f3e794]: Our traveler
+            - generic [ref=f3e796]:
+              - paragraph [ref=f3e798]: "\"This was the perfect Europe vacation for our family! The itinerary was balanced with fun activities for the kids and relaxation for us. The hotel choices were fantastic, with amenities to keep everyone happy. We’re already planning our next trip!\""
+              - list [ref=f3e800]:
+                - listitem [ref=f3e801]:
+                  - generic [aria-hidden] [ref=f3e802]: 
+                - listitem [ref=f3e803]:
+                  - generic [aria-hidden] [ref=f3e804]: 
+                - listitem [ref=f3e805]:
+                  - generic [aria-hidden] [ref=f3e806]: 
+                - listitem [ref=f3e807]:
+                  - generic [aria-hidden] [ref=f3e808]: 
+                - listitem [ref=f3e809]:
+                  - generic [aria-hidden] [ref=f3e810]: 
+              - generic [ref=f3e813]:
+                - strong [ref=f3e814]: Prakhar Agarwal
+                - paragraph [ref=f3e815]: Our traveler
+            - generic [ref=f3e817]:
+              - paragraph [ref=f3e819]: I just wanted to extend my heartfelt thanks for planning such a wonderful trip to Switzerland and Italy for us. Every detail—from the accommodations to the tours, transfers, and local experiences—was perfectly arranged, and it made our journey truly seamless and memorable. Switzerland’s breathtaking landscapes and Italy’s rich culture and cuisine were brought to life thanks to your thoughtful planning and recommendations. Thank you once again for your dedication, patience, and professionalism. We’re so grateful for your help in making this trip so special, and we look forward to planning our next adventure with you!
+              - list [ref=f3e821]:
+                - listitem [ref=f3e822]:
+                  - generic [aria-hidden] [ref=f3e823]: 
+                - listitem [ref=f3e824]:
+                  - generic [aria-hidden] [ref=f3e825]: 
+                - listitem [ref=f3e826]:
+                  - generic [aria-hidden] [ref=f3e827]: 
+                - listitem [ref=f3e828]:
+                  - generic [aria-hidden] [ref=f3e829]: 
+                - listitem [ref=f3e830]:
+                  - generic [aria-hidden] [ref=f3e831]: 
+              - generic [ref=f3e834]:
+                - strong [ref=f3e835]: Mohak & Aashi
+                - paragraph [ref=f3e836]: Our traveler
+            - generic [ref=f3e838]:
+              - paragraph [ref=f3e840]: "\"What an adrenaline rush! From zip-lining through the rainforest to white-water rafting, this adventure package was amazing. The guides were friendly and very knowledgeable about the local wildlife!\""
+              - list [ref=f3e842]:
+                - listitem [ref=f3e843]:
+                  - generic [aria-hidden] [ref=f3e844]: 
+                - listitem [ref=f3e845]:
+                  - generic [aria-hidden] [ref=f3e846]: 
+                - listitem [ref=f3e847]:
+                  - generic [aria-hidden] [ref=f3e848]: 
+                - listitem [ref=f3e849]:
+                  - generic [aria-hidden] [ref=f3e850]: 
+                - listitem [ref=f3e851]:
+                  - generic [aria-hidden] [ref=f3e852]: 
+              - generic [ref=f3e855]:
+                - strong [ref=f3e856]: Lata & Yogesh
+                - paragraph [ref=f3e857]: Our traveler
+            - generic [ref=f3e859]:
+              - paragraph [ref=f3e861]: Our honeymoon in Bali was absolutely magical, all thanks to Vanita Di, Gurbani, and the amazing team! Everything was perfectly planned—flights, hotel bookings, a beautiful itinerary, and stunning properties. The transfers were seamless, and your prompt support throughout made the entire trip completely stress-free. Thank you so much for making our honeymoon so memorable!
+              - list [ref=f3e864]:
+                - listitem [ref=f3e865]:
+                  - generic [aria-hidden] [ref=f3e866]: 
+                - listitem [ref=f3e867]:
+                  - generic [aria-hidden] [ref=f3e868]: 
+                - listitem [ref=f3e869]:
+                  - generic [aria-hidden] [ref=f3e870]: 
+                - listitem [ref=f3e871]:
+                  - generic [aria-hidden] [ref=f3e872]: 
+                - listitem [ref=f3e873]:
+                  - generic [aria-hidden] [ref=f3e874]: 
+              - generic [ref=f3e877]:
+                - strong [ref=f3e878]: Shachi & Samyak
+                - paragraph [ref=f3e879]: Our traveler
+            - generic [ref=f3e881]:
+              - paragraph [ref=f3e883]: "\"This was the perfect Europe vacation for our family! The itinerary was balanced with fun activities for the kids and relaxation for us. The hotel choices were fantastic, with amenities to keep everyone happy. We’re already planning our next trip!\""
+              - list [ref=f3e885]:
+                - listitem [ref=f3e886]:
+                  - generic [aria-hidden] [ref=f3e887]: 
+                - listitem [ref=f3e888]:
+                  - generic [aria-hidden] [ref=f3e889]: 
+                - listitem [ref=f3e890]:
+                  - generic [aria-hidden] [ref=f3e891]: 
+                - listitem [ref=f3e892]:
+                  - generic [aria-hidden] [ref=f3e893]: 
+                - listitem [ref=f3e894]:
+                  - generic [aria-hidden] [ref=f3e895]: 
+              - generic [ref=f3e898]:
+                - strong [ref=f3e899]: Prakhar Agarwal
+                - paragraph [ref=f3e900]: Our traveler
+      - generic [ref=f3e904]:
+        - heading "Explore Our Photo Gallery" [level=2] [ref=f3e909]:
+          - text: Explore Our Photo
+          - generic [ref=f3e910]: Gallery
+        - generic [ref=f3e911]: Every photo we take captures beauty, culture, adventure and experience.
+      - generic [ref=f3e987]:
+        - generic [ref=f3e989]:
+          - heading "Frequently Asked Questions" [level=2] [ref=f3e994]:
+            - text: Frequently Asked
+            - generic [ref=f3e995]: Questions
+          - generic [ref=f3e996]: provides important details and answers to frequently asked questions
+        - generic [ref=f3e1002]:
+          - link "Why should I book with VConnect Holidays instead of booking online myself?" [ref=f3e1005] [cursor=pointer]:
+            - /url: "#expand-3b32835"
+          - link "What types of holiday packages do you offer?" [ref=f3e1013] [cursor=pointer]:
+            - /url: "#expand-8e524ed"
+          - link "Can you create a custom tour package for me?" [ref=f3e1021] [cursor=pointer]:
+            - /url: "#expand-908cb1d"
+          - link "What if I face an issue during my trip? Is there someone I can contact?" [ref=f3e1029] [cursor=pointer]:
+            - /url: "#expand-ac98f61"
+          - link "When will I receive my flight tickets, hotel vouchers, and other travel documents?" [ref=f3e1037] [cursor=pointer]:
+            - /url: "#expand-40b739e"
+      - generic [ref=f3e1045]:
+        - heading "Take an Adventure to Our Featured Destinations, Contact Us Now!" [level=2] [ref=f3e1050]:
+          - text: Take an Adventure to Our Featured
+          - generic [ref=f3e1051]: Destinations,
+          - text: Contact Us Now!
+        - link "Contact Us" [ref=f3e1055] [cursor=pointer]:
+          - /url: https://vconnectholidays.com/contact/
+          - text: Contact Us
+          - generic [aria-hidden] [ref=f3e1056]: 淚
+    - contentinfo [ref=f3e1057]:
+      - generic [ref=f3e1060]:
+        - generic [ref=f3e1062]:
+          - paragraph [ref=f3e1068]: Travoka your perfect escape with tailored travel services, ensuring every detail of your dream vacation
+          - generic [ref=f3e1069]:
+            - heading "Our Newsletter" [level=2] [ref=f3e1072]
+            - generic [ref=f3e1077]:
+              - textbox "Your Email Address" [ref=f3e1081]
+              - button "Subscribe" [ref=f3e1083] [cursor=pointer]:
+                - text: Subscribe
+                - generic [aria-hidden] [ref=f3e1084]: 淚
+        - generic [ref=f3e1086]:
+          - generic [ref=f3e1087]:
+            - heading "Quick Links" [level=2] [ref=f3e1090]
+            - list [ref=f3e1093]:
+              - listitem [ref=f3e1094]:
+                - generic [ref=f3e1095]: About
+              - listitem [ref=f3e1096]:
+                - generic [ref=f3e1097]: Destination
+              - listitem [ref=f3e1098]:
+                - generic [ref=f3e1099]: Packages
+              - listitem [ref=f3e1100]:
+                - generic [ref=f3e1101]: FAQ
+              - listitem [ref=f3e1102]:
+                - generic [ref=f3e1103]: Contact
+          - generic [ref=f3e1104]:
+            - heading "Support" [level=2] [ref=f3e1107]
+            - list [ref=f3e1110]:
+              - listitem [ref=f3e1111]:
+                - generic [ref=f3e1112]: Help Center
+              - listitem [ref=f3e1113]:
+                - generic [ref=f3e1114]: Booking
+              - listitem [ref=f3e1115]:
+                - generic [ref=f3e1116]: Privacy Policy
+              - listitem [ref=f3e1117]:
+                - generic [ref=f3e1118]: Terms & Conditions
+              - listitem [ref=f3e1119]:
+                - generic [ref=f3e1120]: Online Supports
+          - generic [ref=f3e1121]:
+            - heading "Contact Info" [level=2] [ref=f3e1124]
+            - generic [ref=f3e1127]:
+              - heading "Phone" [level=3] [ref=f3e1128]
+              - heading "73540 46384 | 93990 90152" [level=2] [ref=f3e1130]
+            - generic [ref=f3e1134]:
+              - heading "Address" [level=3] [ref=f3e1135]
+              - heading "408, Apollo premier, Vijay Nagar Square, Indore" [level=2] [ref=f3e1137]
+            - generic [ref=f3e1141]:
+              - heading "Email" [level=3] [ref=f3e1142]
+              - heading "vanita@vconnectholidays.com" [level=2] [ref=f3e1144]
+        - generic [ref=f3e1147]:
+          - paragraph [ref=f3e1151]: © VConnect Holidays. All Right Reserved 2025.
+          - list [ref=f3e1155]:
+            - listitem [ref=f3e1156]:
+              - generic [ref=f3e1157] [cursor=pointer]: Facebook
+            - listitem [ref=f3e1161]:
+              - generic [ref=f3e1162] [cursor=pointer]: Twitter
+            - listitem [ref=f3e1166]:
+              - generic [ref=f3e1167] [cursor=pointer]: Youtube
+            - listitem [ref=f3e1171]:
+              - generic [ref=f3e1172] [cursor=pointer]: Telegram-plane
+            - listitem [ref=f3e1176]:
+              - generic [ref=f3e1177] [cursor=pointer]: Instagram
+  - generic [ref=f3e1181]: mobile
