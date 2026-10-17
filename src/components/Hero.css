@@ -1,6 +1,8 @@
 .hero {
   position: relative;
-  min-height: 840px;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 560px;
   display: flex;
   flex-direction: column;
   color: var(--color-white);
@@ -39,38 +41,38 @@
   position: relative;
   width: 100%;
   flex: 1;
-  padding-top: 130px;
-  padding-bottom: 45px;
+  padding-top: 105px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 16px;
   z-index: 2;
 }
 
 .hero__heading-block {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .hero__badge {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 6px 18px;
   border-radius: var(--radius-pill);
   border: 0.8px solid rgba(255, 255, 255, 0.27);
   background: rgba(255, 255, 255, 0.04);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .hero__heading-block h1 {
-  font-size: 80px;
-  line-height: 1;
+  font-size: clamp(38px, 4.6vw, 68px);
+  line-height: 1.08;
   letter-spacing: -0.5px;
   color: var(--color-white);
   font-weight: 400;
@@ -103,20 +105,20 @@
 
 .hero__contact-dropdown {
   position: absolute;
-  bottom: calc(100% + 14px);
+  bottom: calc(100% + 12px);
   left: 50%;
   transform: translateX(-50%);
-  width: 360px;
-  max-width: min(360px, calc(100vw - 32px));
+  width: 350px;
+  max-width: min(350px, calc(100vw - 28px));
   background: rgba(18, 18, 18, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(206, 165, 33, 0.35);
-  border-radius: 18px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 0 25px rgba(206, 165, 33, 0.12);
-  padding: 18px 20px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 25px rgba(206, 165, 33, 0.12);
+  padding: 14px 16px;
   z-index: 100;
-  animation: heroDropdownFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: heroDropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: left;
 }
 
@@ -149,8 +151,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 12px;
-  margin-bottom: 12px;
+  padding-bottom: 9px;
+  margin-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
   z-index: 2;
@@ -159,23 +161,23 @@
 .hero__dropdown-title-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .hero__dropdown-title {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--color-white);
   letter-spacing: -0.2px;
 }
 
 .hero__dropdown-status {
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 600;
   color: #22c55e;
   background: rgba(34, 197, 94, 0.14);
   border: 1px solid rgba(34, 197, 94, 0.3);
-  padding: 2px 8px;
+  padding: 2px 7px;
   border-radius: var(--radius-pill);
   letter-spacing: 0.02em;
 }
@@ -184,10 +186,10 @@
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--color-light-gray);
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -204,15 +206,15 @@
 .hero__dropdown-whatsapp {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: linear-gradient(135deg, #1ea952 0%, #15803d 100%);
   color: #ffffff !important;
-  padding: 10px 14px;
-  border-radius: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
   text-decoration: none;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 16px rgba(30, 169, 82, 0.35);
+  box-shadow: 0 4px 14px rgba(30, 169, 82, 0.32);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   position: relative;
   z-index: 2;
@@ -220,34 +222,34 @@
 
 .hero__dropdown-whatsapp:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(30, 169, 82, 0.5);
+  box-shadow: 0 6px 18px rgba(30, 169, 82, 0.45);
 }
 
 .hero__dropdown-whatsapp svg {
-  font-size: 22px;
+  font-size: 20px;
   flex-shrink: 0;
 }
 
 .hero__dropdown-whatsapp-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .hero__dropdown-whatsapp-title {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .hero__dropdown-whatsapp-sub {
-  font-size: 11px;
+  font-size: 10.5px;
   opacity: 0.9;
   color: #eafaf1;
 }
 
 .hero__dropdown-section {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   position: relative;
   z-index: 2;
 }
@@ -259,36 +261,36 @@
 .hero__dropdown-label {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11px;
+  gap: 5px;
+  font-size: 10.5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-gold-start);
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 .hero__dropdown-label svg {
   color: var(--color-gold-start);
-  font-size: 11px;
+  font-size: 10.5px;
 }
 
 .hero__dropdown-phones-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px;
+  gap: 5px;
 }
 
 .hero__dropdown-phone-chip {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 500;
   color: var(--color-light-gray);
   text-decoration: none;
-  padding: 7px 8px;
-  border-radius: 8px;
+  padding: 6px 7px;
+  border-radius: 7px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.2s ease;
@@ -305,17 +307,17 @@
 .hero__dropdown-emails-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .hero__dropdown-email-chip {
   display: block;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 500;
   color: var(--color-light-gray);
   text-decoration: none;
-  padding: 7px 10px;
-  border-radius: 8px;
+  padding: 6px 9px;
+  border-radius: 7px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.2s ease;
@@ -331,36 +333,40 @@
 
 @media (max-width: 1024px) {
   .hero {
-    min-height: 720px;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 560px;
   }
 
   .hero__content {
-    gap: 40px;
-    padding-top: 110px;
-    padding-bottom: 40px;
+    gap: 16px;
+    padding-top: 100px;
+    padding-bottom: 24px;
   }
 
   .hero__heading-block h1 {
-    font-size: 54px;
+    font-size: clamp(34px, 5.5vw, 50px);
   }
 }
 
 @media (max-width: 640px) {
   .hero {
-    min-height: 640px;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 540px;
   }
 
   .hero__content {
-    gap: 30px;
+    gap: 14px;
     padding-top: 90px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 
   .hero__heading-block h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .hero__contact-dropdown {
-    width: min(340px, calc(100vw - 28px));
+    width: min(330px, calc(100vw - 24px));
   }
 }
