@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import usePageTitle from '../hooks/usePageTitle'
 import PageBanner from '../components/PageBanner'
 import { FaLocationDot, FaEnvelope, FaPhone, FaFacebookF, FaXTwitter, FaYoutube, FaTelegram, FaInstagram } from 'react-icons/fa6'
 import { contactInfo } from '../data/content'
+import { getDestination, tripName } from '../data/destinations'
 import bannerImg from '../assets/images/page-banner-default.jpg'
 import './Contact.css'
 
@@ -17,6 +19,9 @@ const SOCIALS = [
 export default function Contact() {
   usePageTitle('Contact')
   const [status, setStatus] = useState(null)
+  const [params] = useSearchParams()
+  const chosen = getDestination(params.get('destination') || '')
+  const destinationValue = chosen ? tripName(chosen) : params.get('destination') || ''
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -57,14 +62,25 @@ export default function Contact() {
                 <span className="contact-details__icon"><FaEnvelope /></span>
                 <div>
                   <strong>Email Address</strong>
-                  <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    {contactInfo.emails.map((email) => (
+                      <a key={email} href={`mailto:${email}`}>{email}</a>
+                    ))}
+                  </div>
                 </div>
               </li>
               <li>
                 <span className="contact-details__icon"><FaPhone /></span>
                 <div>
-                  <strong>Office Phone Number</strong>
-                  <span>{contactInfo.phones.join(' | ')}</span>
+                  <strong>Office Phone Numbers</strong>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
+                    {contactInfo.phones.map((phone, idx) => (
+                      <span key={phone} style={{ display: 'inline-flex', alignItems: 'center' }}>
+                        {idx > 0 && <span style={{ marginRight: '8px', opacity: 0.4 }}>|</span>}
+                        <a href={`tel:+91${phone}`}>+91 {phone}</a>
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </li>
             </ul>
@@ -99,7 +115,13 @@ export default function Contact() {
               </label>
               <label>
                 Destination
-                <input type="text" name="destination" placeholder="Where do you want to go?" />
+                <input
+                  key={destinationValue}
+                  type="text"
+                  name="destination"
+                  defaultValue={destinationValue}
+                  placeholder="Where do you want to go?"
+                />
               </label>
             </div>
             <label>

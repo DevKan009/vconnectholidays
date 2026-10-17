@@ -52,3 +52,13 @@
     font-size: 36px;
   }
 }
+
+.page-banner__eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold-start);
+}

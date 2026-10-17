@@ -89,3 +89,19 @@
   background: var(--color-gold-start);
   color: var(--color-white);
 }
+
+.dest-card {
+  background-color: #2a2414;
+}
+
+/* The arrow link stretches over the whole card, so tapping anywhere opens it. */
+.dest-card a.dest-card__arrow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.dest-card a.dest-card__arrow:focus-visible {
+  outline: 2px solid var(--color-gold-start);
+  outline-offset: 3px;
+}

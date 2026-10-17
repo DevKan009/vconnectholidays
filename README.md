@@ -153,8 +153,10 @@ All site content is decoupled from components and stored centrally in **[`src/da
   ```javascript
   export const contactInfo = {
     address: '408, Apollo Premier, Vijay Nagar Square, Indore',
-    email: 'Vanita@Vconnectholidays.Com',
-    phones: ['73540 46384', '93990 90152'],
+    email: 'vanita@vconnectholidays.com',
+    emails: ['vanita@vconnectholidays.com', 'vconnectholidays.idr@gmail.com'],
+    phones: ['9098686133', '6263346650', '9399090152', '6264268858'],
+    whatsapp: '9098686133',
   }
   ```
 
@@ -177,8 +179,9 @@ To deploy the website to production (Vercel, Netlify, Cloudflare Pages, etc.):
 
 - **Company**: VConnect Holidays
 - **Office**: 408, Apollo Premier, Vijay Nagar Square, Indore, Madhya Pradesh, India
-- **Email**: [Vanita@Vconnectholidays.Com](mailto:Vanita@Vconnectholidays.Com)
-- **Phone**: +91 73540 46384 / +91 93990 90152
+- **Email**: [vanita@vconnectholidays.com](mailto:vanita@vconnectholidays.com) | [vconnectholidays.idr@gmail.com](mailto:vconnectholidays.idr@gmail.com)
+- **Phone**: +91 90986 86133 / +91 62633 46650 / +91 93990 90152 / +91 62642 68858
+- **WhatsApp**: [+91 90986 86133](https://wa.me/919098686133)
 
 ---
 

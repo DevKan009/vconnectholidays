@@ -59,11 +59,22 @@ export default function Footer() {
             </li>
             <li>
               <span className="site-footer__contact-label"><FaEnvelope /> Email</span>
-              <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+                {contactInfo.emails.map((email) => (
+                  <a key={email} href={`mailto:${email}`}>{email}</a>
+                ))}
+              </div>
             </li>
             <li>
               <span className="site-footer__contact-label"><FaPhone /> Phone</span>
-              {contactInfo.phones.join(' | ')}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', alignItems: 'center' }}>
+                {contactInfo.phones.map((phone, idx) => (
+                  <span key={phone} style={{ display: 'inline-flex', alignItems: 'center' }}>
+                    {idx > 0 && <span style={{ marginRight: '6px', opacity: 0.4 }}>|</span>}
+                    <a href={`tel:+91${phone}`}>+91 {phone}</a>
+                  </span>
+                ))}
+              </div>
             </li>
           </ul>
         </div>

@@ -2,16 +2,16 @@ import './Home.css'
 import usePageTitle from '../hooks/usePageTitle'
 import Hero from '../components/Hero'
 import SectionHeading from '../components/SectionHeading'
-import DestinationCard from '../components/DestinationCard'
-import PackageCard from '../components/PackageCard'
+import TripCard from '../components/TripCard'
+import RegionSwitch from '../components/RegionSwitch'
 import StatCounter from '../components/StatCounter'
 import IconBox from '../components/IconBox'
 import TestimonialSlider from '../components/TestimonialSlider'
 import Accordion from '../components/Accordion'
 import Button from '../components/Button'
+import useRegion from '../hooks/useRegion'
+import { destinationsByRegion, HOME_COUNT, HOME_COUNT_PHONE } from '../data/destinations'
 import {
-  homeDestinations,
-  homePackages,
   homeTestimonials,
   homeFaqs,
   whyChooseUs,
@@ -27,42 +27,29 @@ import whyChoose3 from '../assets/images/why-choose-3.jpg'
 
 export default function Home() {
   usePageTitle(null)
+  const [region, setRegion] = useRegion('home')
+  const featured = destinationsByRegion(region).slice(0, HOME_COUNT)
 
   return (
     <>
       <Hero />
-
-      <section className="section" id="destinations">
-        <div className="container">
-          <SectionHeading
-            before="Discover Your Next Dream"
-            highlight="Destination"
-            description="Here are some of the most visited destinations by tourists in 2025."
-          />
-          <div className="dest-bento">
-            {homeDestinations.map((d, i) => (
-              <DestinationCard key={d.title + d.subtitle} {...d} to="/destination" wide={i === 2 || i === 3} />
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section section--soft" id="packages">
         <div className="container">
           <SectionHeading
             before="Exclusive Tour &amp; Travel"
             highlight="Packages"
-            description="Here are some of our Exclusive Tour Packages highlighting the unique aspects of each place."
           />
+          <RegionSwitch value={region} onChange={setRegion} />
           <div className="card-grid card-grid--4">
-            {homePackages.map((p, i) => (
-              <PackageCard key={p.title + i} {...p} />
+            {featured.map((d, i) => (
+              <TripCard key={d.slug} destination={d} hideOnPhone={i >= HOME_COUNT_PHONE} source="home" />
             ))}
             <div className="explore-world-card">
               <span className="explore-world-card__eyebrow">Explore The World</span>
               <h3>We Have Many Other Holiday Tour Packages</h3>
               <p>Connect with us and let&rsquo;s plan it your way</p>
-              <Button to="/tour-packages" variant="dark">
+              <Button to={region === 'domestic' ? '/tour-packages?region=domestic' : '/tour-packages'} variant="dark">
                 All Packages
               </Button>
             </div>

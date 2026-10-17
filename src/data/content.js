@@ -1,18 +1,3 @@
-import destAbuDhabi from '../assets/images/dest-abu-dhabi.avif'
-import destVietnam from '../assets/images/dest-vietnam.webp'
-import destSriLanka from '../assets/images/dest-sri-lanka.jpg'
-import destFinland from '../assets/images/dest-finland.webp'
-import destSwitzerland from '../assets/images/dest-switzerland.webp'
-import destFiji from '../assets/images/dest-fiji.jpg'
-
-import pkgBali from '../assets/images/pkg-bali.jpeg'
-import pkgAbuDhabi from '../assets/images/pkg-abu-dhabi.jpeg'
-import pkgSingapore from '../assets/images/pkg-singapore.jpg'
-import pkgThailand from '../assets/images/pkg-thailand.jpeg'
-import pkgPhuket from '../assets/images/pkg-phuket.jpeg'
-import pkgSeychelles from '../assets/images/pkg-seychelles.jpeg'
-import pkgSouthKorea from '../assets/images/pkg-south-korea.jpg'
-
 import testiShachi from '../assets/images/about-img2.jpeg'
 import testiPrakhar from '../assets/images/about-img1.jpeg'
 import testiMohak from '../assets/images/testi-mohak.jpeg'
@@ -33,88 +18,7 @@ import team2 from '../assets/images/team-2.jpg'
 import team3 from '../assets/images/team-3.jpg'
 import team4 from '../assets/images/team-4.jpg'
 
-// Homepage "Discover Your Next Dream Destination" cards.
-export const homeDestinations = [
-  { title: 'Abu Dhabi', subtitle: 'Middle East', image: destAbuDhabi },
-  { title: 'Vietnam', subtitle: 'Southeast Asia', image: destVietnam },
-  { title: 'Sri Lanka', subtitle: 'South Asia', image: destSriLanka },
-  { title: 'Finland', subtitle: 'Northern Europe', image: destFinland },
-  { title: 'Switzerland', subtitle: 'Europe', image: destSwitzerland },
-  { title: 'Fiji Island', subtitle: 'South Pacific Ocean', image: destFiji },
-]
-
-// Destination list page cards (distinct subtitles from the homepage set).
-export const destinationList = [
-  { title: 'Abu Dhabi', subtitle: 'UAE', image: destAbuDhabi },
-  { title: 'Vietnam', subtitle: "Let's explore Southeast Asia", image: destVietnam },
-  { title: 'Sri Lanka', subtitle: 'South Asia', image: destSriLanka },
-  { title: 'Finland', subtitle: "Let's go Scandinavia", image: destFinland },
-  { title: 'Switzerland', subtitle: "It's time for Europe", image: destSwitzerland },
-  { title: 'Fiji Island', subtitle: "Let's plan your holiday for an island nation", image: destFiji },
-]
-
-export const homePackages = [
-  {
-    title: 'Bali',
-    subtitle: 'Bali - 06 Nights,07 Days',
-    cost: 'Package cost : INR 83500 per head.',
-    duration: '7 Days 6 Night',
-    image: pkgBali,
-  },
-  {
-    title: 'Abu Dhabi',
-    subtitle: 'Abu Dhabi - 04 Nights, 05 Days',
-    cost: 'Connect for Package',
-    duration: '5 Days 4 Night',
-    image: pkgAbuDhabi,
-  },
-  {
-    title: 'Singapore',
-    subtitle: 'Singapore - 04 Nights, 05 Days',
-    cost: 'Connect for Package',
-    duration: '5 Days 4 Night',
-    image: pkgSingapore,
-  },
-  {
-    title: 'Thailand',
-    subtitle: 'Thailand - 6 Nights, 7 Days',
-    cost: 'Connect for Package',
-    duration: '7 Days 6 Night',
-    image: pkgThailand,
-  },
-  {
-    title: 'Thailand',
-    subtitle: 'Phuket & Krabi',
-    cost: 'Package Cost INR 42,999',
-    duration: 'Connect for Package details*',
-    image: pkgPhuket,
-  },
-  {
-    title: 'Seychelles',
-    subtitle: 'Seychelles - 6 Nights, 7 Days',
-    cost: 'Connect for Package',
-    duration: '7 Days 6 Night',
-    image: pkgSeychelles,
-  },
-  {
-    title: 'South Korea',
-    subtitle: '4 Days Tour Exploring Temples In Korea',
-    cost: 'Connect for Package',
-    duration: '4 Days 3 Night',
-    image: pkgSouthKorea,
-  },
-]
-
-export const tourPackages = [
-  { title: 'Vietnam', subtitle: '7 Days Holiday In Vietnam', price: 'From : RS. 1,01,000', duration: '7 Days 6 Night', image: destVietnam },
-  { title: 'Thailand', subtitle: '7 Days Holiday In Thailand', price: 'From : Rs. 78,300', duration: '6 Days 5 Night', image: pkgPhuket },
-  { title: 'Singapore', subtitle: 'Explore Singapore 7-Day Tour', price: 'From : Rs. 97,800', duration: '7 Days 6 Night', image: pkgSingapore },
-  { title: 'Indonesia', subtitle: '7 - Days Tour Exploring Bali', price: 'From : Rs. 79,000', duration: '7 Days 6 Night', image: pkgBali },
-  { title: 'UAE', subtitle: '5 Days Holiday & Tour Abu Dhabi', price: 'From : Rs. 76,000', duration: '5 Days 4 Night', image: pkgAbuDhabi },
-  { title: 'Sri Lanka', subtitle: '6 Days To Explore Sri Lanka', price: 'From : Rs. 71,800', duration: '6 Days 5 Night', image: destSriLanka },
-  { title: 'France', subtitle: '8 Days Tour Exploring Paris & Swiss', price: 'From : Rs. 1,64,650', duration: '8 Days 7 Night', image: destSwitzerland },
-  { title: 'Europe', subtitle: '5 Days Holiday To Golden Triangle Of Europe', price: 'From : Rs. 1,18,700', duration: '8 Days 7 Night', image: destFinland },
-]
+// Destinations and packages live in ./destinations.js.
 
 export const testimonials = {
   shachi: {
@@ -304,6 +208,8 @@ export const aboutStats = {
 
 export const contactInfo = {
   address: '408, Apollo Premier, Vijay Nagar Square, Indore',
-  email: 'Vanita@Vconnectholidays.Com',
-  phones: ['73540 46384', '93990 90152'],
+  email: 'vanita@vconnectholidays.com',
+  emails: ['vanita@vconnectholidays.com', 'vconnectholidays.idr@gmail.com'],
+  phones: ['9098686133', '6263346650', '9399090152', '6264268858'],
+  whatsapp: '9098686133',
 }

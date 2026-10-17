@@ -1,0 +1,42 @@
+.region-switch {
+  display: flex;
+  width: fit-content;
+  margin: -30px auto 44px;
+  padding: 5px;
+  gap: 4px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+.region-switch button {
+  border: none;
+  background: transparent;
+  padding: 11px 26px;
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-body);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.region-switch button:hover {
+  color: var(--color-dark);
+}
+
+.region-switch button.is-active {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.region-switch button:focus-visible {
+  outline: 2px solid var(--color-gold-start);
+  outline-offset: 2px;
+}
+
+@media (max-width: 560px) {
+  .region-switch button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

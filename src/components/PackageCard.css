@@ -30,7 +30,8 @@
   transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.pkg-card:hover .pkg-card__book {
+.pkg-card:hover .pkg-card__book,
+.pkg-card:focus-within .pkg-card__book {
   opacity: 1;
   transform: translateY(0);
 }
@@ -78,4 +79,17 @@
   font-size: 13px;
   color: var(--color-body);
   border-top: 1px solid var(--color-border);
+}
+
+.pkg-card__book:focus-visible {
+  outline: 2px solid var(--color-gold-start);
+  outline-offset: 2px;
+}
+
+/* Touch screens have no hover, so Book Now is always shown there. */
+@media (hover: none), (max-width: 640px) {
+  .pkg-card__book {
+    opacity: 1;
+    transform: none;
+  }
 }

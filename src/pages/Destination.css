@@ -1,1 +1,11 @@
 /* Destination page reuses the shared .card-grid and .faq-tabs styles from index.css */
+
+.dest-group + .dest-group {
+  margin-top: 70px;
+}
+
+.dest-group__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}

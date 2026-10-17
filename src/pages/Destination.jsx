@@ -4,12 +4,16 @@ import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import DestinationCard from '../components/DestinationCard'
 import Button from '../components/Button'
-import { destinationList, aboutFaqTabs } from '../data/content'
+import { aboutFaqTabs } from '../data/content'
+import { REGIONS, destinationsByRegion } from '../data/destinations'
 import bannerImg from '../assets/images/page-banner-default.jpg'
 import './Destination.css'
 
 export default function Destination() {
-  usePageTitle('Destination List')
+  usePageTitle(
+    'Destination List',
+    'All 40 international and domestic destinations planned by VConnect Holidays, Indore: Dubai, Thailand, Bali, Kashmir, Kerala, Goa and more.',
+  )
   const [activeFaqTab, setActiveFaqTab] = useState(0)
 
   return (
@@ -21,13 +25,24 @@ export default function Destination() {
           <SectionHeading
             before="Discover Your Next Dream"
             highlight="Destination"
-            description="Here are some of the most visited destinations by tourists in 2024-2025."
+            description="Here are the destinations our travellers love most, international and across India."
           />
-          <div className="dest-bento">
-            {destinationList.map((d, i) => (
-              <DestinationCard key={d.title} {...d} wide={i === 2 || i === 3} />
-            ))}
-          </div>
+          {REGIONS.map((r) => (
+            <div key={r.id} className="dest-group" id={r.id}>
+              <h3 className="dest-group__title">{r.label}</h3>
+              <div className="dest-bento">
+                {destinationsByRegion(r.id).map((d) => (
+                  <DestinationCard
+                    key={d.slug}
+                    title={d.place}
+                    subtitle={d.country}
+                    image={d.cover}
+                    to={`/destinations/${d.slug}`}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

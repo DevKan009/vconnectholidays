@@ -1,15 +1,24 @@
 import usePageTitle from '../hooks/usePageTitle'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
-import PackageCard from '../components/PackageCard'
+import TripCard from '../components/TripCard'
+import RegionSwitch from '../components/RegionSwitch'
 import TestimonialSlider from '../components/TestimonialSlider'
 import Button from '../components/Button'
-import { tourPackages, packagesTestimonials } from '../data/content'
+import useRegion from '../hooks/useRegion'
+import { packagesTestimonials } from '../data/content'
+import { destinationsByRegion } from '../data/destinations'
 import bannerImg from '../assets/images/tourpackages-banner.jpg'
 import './TourPackages.css'
 
 export default function TourPackages() {
-  usePageTitle('Tour Packages')
+  const [region, setRegion] = useRegion('tour_packages')
+  usePageTitle(
+    region === 'domestic' ? 'Domestic Tour Packages' : 'International Tour Packages',
+    region === 'domestic'
+      ? 'Domestic holiday packages across India, from Kashmir and Kerala to Goa and the Andamans, planned by VConnect Holidays, Indore.'
+      : 'International holiday packages to Dubai, Thailand, Bali, Singapore, Maldives, Europe and more, with visas handled by VConnect Holidays, Indore.',
+  )
 
   return (
     <>
@@ -17,9 +26,15 @@ export default function TourPackages() {
 
       <section className="section">
         <div className="container">
+          <SectionHeading
+            before="Choose Your Next"
+            highlight="Holiday"
+            description="Every trip can be tailored to your dates, hotels and budget."
+          />
+          <RegionSwitch value={region} onChange={setRegion} />
           <div className="card-grid card-grid--4">
-            {tourPackages.map((p, i) => (
-              <PackageCard key={p.title + i} title={p.title} subtitle={p.subtitle} cost={p.price} duration={p.duration} image={p.image} />
+            {destinationsByRegion(region).map((d) => (
+              <TripCard key={d.slug} destination={d} source="tour_packages" />
             ))}
           </div>
         </div>

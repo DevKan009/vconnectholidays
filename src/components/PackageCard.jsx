@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 import { FaLocationDot } from 'react-icons/fa6'
 import './PackageCard.css'
 
-export default function PackageCard({ title, subtitle, cost, duration, image }) {
+export default function PackageCard({ title, subtitle, cost, duration, image, bookTo = '/contact', onBook }) {
   return (
     <div className="pkg-card">
       <div className="pkg-card__image" style={{ backgroundImage: `url(${image})` }}>
-        <Link to="/contact" className="pkg-card__book">
+        <Link to={bookTo} className="pkg-card__book" onClick={onBook}>
           Book Now
         </Link>
       </div>

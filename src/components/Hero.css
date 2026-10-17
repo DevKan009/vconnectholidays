@@ -1,10 +1,17 @@
 .hero {
   position: relative;
-  min-height: 820px;
+  min-height: 840px;
   display: flex;
-  align-items: center;
-  overflow: hidden;
+  flex-direction: column;
   color: var(--color-white);
+  overflow: visible;
+}
+
+.hero__slides-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .hero__slide {
@@ -25,26 +32,31 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.55) 0%, rgba(20, 20, 20, 0.25) 45%, rgba(20, 20, 20, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.6) 0%, rgba(20, 20, 20, 0.3) 45%, rgba(20, 20, 20, 0.8) 100%);
 }
 
 .hero__content {
   position: relative;
-  padding-top: 95px;
+  width: 100%;
+  flex: 1;
+  padding-top: 130px;
+  padding-bottom: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  justify-content: space-between;
+  gap: 60px;
+  z-index: 2;
 }
 
 .hero__heading-block {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  gap: 24px;
 }
 
 .hero__badge {
@@ -71,50 +83,284 @@
 .hero__footer-row {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  position: relative;
+  margin-top: auto;
 }
 
-.hero__footer-row p {
-  max-width: 480px;
+.hero__contact-wrap {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.hero__contact-wrap .btn.is-active {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: var(--color-gold-start);
+  box-shadow: 0 0 16px rgba(206, 165, 33, 0.3);
+}
+
+.hero__contact-dropdown {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  max-width: min(360px, calc(100vw - 32px));
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(206, 165, 33, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 0 25px rgba(206, 165, 33, 0.12);
+  padding: 18px 20px;
+  z-index: 100;
+  animation: heroDropdownFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: left;
+}
+
+.hero__contact-dropdown::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 11px;
+  height: 11px;
+  background: #121212;
+  border-right: 1px solid rgba(206, 165, 33, 0.35);
+  border-bottom: 1px solid rgba(206, 165, 33, 0.35);
+  z-index: 1;
+}
+
+@keyframes heroDropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.hero__dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.hero__dropdown-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__dropdown-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.2px;
+}
+
+.hero__dropdown-status {
+  font-size: 11px;
+  font-weight: 600;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.14);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.02em;
+}
+
+.hero__dropdown-close {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--color-light-gray);
-  font-size: 17px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.hero__dropdown-close:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--color-gold-start);
+  color: #ffffff;
+}
+
+.hero__dropdown-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #1ea952 0%, #15803d 100%);
+  color: #ffffff !important;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px rgba(30, 169, 82, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__dropdown-whatsapp:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(30, 169, 82, 0.5);
+}
+
+.hero__dropdown-whatsapp svg {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.hero__dropdown-whatsapp-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.hero__dropdown-whatsapp-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero__dropdown-whatsapp-sub {
+  font-size: 11px;
+  opacity: 0.9;
+  color: #eafaf1;
+}
+
+.hero__dropdown-section {
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__dropdown-section:last-child {
+  margin-bottom: 0;
+}
+
+.hero__dropdown-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold-start);
+  margin-bottom: 7px;
+}
+
+.hero__dropdown-label svg {
+  color: var(--color-gold-start);
+  font-size: 11px;
+}
+
+.hero__dropdown-phones-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.hero__dropdown-phone-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--color-light-gray);
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.hero__dropdown-phone-chip:hover {
+  background: rgba(206, 165, 33, 0.16);
+  border-color: var(--color-gold-start);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.hero__dropdown-emails-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero__dropdown-email-chip {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-light-gray);
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+  word-break: break-all;
+}
+
+.hero__dropdown-email-chip:hover {
+  background: rgba(206, 165, 33, 0.16);
+  border-color: var(--color-gold-start);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 1024px) {
   .hero {
-    min-height: 680px;
+    min-height: 720px;
   }
 
   .hero__content {
     gap: 40px;
+    padding-top: 110px;
+    padding-bottom: 40px;
   }
 
   .hero__heading-block h1 {
     font-size: 54px;
   }
-
-  .hero__footer-row {
-    flex-direction: column;
-    text-align: center;
-    gap: 26px;
-  }
-
-  .hero__footer-row p {
-    max-width: 520px;
-    text-align: center;
-  }
 }
 
 @media (max-width: 640px) {
   .hero {
-    min-height: 620px;
+    min-height: 640px;
+  }
+
+  .hero__content {
+    gap: 30px;
+    padding-top: 90px;
+    padding-bottom: 35px;
   }
 
   .hero__heading-block h1 {
     font-size: 36px;
+  }
+
+  .hero__contact-dropdown {
+    width: min(340px, calc(100vw - 28px));
   }
 }
