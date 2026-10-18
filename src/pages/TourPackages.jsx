@@ -3,10 +3,9 @@ import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import TripCard from '../components/TripCard'
 import RegionSwitch from '../components/RegionSwitch'
-import TestimonialSlider from '../components/TestimonialSlider'
+import GoogleReviews from '../components/GoogleReviews'
 import Button from '../components/Button'
 import useRegion from '../hooks/useRegion'
-import { packagesTestimonials } from '../data/content'
 import { destinationsByRegion } from '../data/destinations'
 import bannerImg from '../assets/images/tourpackages-banner.jpg'
 import './TourPackages.css'
@@ -40,17 +39,7 @@ export default function TourPackages() {
         </div>
       </section>
 
-      <section className="section testimonials-section">
-        <div className="container">
-          <SectionHeading
-            before="Amazing Reviews From Our"
-            highlight="Travelers"
-            description="Read authentic experiences and reviews from happy travelers about their journeys with us."
-            light
-          />
-          <TestimonialSlider items={packagesTestimonials} />
-        </div>
-      </section>
+      <GoogleReviews />
 
       <section className="cta-band">
         <div className="container cta-band__inner">

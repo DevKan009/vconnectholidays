@@ -1,0 +1,400 @@
+.founders-note-section {
+  padding: 80px 0 90px;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f8f5 50%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative warm background glow */
+.founders-note-section::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(206, 165, 33, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.founders-note-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 60px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(206, 165, 33, 0.22);
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 16px 48px rgba(20, 20, 20, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.founders-note-card:hover {
+  box-shadow: 0 20px 56px rgba(20, 20, 20, 0.08);
+}
+
+/* ================= Media Column ================= */
+
+.founders-note-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founders-note-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(20, 20, 20, 0.12);
+  background: #f0eee9;
+  aspect-ratio: 3 / 4;
+}
+
+.founders-note-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.founders-note-card:hover .founders-note-img {
+  transform: scale(1.025);
+}
+
+.founders-note-gold-accent {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(206, 165, 33, 0.25);
+  pointer-events: none;
+}
+
+/* Floating Founder Role Badge */
+.founders-note-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.founders-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-gold-start);
+  box-shadow: 0 0 8px var(--color-gold-start);
+}
+
+/* Bottom Experience Chip */
+.founders-note-trust-tag {
+  margin-top: -24px;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  border: 1px solid rgba(206, 165, 33, 0.35);
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  box-shadow: 0 8px 22px rgba(20, 20, 20, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-dark);
+}
+
+.founders-trust-years {
+  font-weight: 700;
+  color: var(--color-gold-end);
+  font-size: 14px;
+}
+
+.founders-trust-sub {
+  color: var(--color-muted);
+}
+
+/* ================= Content Column ================= */
+
+.founders-note-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.founders-note-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold-end);
+}
+
+.founders-eyebrow-line {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--color-gold-gradient);
+  border-radius: 2px;
+}
+
+.founders-quote-wrapper {
+  position: relative;
+}
+
+.founders-quote-icon {
+  font-size: 38px;
+  color: rgba(206, 165, 33, 0.28);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.founders-note-headline {
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.founders-note-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--color-body);
+}
+
+/* Feature Pills Row */
+.founders-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.founders-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.founders-pill-icon {
+  color: var(--color-gold-end);
+  font-size: 11px;
+}
+
+/* Footer & Signature Section */
+.founders-footer {
+  margin-top: 10px;
+  padding-top: 22px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.founders-signature-block {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.founders-signature-name {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.founders-signature-role {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-gold-end);
+}
+
+.founders-signature-location {
+  font-size: 12.5px;
+  color: var(--color-muted);
+}
+
+.founders-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Special Button for WhatsApp direct connect with the founder */
+.btn--founder-whatsapp {
+  background: #0f8f48;
+  color: #ffffff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px rgba(15, 143, 72, 0.25);
+}
+
+.btn--founder-whatsapp:hover {
+  background: #0b7339;
+  color: #ffffff;
+  transform: scale(0.97);
+  box-shadow: 0 6px 18px rgba(15, 143, 72, 0.35);
+}
+
+.founders-actions .btn--outline-dark {
+  padding: 12px 22px;
+  font-size: 14.5px;
+}
+
+/* ================= Responsive Rules ================= */
+
+@media (max-width: 1024px) {
+  .founders-note-card {
+    grid-template-columns: 310px 1fr;
+    gap: 40px;
+    padding: 36px 30px;
+  }
+
+  .founders-note-headline {
+    font-size: 26px;
+  }
+
+  .founders-note-body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 860px) {
+  .founders-note-section {
+    padding: 60px 0 70px;
+  }
+
+  .founders-note-card {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 32px 24px;
+    text-align: left;
+  }
+
+  .founders-note-media {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .founders-quote-icon {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+
+  .founders-note-headline {
+    font-size: 24px;
+  }
+
+  .founders-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .founders-actions {
+    width: 100%;
+  }
+
+  .founders-actions .btn--founder-whatsapp,
+  .founders-actions .btn--outline-dark {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .founders-note-card {
+    padding: 26px 18px;
+    border-radius: 18px;
+  }
+
+  .founders-note-image-frame {
+    max-width: 260px;
+    border-radius: 16px;
+  }
+
+  .founders-note-badge {
+    top: 12px;
+    left: 12px;
+    font-size: 11px;
+    padding: 5px 11px;
+  }
+
+  .founders-note-trust-tag {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top: -18px;
+  }
+
+  .founders-note-headline {
+    font-size: 21px;
+  }
+
+  .founders-note-body {
+    font-size: 14.5px;
+    line-height: 1.65;
+  }
+
+  .founders-signature-name {
+    font-size: 24px;
+  }
+
+  .founders-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .founders-actions .btn--founder-whatsapp,
+  .founders-actions .btn--outline-dark {
+    width: 100%;
+  }
+}

@@ -5,25 +5,20 @@ import SectionHeading from '../components/SectionHeading'
 import TripCard from '../components/TripCard'
 import RegionSwitch from '../components/RegionSwitch'
 import StatCounter from '../components/StatCounter'
-import IconBox from '../components/IconBox'
-import TestimonialSlider from '../components/TestimonialSlider'
+import GoogleReviews from '../components/GoogleReviews'
 import Accordion from '../components/Accordion'
 import Button from '../components/Button'
+import FoundersNote from '../components/FoundersNote'
 import useRegion from '../hooks/useRegion'
 import { destinationsByRegion, HOME_COUNT, HOME_COUNT_PHONE } from '../data/destinations'
 import {
-  homeTestimonials,
   homeFaqs,
-  whyChooseUs,
   gallery,
   stats,
 } from '../data/content'
 import aboutImg1 from '../assets/images/about-img1.jpeg'
 import aboutImg2 from '../assets/images/about-img2.jpeg'
 import testiMohakImg from '../assets/images/testi-mohak.jpeg'
-import whyChoose1 from '../assets/images/why-choose-1.jpg'
-import whyChoose2 from '../assets/images/why-choose-2.jpg'
-import whyChoose3 from '../assets/images/why-choose-3.jpg'
 
 export default function Home() {
   usePageTitle(null)
@@ -91,7 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section--soft" id="why-us">
+      {/* <section className="section section--soft" id="why-us">
         <div className="container why-choose__grid">
           <div className="why-choose__media">
             <div className="why-choose__media-row">
@@ -114,19 +109,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section testimonials-section">
-        <div className="container">
-          <SectionHeading
-            before="Amazing Reviews From Our"
-            highlight="Travelers"
-            description="Read authentic experiences and reviews from happy travelers who explored the world with us."
-            light
-          />
-          <TestimonialSlider items={homeTestimonials} />
-        </div>
-      </section>
+      <GoogleReviews />
+
+      <FoundersNote />
 
       <section className="section" id="gallery">
         <div className="container">
@@ -160,17 +147,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="container cta-band__inner">
-          <h2>
-            Take An Adventure To Our Featured <span className="accent">Destinations,</span> Contact Us Now!
-          </h2>
-          <p>Your perfect escape with tailored travel services, ensuring every detail of your dream vacation</p>
-          <Button to="/contact" variant="outline-dark">
-            Contact Us
-          </Button>
-        </div>
-      </section>
     </>
   )
 }

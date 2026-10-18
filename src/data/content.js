@@ -145,10 +145,30 @@ export const gallery = [
 ]
 
 export const team = [
-  { name: 'Damian Stevens', image: team1 },
-  { name: 'Nadia Ingram', image: team2 },
-  { name: 'Mark Sherman', image: team3 },
-  { name: 'Ivory Malcom', image: team4 },
+  {
+    name: 'Ayan Choksey',
+    role: 'Sr. Travel Consultant & Operations',
+    specialty: 'Dubai, Europe & Luxury Vacations',
+    image: team1,
+  },
+  {
+    name: 'Rajesh Sharma',
+    role: 'Operations & Logistics Manager',
+    specialty: 'Seamless Transfers & On-Ground Coordination',
+    image: team2,
+  },
+  {
+    name: 'Zainab Khan',
+    role: 'Holiday Curator & Visa Specialist',
+    specialty: 'Visa Assistance, Flights & Bespoke Stays',
+    image: team3,
+  },
+  {
+    name: 'Gurbani Singh',
+    role: 'Client Experience & Tour Specialist',
+    specialty: 'Honeymoons, Tropical Stays & 24/7 Support',
+    image: team4,
+  },
 ]
 
 export const aboutFaqTabs = ['Travel', 'Places', 'Booking & Refund', 'Transportation Facilities']

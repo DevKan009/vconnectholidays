@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="site-footer__col">
+        <nav className="site-footer__col site-footer__col--links" aria-label="Quick links">
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -36,12 +36,12 @@ export default function Footer() {
             <li><Link to="/#faq">FAQ</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
-        </div>
+        </nav>
 
-        <div className="site-footer__col">
+        <div className="site-footer__col site-footer__col--support">
           <h4>Support</h4>
           {/* These items are plain, non-linked text on the live reference site too. */}
-          <ul className="site-footer__col--static">
+          <ul>
             <li>Help Center</li>
             <li>Booking</li>
             <li>Privacy Policy</li>
@@ -50,30 +50,34 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="site-footer__col">
+        <div className="site-footer__col site-footer__col--contact">
           <h4>Contact Info</h4>
           <ul className="site-footer__contact">
             <li>
-              <span className="site-footer__contact-label"><FaLocationDot /> Address</span>
-              {contactInfo.address}
+              <span className="site-footer__icon"><FaLocationDot /></span>
+              <div>
+                <span className="site-footer__contact-label">Address</span>
+                <p>{contactInfo.address}</p>
+              </div>
             </li>
             <li>
-              <span className="site-footer__contact-label"><FaEnvelope /> Email</span>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+              <span className="site-footer__icon"><FaEnvelope /></span>
+              <div>
+                <span className="site-footer__contact-label">Email</span>
                 {contactInfo.emails.map((email) => (
                   <a key={email} href={`mailto:${email}`}>{email}</a>
                 ))}
               </div>
             </li>
             <li>
-              <span className="site-footer__contact-label"><FaPhone /> Phone</span>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', alignItems: 'center' }}>
-                {contactInfo.phones.map((phone, idx) => (
-                  <span key={phone} style={{ display: 'inline-flex', alignItems: 'center' }}>
-                    {idx > 0 && <span style={{ marginRight: '6px', opacity: 0.4 }}>|</span>}
-                    <a href={`tel:+91${phone}`}>+91 {phone}</a>
-                  </span>
-                ))}
+              <span className="site-footer__icon"><FaPhone /></span>
+              <div>
+                <span className="site-footer__contact-label">Phone</span>
+                <div className="site-footer__phones">
+                  {contactInfo.phones.map((phone) => (
+                    <a key={phone} href={`tel:+91${phone}`}>+91 {phone}</a>
+                  ))}
+                </div>
               </div>
             </li>
           </ul>
@@ -82,6 +86,7 @@ export default function Footer() {
 
       <div className="site-footer__bottom">
         <div className="container site-footer__bottom-inner">
+          <p>&copy; VConnect Holidays. All Right Reserved {CURRENT_YEAR}.</p>
           <div className="site-footer__socials">
             {SOCIALS.map(({ icon: Icon, label }) => (
               <a key={label} href="#top" aria-label={label} className="site-footer__social">
@@ -89,7 +94,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p>&copy; VConnect Holidays. All Right Reserved {CURRENT_YEAR}.</p>
         </div>
       </div>
     </footer>
