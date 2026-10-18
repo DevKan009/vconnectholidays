@@ -398,3 +398,50 @@
     width: 100%;
   }
 }
+
+/* ================= Compact (home page) version ================= */
+
+.founders-note-section--compact {
+  padding: 70px 0;
+}
+
+.founders-note-card--compact {
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+  padding: 36px 40px;
+}
+
+.founders-note-card--compact .founders-note-image-frame {
+  max-width: 240px;
+}
+
+.founders-note-card--compact .founders-note-headline {
+  font-size: 26px;
+}
+
+@media (max-width: 860px) {
+  .founders-note-section--compact {
+    padding: 56px 0;
+  }
+
+  /* Phones: a smaller, centred portrait above the note. */
+  .founders-note-card--compact {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .founders-note-card--compact .founders-note-media {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .founders-note-card--compact .founders-note-image-frame {
+    border-radius: 16px;
+  }
+
+  .founders-note-card--compact .founders-note-headline {
+    font-size: 21px;
+  }
+}

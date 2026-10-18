@@ -1,8 +1,15 @@
 import { useEffect, useState } from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import { FaStar, FaXmark, FaArrowRight } from 'react-icons/fa6'
-import { googleBusiness, googleReviews, reviewPhotos } from '../data/googleReviews'
+import { googleBusiness, googleReviews, CARD_PHOTOS } from '../data/googleReviews'
+import trip1 from '../assets/images/gallery-1.jpg'
+import trip2 from '../assets/images/gallery-4.jpg'
+import trip3 from '../assets/images/gallery-5.jpg'
+import trip4 from '../assets/images/gallery-3.jpg'
 import './GoogleReviews.css'
+
+// Group-trip photos from an older Google review, shown after the current reviewers' photos.
+const TRIP_PHOTOS = [trip1, trip2, trip3, trip4].map((src) => ({ src, name: 'a VConnect group trip' }))
 
 function Stars({ size = 15 }) {
   return (
@@ -17,8 +24,7 @@ function Stars({ size = 15 }) {
 function ReviewCard({ review, onPhoto }) {
   const [expanded, setExpanded] = useState(false)
   const long = review.text.length > 260
-  const shown = review.photos.slice(0, 3)
-  const extra = review.photos.length - shown.length
+  const shown = review.photos.slice(0, CARD_PHOTOS)
 
   return (
     <article className="g-review">
@@ -53,7 +59,6 @@ function ReviewCard({ review, onPhoto }) {
               aria-label={`Open photo ${i + 1} from ${review.name}'s review`}
             >
               <img src={src} alt="" loading="lazy" />
-              {i === shown.length - 1 && extra > 0 && <span className="g-review__extra">+{extra}</span>}
             </button>
           ))}
         </div>
@@ -62,10 +67,18 @@ function ReviewCard({ review, onPhoto }) {
   )
 }
 
-export default function GoogleReviews({ initialCount = 6 }) {
+// Each page gets its own reviews so no photo or avatar shows up twice on the site:
+// set="photos" (Home) uses the reviews with trip photos, set="text" (Tour Packages) the rest.
+export default function GoogleReviews({ set = 'photos', initialCount = 6 }) {
+  const reviews = googleReviews.filter((r) => (set === 'photos' ? r.photos.length > 0 : r.photos.length === 0))
+  // The strip only carries photos the cards don't already show.
+  const stripPhotos = [
+    ...reviews.flatMap((r) => r.photos.slice(CARD_PHOTOS).map((src) => ({ src, name: r.name }))),
+    ...(set === 'photos' ? TRIP_PHOTOS : []),
+  ]
   const [count, setCount] = useState(initialCount)
   const [lightbox, setLightbox] = useState(null)
-  const visible = googleReviews.slice(0, count)
+  const visible = reviews.slice(0, count)
 
   useEffect(() => {
     if (!lightbox) return
@@ -112,16 +125,18 @@ export default function GoogleReviews({ initialCount = 6 }) {
           </div>
         </div>
 
-        <div className="g-photos" aria-label="Photos shared by travellers on Google">
-          <span className="g-photos__label">Photos from our travellers on Google</span>
-          <div className="g-photos__strip">
-            {reviewPhotos.map((p, i) => (
-              <button type="button" key={p.src} onClick={() => setLightbox(p.src)} aria-label={`Open photo ${i + 1} by ${p.name}`}>
-                <img src={p.src} alt="" loading="lazy" />
-              </button>
-            ))}
+        {stripPhotos.length > 0 && (
+          <div className="g-photos" aria-label="Photos from our travellers on Google">
+            <span className="g-photos__label">Photos from our travellers on Google</span>
+            <div className="g-photos__strip">
+              {stripPhotos.map((p, i) => (
+                <button type="button" key={p.src} onClick={() => setLightbox(p.src)} aria-label={`Open photo ${i + 1} by ${p.name}`}>
+                  <img src={p.src} alt="" loading="lazy" />
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className={`g-reviews__grid ${count > initialCount ? 'is-expanded' : ''}`}>
           {visible.map((r) => (
@@ -130,8 +145,8 @@ export default function GoogleReviews({ initialCount = 6 }) {
         </div>
 
         <div className="g-reviews__footer">
-          {count < googleReviews.length ? (
-            <button type="button" className="g-btn" onClick={() => setCount(googleReviews.length)}>
+          {count < reviews.length ? (
+            <button type="button" className="g-btn" onClick={() => setCount(reviews.length)}>
               Show more reviews
             </button>
           ) : null}

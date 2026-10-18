@@ -3,11 +3,16 @@ import { FaQuoteLeft, FaWhatsapp, FaArrowRight, FaCheck } from 'react-icons/fa6'
 import founderImg from '../assets/images/founder.png'
 import './FoundersNote.css'
 
-export default function FoundersNote() {
+// `compact` is the short home-page version; the full note lives on the About page.
+export default function FoundersNote({ compact = false }) {
   return (
-    <section className="section founders-note-section" id="founders-note" aria-labelledby="founders-note-title">
+    <section
+      className={`section founders-note-section ${compact ? 'founders-note-section--compact' : ''}`}
+      id={compact ? undefined : 'founders-note'}
+      aria-labelledby="founders-note-title"
+    >
       <div className="container">
-        <div className="founders-note-card">
+        <div className={`founders-note-card ${compact ? 'founders-note-card--compact' : ''}`}>
           {/* Media Column */}
           <div className="founders-note-media">
             <div className="founders-note-image-frame">
@@ -20,6 +25,8 @@ export default function FoundersNote() {
               <div className="founders-note-gold-accent" aria-hidden="true" />
             </div>
 
+            {!compact && (
+            <>
             <div className="founders-note-badge">
               <span className="founders-badge-dot" />
               <span>Founder &amp; Travel Curator</span>
@@ -29,6 +36,8 @@ export default function FoundersNote() {
               <span className="founders-trust-years">7+ Years</span>
               <span className="founders-trust-sub">Crafting Bespoke Holidays</span>
             </div>
+            </>
+            )}
           </div>
 
           {/* Content Column */}
@@ -46,6 +55,15 @@ export default function FoundersNote() {
               </h2>
             </div>
 
+            {compact ? (
+              <div className="founders-note-body">
+                <p>
+                  When I founded VConnect Holidays in 2018, my promise was simple: to plan every traveler&rsquo;s vacation
+                  with the same care and honesty as I would for my own family.
+                </p>
+              </div>
+            ) : (
+              <>
             <div className="founders-note-body">
               <p>
                 When I founded VConnect Holidays in 2018 in Indore, my promise was simple yet deeply personal: to plan
@@ -71,6 +89,8 @@ export default function FoundersNote() {
                 <FaCheck className="founders-pill-icon" aria-hidden="true" /> 25,000+ Happy Travelers
               </span>
             </div>
+              </>
+            )}
 
             <div className="founders-footer">
               <div className="founders-signature-block">
@@ -91,10 +111,17 @@ export default function FoundersNote() {
                   <span>Chat With Vanita</span>
                 </a>
 
-                <Link to="/contact" className="btn btn--outline-dark" aria-label="Plan your customized trip">
-                  <span>Plan Your Trip</span>
-                  <FaArrowRight className="btn-icon" aria-hidden="true" />
-                </Link>
+                {compact ? (
+                  <Link to="/about#founders-note" className="btn btn--outline-dark">
+                    <span>Read Vanita&rsquo;s Story</span>
+                    <FaArrowRight className="btn-icon" aria-hidden="true" />
+                  </Link>
+                ) : (
+                  <Link to="/contact" className="btn btn--outline-dark" aria-label="Plan your customized trip">
+                    <span>Plan Your Trip</span>
+                    <FaArrowRight className="btn-icon" aria-hidden="true" />
+                  </Link>
+                )}
               </div>
             </div>
           </div>

@@ -132,4 +132,5 @@ export const googleReviews = [
   ),
 ]
 
-export const reviewPhotos = googleReviews.flatMap((r) => r.photos.map((src) => ({ src, name: r.name })))
+// Review cards show this many of each reviewer's photos; the photo strip shows the rest.
+export const CARD_PHOTOS = 3

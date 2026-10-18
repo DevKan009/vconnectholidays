@@ -13,7 +13,6 @@ import useRegion from '../hooks/useRegion'
 import { destinationsByRegion, HOME_COUNT, HOME_COUNT_PHONE } from '../data/destinations'
 import {
   homeFaqs,
-  gallery,
   stats,
 } from '../data/content'
 import aboutImg1 from '../assets/images/about-img1.jpeg'
@@ -113,28 +112,8 @@ export default function Home() {
 
       <GoogleReviews />
 
-      <FoundersNote />
+      <FoundersNote compact />
 
-      <section className="section" id="gallery">
-        <div className="container">
-          <SectionHeading
-            before="Explore Our Photo"
-            highlight="Gallery"
-            description="Every photo we take captures beauty, culture, adventure and experience."
-          />
-          <div className="gallery-grid">
-            {gallery.map((item, i) => (
-              <img
-                key={i}
-                src={item.src}
-                alt="VConnect Holidays travel moment"
-                loading="lazy"
-                className={item.tall ? 'is-tall' : 'is-short'}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section section--soft" id="faq">
         <div className="container container--narrow">

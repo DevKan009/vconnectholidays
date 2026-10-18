@@ -39,7 +39,7 @@ export default function TourPackages() {
         </div>
       </section>
 
-      <GoogleReviews />
+      <GoogleReviews set="text" />
 
       <section className="cta-band">
         <div className="container cta-band__inner">

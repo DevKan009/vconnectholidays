@@ -1,44 +1,48 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import { FcGoogle } from 'react-icons/fc'
+import { FaShieldHeart, FaCompass, FaPhoneVolume, FaEye, FaBullseye, FaHandshake, FaStar, FaXmark } from 'react-icons/fa6'
 import usePageTitle from '../hooks/usePageTitle'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import StatCounter from '../components/StatCounter'
-import IconBox from '../components/IconBox'
 import Button from '../components/Button'
 import FoundersNote from '../components/FoundersNote'
-import { aboutBenefits, aboutStats, team } from '../data/content'
+import { aboutStats, team } from '../data/content'
+import { googleBusiness } from '../data/googleReviews'
 import aboutBanner from '../assets/images/about-banner.jpg'
-import aboutHero from '../assets/images/about-img2.jpeg'
-import { FaShieldHeart, FaCompass, FaPhoneVolume, FaAward } from 'react-icons/fa6'
+import aboutHero from '../assets/images/gallery-2.jpg'
 import './About.css'
 
-const VISION_MISSION = [
-  {
-    label: 'Our Vision',
-    title: 'Redefining Modern Travel',
-    text: 'To redefine travel by setting the benchmark for customer care, sustainable exploration, and unforgettable cultural encounters across both popular hotspots and hidden gems.',
-  },
-  {
-    label: 'Our Mission',
-    title: 'Connecting Travelers with Authentic World Experiences',
-    text: 'To craft stress-free, tailor-made journeys that bring people closer to nature, local traditions, and lifelong memories through honest advice and 24/7 dedicated support.',
-  },
-  {
-    label: 'Our Values',
-    title: 'Trust, Empathy & Excellence',
-    text: 'We treat every traveler’s vacation with the same love, honesty, and meticulous attention to detail as our own family’s. Transparent pricing, handpicked stays, and zero compromises.',
-  },
+const PILLARS = [
+  { icon: FaEye, label: 'Vision', text: 'Set the benchmark for caring, honest travel, to popular hotspots and hidden gems alike.' },
+  { icon: FaBullseye, label: 'Mission', text: 'Stress-free, tailor-made journeys backed by honest advice and 24/7 support.' },
+  { icon: FaHandshake, label: 'Values', text: 'Trust, empathy and transparent pricing, with zero compromises.' },
+]
+
+const STEPS = [
+  { icon: FaCompass, title: 'Tell Us Your Dream', text: 'Share your dates, travel style and budget. We listen first.' },
+  { icon: FaShieldHeart, title: 'We Handcraft It', text: 'A day-by-day plan with handpicked stays, transfers and transparent pricing.' },
+  { icon: FaPhoneVolume, title: 'We Stay With You', text: 'Our team and local partners support you around the clock, 24/7.' },
 ]
 
 export default function About() {
   usePageTitle('About Us')
-  const [activeTab, setActiveTab] = useState(0)
+  const { hash } = useLocation()
+  const [openMember, setOpenMember] = useState(null)
+
+  // Links like /about#founders-note land on that section (the app otherwise scrolls to the top).
+  useEffect(() => {
+    if (!hash) return
+    const id = requestAnimationFrame(() => document.querySelector(hash)?.scrollIntoView({ block: 'start' }))
+    return () => cancelAnimationFrame(id)
+  }, [hash])
 
   return (
     <>
       <PageBanner title="About Us" image={aboutBanner} />
 
-      {/* Intro & Story Section */}
+      {/* Intro */}
       <section className="section about-intro">
         <div className="container about-intro__grid">
           <div className="about-intro__content">
@@ -48,37 +52,27 @@ export default function About() {
             </div>
 
             <h1 className="about-intro__title">
-              Delivering Bespoke Journeys &amp; Authentic Experiences{' '}
-              <span className="accent">Since 2018.</span>
+              Delivering Bespoke Journeys &amp; Authentic Experiences <span className="accent">Since 2018.</span>
             </h1>
 
-            <div className="vm-tabs">
-              <div className="vm-tabs__list" role="tablist">
-                {VISION_MISSION.map((tab, i) => (
-                  <button
-                    key={tab.label}
-                    role="tab"
-                    aria-selected={activeTab === i}
-                    className={activeTab === i ? 'is-active' : ''}
-                    onClick={() => setActiveTab(i)}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-              <div className="vm-tabs__panel">
-                <h4>{VISION_MISSION[activeTab].title}</h4>
-                <p>{VISION_MISSION[activeTab].text}</p>
-              </div>
-            </div>
-
-            <p className="about-intro__body">
-              At VConnect Holidays, our foundation is built upon a steadfast commitment to personal excellence,
-              transparent guidance, and genuine empathy. We believe that no two travelers are alike, which is why every
-              itinerary we design is custom-built around your personal passions, preferred pacing, and comfort. From
-              private romantic escapes in Bali and the Maldives to grand European expeditions and serene Himalayan
-              retreats, we take care of every detail so you can simply embrace the wonder.
+            <p className="about-intro__lead">
+              Custom-built holidays planned in Indore, from Bali honeymoons to European expeditions, with every detail
+              handled for you.
             </p>
+
+            <ul className="about-pillars">
+              {PILLARS.map(({ icon: Icon, label, text }) => (
+                <li key={label} className="about-pillar">
+                  <span className="about-pillar__icon" aria-hidden="true">
+                    <Icon />
+                  </span>
+                  <div>
+                    <strong>{label}</strong>
+                    <p>{text}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
 
             <StatCounter
               items={[
@@ -91,115 +85,83 @@ export default function About() {
 
           <div className="about-intro__media-wrap">
             <div className="about-intro__img-frame">
-              <img src={aboutHero} alt="VConnect Holidays travelers experiencing memorable journeys" className="about-intro__img" />
-              <div className="about-intro__img-glow" aria-hidden="true" />
+              <img src={aboutHero} alt="VConnect Holidays travellers on a trip" className="about-intro__img" />
             </div>
 
-            <div className="about-intro__floating-card">
-              <div className="about-intro__floating-icon">
-                <FaAward />
-              </div>
+            <a href={googleBusiness.reviewsUrl} target="_blank" rel="noreferrer" className="about-google-badge">
+              <FcGoogle className="about-google-badge__logo" aria-hidden="true" />
               <div>
-                <strong>Top Rated Travel Agency</strong>
-                <span>4.9 / 5.0 Rating Across 1,000+ Journeys</span>
+                <span className="about-google-badge__score">
+                  {googleBusiness.rating.toFixed(1)}
+                  <span className="about-google-badge__stars" aria-label="5 out of 5 stars" role="img">
+                    {Array.from({ length: 5 }, (_, i) => (
+                      <FaStar key={i} aria-hidden="true" />
+                    ))}
+                  </span>
+                </span>
+                <span className="about-google-badge__count">{googleBusiness.reviewCount} Google reviews</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Core Benefits / Pillars */}
-      <section className="section section--soft about-benefits-section">
-        <div className="container">
-          <SectionHeading
-            before="Why Travelers Choose"
-            highlight="VConnect Holidays"
-            description="We go far beyond standard online bookings to deliver seamless, handcrafted vacations backed by unmatched personal care."
-          />
-          <div className="card-grid card-grid--4">
-            {aboutBenefits.map((item) => (
-              <IconBox key={item.title} {...item} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Founder's Note Section */}
-      <FoundersNote />
-
-      {/* Meet Our Passionate Team */}
-      <section className="section about-team-section" id="team">
-        <div className="container">
-          <SectionHeading
-            before="Meet Our Dedicated"
-            highlight="Travel Specialists"
-            description="The passionate team of travel curators, tour coordinators, and logistics specialists working round the clock to make every vacation flawless."
-          />
-          <div className="about-team-grid">
-            {team.map((member) => (
-              <div className="about-team-card" key={member.name}>
-                <div className="about-team-card__image-wrap">
-                  <img src={member.image} alt={member.name} loading="lazy" />
-                  <div className="about-team-card__overlay">
-                    <span className="about-team-card__overlay-text">{member.role}</span>
-                  </div>
-                </div>
-                <div className="about-team-card__content">
-                  <h3 className="about-team-card__name">{member.name}</h3>
-                  <span className="about-team-card__role">{member.role}</span>
-                  <p className="about-team-card__specialty">{member.specialty}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How We Plan Your Vacation */}
+      {/* How we work (replaces "Why choose us" + "How we plan") */}
       <section className="section section--soft about-process-section">
         <div className="container">
-          <SectionHeading
-            before="How We Create Your"
-            highlight="Dream Vacation"
-            description="A transparent, hassle-free process from your very first conversation to your safe return back home."
-          />
-          <div className="about-process-grid">
-            <div className="about-process-card">
-              <span className="about-process-card__step">01</span>
-              <div className="about-process-card__icon" aria-hidden="true">
-                <FaCompass />
-              </div>
-              <h3>Dream &amp; Discover</h3>
-              <p>
-                Share your travel vision, preferred style, dates, and budget. We listen closely to understand what makes
-                your perfect getaway.
-              </p>
-            </div>
+          <SectionHeading before="How We Plan Your" highlight="Dream Vacation" />
+          <ol className="about-steps">
+            {STEPS.map(({ icon: Icon, title, text }, i) => (
+              <li key={title} className="about-step">
+                <span className="about-step__icon" aria-hidden="true">
+                  <Icon />
+                </span>
+                <span className="about-step__num">0{i + 1}</span>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
 
-            <div className="about-process-card">
-              <span className="about-process-card__step">02</span>
-              <div className="about-process-card__icon" aria-hidden="true">
-                <FaShieldHeart />
-              </div>
-              <h3>Handcrafted Itinerary</h3>
-              <p>
-                Our specialists craft a custom day-by-day itinerary with handpicked boutique stays, seamless transfers,
-                and transparent pricing.
-              </p>
-            </div>
+      <FoundersNote />
 
-            <div className="about-process-card">
-              <span className="about-process-card__step">03</span>
-              <div className="about-process-card__icon" aria-hidden="true">
-                <FaPhoneVolume />
-              </div>
-              <h3>24/7 On-Trip Care</h3>
-              <p>
-                Travel with complete peace of mind. Our team and local partners are available around the clock to support
-                you through every step.
-              </p>
-            </div>
-          </div>
+      {/* Team */}
+      <section className="section about-team-section" id="team">
+        <div className="container">
+          <SectionHeading before="Meet Our" highlight="Travel Specialists" />
+          <p className="about-team-hint">Tap a photo to meet them</p>
+          <ul className="about-team-grid">
+            {team.map((member, i) => {
+              const open = openMember === i
+              return (
+                <li key={member.name}>
+                  <button
+                    type="button"
+                    className={`about-team-card ${open ? 'is-open' : ''}`}
+                    aria-expanded={open}
+                    aria-label={`${member.name}, ${member.role}`}
+                    onClick={() => setOpenMember(open ? null : i)}
+                  >
+                    <span className="about-team-card__photo">
+                      <img src={member.image} alt="" loading="lazy" />
+                      <span className="about-team-card__overlay">
+                        <strong>{member.name}</strong>
+                        <span>{member.role}</span>
+                        <em>{member.specialty}</em>
+                        {open && <FaXmark className="about-team-card__close" aria-hidden="true" />}
+                      </span>
+                    </span>
+                    <span className="about-team-card__caption">
+                      <strong>{member.name}</strong>
+                      <span>{member.role}</span>
+                    </span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </section>
 
