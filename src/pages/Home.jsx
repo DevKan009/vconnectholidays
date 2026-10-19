@@ -4,16 +4,20 @@ import Hero from '../components/Hero'
 import SectionHeading from '../components/SectionHeading'
 import TripCard from '../components/TripCard'
 import RegionSwitch from '../components/RegionSwitch'
+import StatCounter from '../components/StatCounter'
 import GoogleReviews from '../components/GoogleReviews'
 import Accordion from '../components/Accordion'
 import Button from '../components/Button'
 import FoundersNote from '../components/FoundersNote'
-import StoryHome from '../components/StoryHome'
 import useRegion from '../hooks/useRegion'
 import { destinationsByRegion, HOME_COUNT, HOME_COUNT_PHONE } from '../data/destinations'
 import {
   homeFaqs,
+  stats,
 } from '../data/content'
+import aboutImg1 from '../assets/images/about-img1.jpeg'
+import aboutImg2 from '../assets/images/about-img2.jpeg'
+import testiMohakImg from '../assets/images/testi-mohak.jpeg'
 
 export default function Home() {
   usePageTitle(null)
@@ -47,7 +51,39 @@ export default function Home() {
         </div>
       </section>
 
-      <StoryHome />
+      <section className="section about-teaser">
+        <div className="container about-teaser__grid">
+          <div className="about-teaser__media">
+            <img src={aboutImg1} alt="VConnect Holidays travellers group" className="about-teaser__main-img" />
+          </div>
+          <div className="about-teaser__content">
+            <h2>
+              Your Trusted Partner For Curated Vacations &amp; Seamless Travel <span className="accent">Since 2018.</span>
+            </h2>
+            <div className="about-teaser__pair">
+              <img src={aboutImg2} alt="VConnect Holidays couple travellers" />
+              <img src={testiMohakImg} alt="VConnect Holidays travellers" />
+            </div>
+            <p>
+              At The VConnect Holidays, our foundation is built upon a steadfast commitment to excellence, a
+              visionary approach to travel, a clear mission, and a set of deeply ingrained values. Our
+              commitment drives every aspect of our operations, ensuring that every traveler&rsquo;s experience
+              exceeds expectations. From meticulously curated itineraries to personalized customer service, we
+              spare no effort in delivering unforgettable journeys.
+            </p>
+            <Button to="/about" variant="dark">
+              Discover More
+            </Button>
+            <StatCounter
+              items={[
+                { value: stats.travellers, suffix: ' K+', label: 'Happy Traveller' },
+                { value: stats.destinations, suffix: ' +', label: 'Travel Destinations' },
+                { value: stats.years, suffix: ' +', label: 'Year Of Service' },
+              ]}
+            />
+          </div>
+        </div>
+      </section>
 
       {/* <section className="section section--soft" id="why-us">
         <div className="container why-choose__grid">
