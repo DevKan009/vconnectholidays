@@ -1,23 +1,24 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { FcGoogle } from 'react-icons/fc'
-import { FaShieldHeart, FaCompass, FaPhoneVolume, FaEye, FaBullseye, FaHandshake, FaStar, FaXmark } from 'react-icons/fa6'
+import { FaShieldHeart, FaCompass, FaPhoneVolume, FaStar, FaXmark } from 'react-icons/fa6'
 import usePageTitle from '../hooks/usePageTitle'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
-import StatCounter from '../components/StatCounter'
+import CountUp from '../components/CountUp'
 import Button from '../components/Button'
 import FoundersNote from '../components/FoundersNote'
 import { aboutStats, team } from '../data/content'
 import { googleBusiness } from '../data/googleReviews'
 import aboutBanner from '../assets/images/about-banner.jpg'
-import aboutHero from '../assets/images/gallery-2.jpg'
+import '../components/StoryHome.css'
+import './AboutStory.css'
 import './About.css'
 
 const PILLARS = [
-  { icon: FaEye, label: 'Vision', text: 'Set the benchmark for caring, honest travel, to popular hotspots and hidden gems alike.' },
-  { icon: FaBullseye, label: 'Mission', text: 'Stress-free, tailor-made journeys backed by honest advice and 24/7 support.' },
-  { icon: FaHandshake, label: 'Values', text: 'Trust, empathy and transparent pricing, with zero compromises.' },
+  { label: 'Vision', text: 'Set the benchmark for caring, honest travel, to popular hotspots and hidden gems alike.' },
+  { label: 'Mission', text: 'Stress-free, tailor-made journeys backed by honest advice and 24/7 support.' },
+  { label: 'Values', text: 'Trust, empathy and transparent pricing, with zero compromises.' },
 ]
 
 const STEPS = [
@@ -42,67 +43,79 @@ export default function About() {
     <>
       <PageBanner title="About Us" image={aboutBanner} />
 
-      {/* Intro */}
-      <section className="section about-intro">
-        <div className="container about-intro__grid">
-          <div className="about-intro__content">
-            <div className="about-intro__eyebrow">
-              <span className="about-eyebrow-line" aria-hidden="true" />
-              <span>Our Story &amp; Philosophy</span>
-            </div>
-
-            <h1 className="about-intro__title">
-              Delivering Bespoke Journeys &amp; Authentic Experiences <span className="accent">Since 2018.</span>
+      {/* Intro / our story */}
+      <section className="story-about">
+        <div className="container story-about__grid">
+          <div className="story-about__text">
+            <span className="story-script">our little story</span>
+            <h1 className="story-about__title">
+              Seven years. Thousands of <em>journeys.</em> One promise.
             </h1>
-
-            <p className="about-intro__lead">
+            <p className="story-about__lead">
               Custom-built holidays planned in Indore, from Bali honeymoons to European expeditions, with every detail
               handled for you.
             </p>
 
-            <ul className="about-pillars">
-              {PILLARS.map(({ icon: Icon, label, text }) => (
-                <li key={label} className="about-pillar">
-                  <span className="about-pillar__icon" aria-hidden="true">
-                    <Icon />
-                  </span>
-                  <div>
-                    <strong>{label}</strong>
-                    <p>{text}</p>
-                  </div>
-                </li>
+            <dl className="story-about__pillars">
+              {PILLARS.map(({ label, text }, i) => (
+                <div key={label} className="story-pillar">
+                  <dt>
+                    <span className="story-pillar__num">0{i + 1}</span>
+                    {label}
+                  </dt>
+                  <dd>{text}</dd>
+                </div>
               ))}
-            </ul>
-
-            <StatCounter
-              items={[
-                { value: aboutStats.travellers, suffix: ' K+', label: 'Happy Travelers' },
-                { value: aboutStats.destinations, suffix: ' +', label: 'Curated Destinations' },
-                { value: aboutStats.years, suffix: ' +', label: 'Years of Excellence' },
-              ]}
-            />
+            </dl>
           </div>
 
-          <div className="about-intro__media-wrap">
-            <div className="about-intro__img-frame">
-              <img src={aboutHero} alt="VConnect Holidays travellers on a trip" className="about-intro__img" />
-            </div>
+          <div className="story-collage">
+            <figure className="story-polaroid story-polaroid--main">
+              <img src="/story/moraine.webp" alt="Moraine Lake in the Canadian Rockies" />
+              <figcaption>Moraine Lake, Canada</figcaption>
+            </figure>
+            <figure className="story-polaroid story-polaroid--small">
+              <img src="/story/hallstatt.webp" alt="Hallstatt village on the lake" loading="lazy" />
+              <figcaption>Hallstatt, Austria</figcaption>
+            </figure>
 
-            <a href={googleBusiness.reviewsUrl} target="_blank" rel="noreferrer" className="about-google-badge">
-              <FcGoogle className="about-google-badge__logo" aria-hidden="true" />
-              <div>
-                <span className="about-google-badge__score">
-                  {googleBusiness.rating.toFixed(1)}
-                  <span className="about-google-badge__stars" aria-label="5 out of 5 stars" role="img">
-                    {Array.from({ length: 5 }, (_, i) => (
-                      <FaStar key={i} aria-hidden="true" />
-                    ))}
-                  </span>
-                </span>
-                <span className="about-google-badge__count">{googleBusiness.reviewCount} Google reviews</span>
-              </div>
+            <a href={googleBusiness.reviewsUrl} target="_blank" rel="noreferrer" className="story-sticker">
+              <FcGoogle className="story-sticker__logo" aria-hidden="true" />
+              <strong>{googleBusiness.rating.toFixed(1)}</strong>
+              <span className="story-sticker__stars" aria-label="5 out of 5 stars" role="img">
+                {Array.from({ length: 5 }, (_, i) => (
+                  <FaStar key={i} aria-hidden="true" />
+                ))}
+              </span>
+              <span className="story-sticker__count">{googleBusiness.reviewCount} reviews</span>
             </a>
           </div>
+        </div>
+
+        <div className="container">
+          <ul className="story-numbers">
+            <li>
+              <strong>
+                <CountUp value={aboutStats.travellers} />
+                <sup>K+</sup>
+              </strong>
+              <span className="story-numbers__label">happy travellers</span>
+            </li>
+            <li>
+              <strong>
+                <CountUp value={aboutStats.destinations} />
+                <sup>+</sup>
+              </strong>
+              <span className="story-numbers__label">destinations</span>
+            </li>
+            <li>
+              <strong>
+                <CountUp value={aboutStats.years} />
+                <sup>yrs</sup>
+              </strong>
+              <span className="story-numbers__label">of holidays</span>
+            </li>
+          </ul>
         </div>
       </section>
 

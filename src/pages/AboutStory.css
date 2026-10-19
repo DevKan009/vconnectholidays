@@ -1,0 +1,356 @@
+/* ================= About: our story ================= */
+
+.story-about {
+  position: relative;
+  padding: 100px 0 90px;
+  background:
+    radial-gradient(60% 50% at 100% 0%, rgba(206, 165, 33, 0.1) 0%, transparent 70%),
+    #faf7f1;
+  overflow: hidden;
+}
+
+.story-about__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.story-about__title {
+  margin: 16px 0 22px;
+  font-family: 'Fraunces', var(--font-accent);
+  font-size: clamp(40px, 4.6vw, 70px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--color-dark);
+  text-wrap: balance;
+}
+
+.story-about__title em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-gold-end);
+}
+
+.story-about__lead {
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Vision / Mission / Values as an editorial list */
+.story-about__pillars {
+  margin: 38px 0 0;
+  border-top: 1px solid rgba(20, 20, 20, 0.12);
+}
+
+.story-pillar {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.12);
+}
+
+.story-pillar dt {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: 'Fraunces', var(--font-accent);
+  font-size: 22px;
+  color: var(--color-dark);
+}
+
+.story-pillar__num {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-end);
+}
+
+.story-pillar dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Collage: two tilted prints and a Google sticker */
+.story-collage {
+  position: relative;
+  min-height: 560px;
+}
+
+.story-polaroid {
+  position: absolute;
+  margin: 0;
+  padding: 12px 12px 0;
+  background: var(--color-white);
+  border-radius: 6px;
+  box-shadow: 0 22px 50px rgba(20, 20, 20, 0.16);
+  transition: transform 0.5s ease;
+}
+
+.story-polaroid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.story-polaroid figcaption {
+  padding: 10px 4px 12px;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.story-polaroid--main {
+  top: 0;
+  left: 6%;
+  width: 62%;
+  transform: rotate(-3deg);
+}
+
+.story-polaroid--main img {
+  aspect-ratio: 4 / 5;
+}
+
+/* Left-aligned so the overlapping print never covers it */
+.story-polaroid--main figcaption {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.story-polaroid--small {
+  right: 0;
+  bottom: 10px;
+  width: 50%;
+  transform: rotate(4deg);
+}
+
+.story-polaroid--small img {
+  aspect-ratio: 4 / 3;
+}
+
+.story-collage:hover .story-polaroid--main {
+  transform: rotate(-1deg) translateY(-4px);
+}
+
+.story-collage:hover .story-polaroid--small {
+  transform: rotate(2deg) translateY(-4px);
+}
+
+.story-sticker {
+  position: absolute;
+  top: 18px;
+  right: 6%;
+  z-index: 2;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: var(--color-white);
+  border: 1px dashed rgba(173, 122, 10, 0.5);
+  box-shadow: 0 14px 30px rgba(20, 20, 20, 0.14);
+  transform: rotate(8deg);
+  transition: transform 0.3s ease;
+}
+
+.story-sticker:hover {
+  transform: rotate(0deg) scale(1.04);
+}
+
+.story-sticker:focus-visible {
+  outline: 2px solid var(--color-gold-start);
+  outline-offset: 4px;
+}
+
+.story-sticker__logo {
+  font-size: 22px;
+}
+
+.story-sticker strong {
+  font-family: 'Fraunces', var(--font-accent);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-dark);
+}
+
+.story-sticker__stars {
+  display: inline-flex;
+  gap: 1px;
+  font-size: 11px;
+  color: #fbbc04;
+}
+
+.story-sticker__count {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-body);
+}
+
+/* The numbers: a dark ribbon with big serif numerals */
+.story-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 80px 0 0;
+  padding: 34px 20px;
+  list-style: none;
+  background: #141414;
+  border-radius: 28px;
+  box-shadow: 0 24px 50px rgba(20, 20, 20, 0.18);
+}
+
+.story-numbers li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.story-numbers li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.story-numbers strong {
+  font-family: 'Fraunces', var(--font-accent);
+  font-size: clamp(54px, 6vw, 88px);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: lining-nums tabular-nums;
+  background: linear-gradient(180deg, #f3d77a 0%, var(--color-gold-start) 45%, var(--color-gold-end) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.story-numbers sup {
+  margin-left: 4px;
+  font-family: var(--font-body);
+  font-size: 0.26em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  vertical-align: 1.6em;
+  color: var(--color-gold-start);
+  -webkit-text-fill-color: var(--color-gold-start);
+}
+
+.story-numbers__label {
+  margin-top: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 1100px) {
+  .story-about__grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .story-collage {
+    order: -1;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .story-about {
+    padding: 56px 0 64px;
+  }
+
+  .story-about__lead {
+    font-size: 16px;
+  }
+
+  .story-about__pillars {
+    margin-top: 28px;
+  }
+
+  .story-pillar {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 14px 0;
+  }
+
+  .story-pillar dt {
+    font-size: 20px;
+  }
+
+  .story-collage {
+    min-height: 0;
+    height: 410px;
+  }
+
+  .story-polaroid {
+    padding: 8px 8px 0;
+  }
+
+  .story-polaroid figcaption {
+    font-size: 18px;
+    padding: 8px 2px 10px;
+  }
+
+  .story-polaroid--main {
+    left: 0;
+    width: 66%;
+  }
+
+  .story-polaroid--small {
+    width: 54%;
+    bottom: 0;
+  }
+
+  .story-sticker {
+    top: 6px;
+    right: 0;
+    width: 104px;
+    height: 104px;
+  }
+
+  .story-sticker strong {
+    font-size: 24px;
+  }
+
+  .story-sticker__count {
+    font-size: 9.5px;
+  }
+
+  /* Numbers stay on one row on phones, just smaller */
+  .story-numbers {
+    margin-top: 48px;
+    padding: 24px 6px;
+    border-radius: 20px;
+  }
+
+  .story-numbers li {
+    padding: 0 4px;
+  }
+
+  .story-numbers strong {
+    font-size: 40px;
+  }
+
+  .story-numbers__label {
+    margin-top: 6px;
+    font-size: 17px;
+  }
+}
