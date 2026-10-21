@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about-teaser">
+      {/* <section className="section about-teaser">
         <div className="container about-teaser__grid">
           <div className="about-teaser__media">
             <img src={aboutImg1} alt="VConnect Holidays travellers group" className="about-teaser__main-img" />
@@ -83,7 +83,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="section section--soft" id="why-us">
         <div className="container why-choose__grid">

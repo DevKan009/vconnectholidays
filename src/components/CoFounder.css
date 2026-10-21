@@ -1,0 +1,147 @@
+/* Same width as the Founder's Note card above it, but flatter: no shadow, badges or quote. */
+.cofounder {
+  padding-top: 0;
+}
+
+.cofounder__card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 40px 48px;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background: var(--color-white);
+}
+
+.cofounder__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 18px;
+  background: #e9ebee;
+}
+
+.cofounder__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold-end);
+}
+
+.cofounder__eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-gold-gradient);
+}
+
+.cofounder__title {
+  margin: 12px 0 16px;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--color-dark);
+}
+
+.cofounder__text {
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Three points side by side on wide screens */
+.cofounder__points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 26px 0 28px;
+}
+
+.cofounder__points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--color-bg-soft);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+.cofounder__points svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--color-gold-start);
+}
+
+.cofounder__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--color-gold-start);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-dark);
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.cofounder__link:hover {
+  gap: 12px;
+  color: var(--color-gold-end);
+}
+
+.cofounder__link:focus-visible {
+  outline: 2px solid var(--color-gold-start);
+  outline-offset: 4px;
+}
+
+@media (max-width: 1100px) {
+  .cofounder__card {
+    grid-template-columns: 240px 1fr;
+    gap: 40px;
+    padding: 36px;
+  }
+
+  .cofounder__points {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cofounder__points li {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .cofounder__card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 26px 20px;
+    border-radius: 18px;
+  }
+
+  .cofounder__photo {
+    width: 150px;
+  }
+
+  .cofounder__title {
+    font-size: 24px;
+  }
+
+  .cofounder__text {
+    font-size: 15px;
+  }
+
+  .cofounder__points {
+    margin: 20px 0 22px;
+  }
+}

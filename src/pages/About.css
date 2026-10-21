@@ -241,9 +241,10 @@
 
 .about-team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
   gap: 24px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -367,17 +368,15 @@
   font-weight: 600;
 }
 
+.about-team-detail {
+  display: none;
+}
+
 /* ================= Responsive ================= */
 
 @media (max-width: 1100px) {
   .about-intro__grid {
-    grid-template-columns: 1fr;
-    gap: 64px;
-  }
-
-  .about-intro__media-wrap {
-    order: -1;
-    max-width: 440px;
+    gap: 40px;
   }
 
   .about-intro__title {
@@ -385,7 +384,19 @@
   }
 
   .about-team-grid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+/* Phone / mobile: hide the intro image so it does not wrap; only show on laptop */
+@media (max-width: 860px) {
+  .about-intro__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about-intro__media-wrap {
+    display: none;
   }
 }
 
@@ -482,12 +493,46 @@
     margin-top: -36px;
   }
 
+  /* Three photos in one row; the tapped person's details appear in a panel below */
   .about-team-grid {
-    gap: 12px;
+    gap: 8px;
   }
 
-  .about-team-card__caption {
+  .about-team-card__caption,
+  .about-team-card__overlay {
     display: none;
+  }
+
+  .about-team-card.is-open .about-team-card__photo {
+    outline: 3px solid var(--color-gold-start);
+    outline-offset: 2px;
+  }
+
+  .about-team-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: var(--color-bg-soft);
+    border: 1px solid rgba(206, 165, 33, 0.3);
+  }
+
+  .about-team-detail strong {
+    font-size: 16px;
+    color: var(--color-dark);
+  }
+
+  .about-team-detail span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-gold-end);
+  }
+
+  .about-team-detail p {
+    margin-top: 4px;
+    font-size: 14px;
   }
 
   .about-team-card__photo {

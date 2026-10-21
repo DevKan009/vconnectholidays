@@ -8,6 +8,7 @@ import SectionHeading from '../components/SectionHeading'
 import StatCounter from '../components/StatCounter'
 import Button from '../components/Button'
 import FoundersNote from '../components/FoundersNote'
+import CoFounder from '../components/CoFounder'
 import { aboutStats, team } from '../data/content'
 import { googleBusiness } from '../data/googleReviews'
 import aboutBanner from '../assets/images/about-banner.jpg'
@@ -127,6 +128,8 @@ export default function About() {
 
       <FoundersNote />
 
+      <CoFounder />
+
       {/* Team */}
       <section className="section about-team-section" id="team">
         <div className="container">
@@ -162,6 +165,14 @@ export default function About() {
               )
             })}
           </ul>
+          {/* Phones: the tapped person's details show below the row of photos */}
+          {openMember !== null && (
+            <div className="about-team-detail" aria-live="polite">
+              <strong>{team[openMember].name}</strong>
+              <span>{team[openMember].role}</span>
+              <p>{team[openMember].specialty}</p>
+            </div>
+          )}
         </div>
       </section>
 

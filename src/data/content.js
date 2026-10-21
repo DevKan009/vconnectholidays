@@ -14,7 +14,6 @@ import gallery4 from '../assets/images/gallery-4.jpg'
 import gallery5 from '../assets/images/gallery-5.jpg'
 
 import team1 from '../assets/images/team-1.jpg'
-import team2 from '../assets/images/team-2.jpg'
 import team3 from '../assets/images/team-3.jpg'
 import team4 from '../assets/images/team-4.jpg'
 
@@ -144,29 +143,25 @@ export const gallery = [
   { src: gallery5, tall: false },
 ]
 
+// Specialty lines are drafts to confirm with the client.
+// Ranjan Jain (co-founder) has his own section on the About page, see CoFounder.jsx.
 export const team = [
   {
-    name: 'Ayan Choksey',
-    role: 'Sr. Travel Consultant & Operations',
-    specialty: 'Dubai, Europe & Luxury Vacations',
+    name: 'Ayan Chouksey',
+    role: 'Team Leader',
+    specialty: 'Leads our planning team; Dubai, Europe & luxury holidays',
     image: team1,
   },
   {
-    name: 'Rajesh Sharma',
-    role: 'Operations & Logistics Manager',
-    specialty: 'Seamless Transfers & On-Ground Coordination',
-    image: team2,
-  },
-  {
-    name: 'Zainab Khan',
-    role: 'Holiday Curator & Visa Specialist',
-    specialty: 'Visa Assistance, Flights & Bespoke Stays',
+    name: 'Hussaina Rangwala',
+    role: 'Holiday Consultant',
+    specialty: 'Custom itineraries, stays & visa paperwork',
     image: team3,
   },
   {
-    name: 'Gurbani Singh',
-    role: 'Client Experience & Tour Specialist',
-    specialty: 'Honeymoons, Tropical Stays & 24/7 Support',
+    name: 'Aman Sharma',
+    role: 'Holiday Consultant',
+    specialty: 'Family & honeymoon trips, with on-trip support',
     image: team4,
   },
 ]

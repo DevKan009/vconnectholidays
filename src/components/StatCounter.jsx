@@ -50,7 +50,7 @@ function Stat({ value, suffix, label }) {
     <div className="stat" ref={ref}>
       <span className="stat__value">
         {count}
-        {suffix}
+        <span className="stat__suffix">{suffix.trim()}</span>
       </span>
       <span className="stat__label">{label}</span>
     </div>
