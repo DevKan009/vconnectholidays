@@ -1,4 +1,5 @@
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import ServiceCard from '../components/ServiceCard'
@@ -16,10 +17,7 @@ const STEPS = [
 ]
 
 export default function Services() {
-  usePageTitle(
-    'Our Services',
-    'Hotels, flights, visas and e-visas, international SIM cards and travel insurance from VConnect Holidays, Indore. Book a single service or the full trip.',
-  )
+  usePageTitle(PAGE_META['/services'])
 
   return (
     <>

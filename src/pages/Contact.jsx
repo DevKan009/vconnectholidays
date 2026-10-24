@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import { FaLocationDot, FaEnvelope, FaPhone, FaFacebookF, FaXTwitter, FaYoutube, FaTelegram, FaInstagram, FaWhatsapp, FaCircleCheck } from 'react-icons/fa6'
 import { contactInfo } from '../data/content'
@@ -53,7 +54,7 @@ function contextBanner(service, country) {
 }
 
 export default function Contact() {
-  usePageTitle('Contact')
+  usePageTitle(PAGE_META['/contact'])
   const [params] = useSearchParams()
   const chosen = getDestination(params.get('destination') || '')
   const destinationValue = chosen ? tripName(chosen) : params.get('destination') || ''
@@ -311,6 +312,10 @@ export default function Contact() {
                   <span>Send on WhatsApp</span>
                 </button>
               </div>
+              <p className="contact-form__consent">
+                By sending, you agree we may contact you about this enquiry by phone, email or WhatsApp. See our{' '}
+                <Link to="/privacy-policy">Privacy Policy</Link>.
+              </p>
 
               {status.state === 'error' && (
                 <p className="contact-form__status contact-form__status--error" role="alert">

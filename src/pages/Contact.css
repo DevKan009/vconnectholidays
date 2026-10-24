@@ -230,3 +230,13 @@
     order: -1;
   }
 }
+
+.contact-form__consent {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.contact-form__consent a {
+  color: var(--color-dark);
+  text-decoration: underline;
+}

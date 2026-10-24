@@ -47,7 +47,7 @@ export default function Footer() {
           <ul>
             <li>Help Center</li>
             <li>Booking</li>
-            <li>Privacy Policy</li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
             <li>Terms &amp; Conditions</li>
             <li>Online Supports</li>
           </ul>

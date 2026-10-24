@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import DestinationCard from '../components/DestinationCard'
@@ -10,10 +11,7 @@ import bannerImg from '../assets/images/page-banner-default.jpg'
 import './Destination.css'
 
 export default function Destination() {
-  usePageTitle(
-    'Destination List',
-    'All 40 international and domestic destinations planned by VConnect Holidays, Indore: Dubai, Thailand, Bali, Kashmir, Kerala, Goa and more.',
-  )
+  usePageTitle(PAGE_META['/destinations'])
   const [activeFaqTab, setActiveFaqTab] = useState(0)
 
   return (

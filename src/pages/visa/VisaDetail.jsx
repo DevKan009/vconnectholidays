@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { FaClock, FaCalendarDays, FaHourglassHalf, FaDoorOpen, FaIndianRupeeSign } from 'react-icons/fa6'
 import usePageTitle from '../../hooks/usePageTitle'
+import { visaMeta } from '../../data/seo'
 import PageBanner from '../../components/PageBanner'
 import DocumentChecklist from '../../components/DocumentChecklist'
 import VisaCountryCard, { Flag } from '../../components/VisaCountryCard'
@@ -23,10 +24,7 @@ export default function VisaDetail({ kind }) {
   const v = getVisa(kind, slug)
   const k = VISA_KINDS[kind]
 
-  usePageTitle(
-    v ? `${v.name} ${k.label}` : 'Page Not Found',
-    v ? `${v.name} ${k.label.toLowerCase()} for Indian passport holders: required documents, processing time and help from VConnect Holidays, Indore.` : undefined,
-  )
+  usePageTitle(v ? visaMeta(v, k.label) : 'Page Not Found')
 
   if (!v) return <NotFound />
 

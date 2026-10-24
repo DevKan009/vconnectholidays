@@ -1,12 +1,16 @@
 import { useEffect } from 'react'
+import { DEFAULT_DESCRIPTION, formatTitle } from '../data/seo'
 
-const SITE_NAME = 'Vconnect Holidays'
-const DEFAULT_DESCRIPTION =
-  'VConnect Holidays - Holidays | Airtickets | Visas | Honeymoon trips. Trusted travel specialists crafting bespoke domestic and international vacations since 2018.'
+// Sets the title and description after navigation. The first load already has
+// them in the HTML (scripts/prerender-meta.mjs); this keeps them right as the
+// visitor moves around. Accepts (title, description) or a PAGE_META entry.
+export default function usePageTitle(titleOrMeta, descriptionArg) {
+  const isMeta = titleOrMeta && typeof titleOrMeta === 'object'
+  const title = isMeta ? titleOrMeta.title : titleOrMeta
+  const description = isMeta ? titleOrMeta.description : descriptionArg
 
-export default function usePageTitle(title, description) {
   useEffect(() => {
-    document.title = title ? `${title} – ${SITE_NAME}` : `${SITE_NAME} – Holidays | Airtickets | Visas | Honeymoon trips`
+    document.title = formatTitle(title)
   }, [title])
 
   useEffect(() => {

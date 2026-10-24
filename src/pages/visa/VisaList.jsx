@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaMagnifyingGlass } from 'react-icons/fa6'
 import usePageTitle from '../../hooks/usePageTitle'
+import { visaListMeta } from '../../data/seo'
 import PageBanner from '../../components/PageBanner'
 import SectionHeading from '../../components/SectionHeading'
 import VisaCountryCard from '../../components/VisaCountryCard'
@@ -15,12 +16,7 @@ export default function VisaList({ kind }) {
   const [query, setQuery] = useState('')
   const results = searchVisas(query, k.list)
 
-  usePageTitle(
-    `${k.label} Countries`,
-    kind === 'e-visa'
-      ? `E-visa assistance for ${k.list.length} countries from VConnect Holidays, Indore. Document lists and processing times.`
-      : `Embassy visa assistance for ${k.list.length} countries from VConnect Holidays, Indore. Document checklists, VFS appointments and processing times.`,
-  )
+  usePageTitle(visaListMeta(kind, k.list.length))
 
   return (
     <>

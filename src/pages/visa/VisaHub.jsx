@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FaLaptop, FaBuildingColumns, FaCheck, FaArrowRight, FaFileLines } from 'react-icons/fa6'
 import usePageTitle from '../../hooks/usePageTitle'
+import { PAGE_META } from '../../data/seo'
 import PageBanner from '../../components/PageBanner'
 import SectionHeading from '../../components/SectionHeading'
 import Accordion from '../../components/Accordion'
@@ -43,10 +44,7 @@ const FAQS = [
 ]
 
 export default function VisaHub() {
-  usePageTitle(
-    'Visa & E-Visa Services',
-    'E-visa and embassy visa assistance from VConnect Holidays, Indore: document checklists, forms and appointments for 90+ countries.',
-  )
+  usePageTitle(PAGE_META['/visa'])
 
   return (
     <>

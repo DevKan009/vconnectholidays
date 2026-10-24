@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import usePageTitle from '../../hooks/usePageTitle'
+import { PAGE_META } from '../../data/seo'
 import PageBanner from '../../components/PageBanner'
 import DocumentChecklist from '../../components/DocumentChecklist'
 import WhatsAppButton from '../../components/WhatsAppButton'
@@ -9,10 +10,7 @@ import bannerImg from '../../assets/images/page-banner-default.jpg'
 import './Visa.css'
 
 export default function SchengenChecklist() {
-  usePageTitle(
-    'Schengen Visa Required Documents',
-    'Schengen visa document checklist for Indian passport holders: tourist, business and family visit. One visa for 29 European countries.',
-  )
+  usePageTitle(PAGE_META['/visa/required-documents/schengen'])
   const pages = Object.fromEntries(visasByKind('visa').filter((v) => v.schengen).map((v) => [v.name, v]))
 
   return (

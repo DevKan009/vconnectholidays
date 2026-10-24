@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { FcGoogle } from 'react-icons/fc'
 import { FaShieldHeart, FaCompass, FaPhoneVolume, FaEye, FaBullseye, FaHandshake, FaStar, FaXmark } from 'react-icons/fa6'
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import StatCounter from '../components/StatCounter'
@@ -28,7 +29,7 @@ const STEPS = [
 ]
 
 export default function About() {
-  usePageTitle('About Us')
+  usePageTitle(PAGE_META['/about'])
   const { hash } = useLocation()
   const [openMember, setOpenMember] = useState(null)
 

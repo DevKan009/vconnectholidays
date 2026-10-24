@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { FaCalendarDays, FaPassport, FaPlaneDeparture, FaClock, FaIndianRupeeSign, FaWhatsapp } from 'react-icons/fa6'
 import usePageTitle from '../hooks/usePageTitle'
+import { destinationMeta } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import CoverImage from '../components/CoverImage'
@@ -29,10 +30,7 @@ export default function DestinationDetail() {
   const { slug } = useParams()
   const d = getDestination(slug)
 
-  usePageTitle(
-    d ? `${d.place} Tour Packages, ${d.country}` : 'Page Not Found',
-    d ? `${d.place} (${d.country}) holiday packages from Indore by VConnect Holidays. ${d.summary}` : undefined,
-  )
+  usePageTitle(d ? destinationMeta(d) : 'Page Not Found')
 
   if (!d) return <NotFound />
 

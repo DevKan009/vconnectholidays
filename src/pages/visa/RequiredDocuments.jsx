@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FaMagnifyingGlass } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import usePageTitle from '../../hooks/usePageTitle'
+import { PAGE_META } from '../../data/seo'
 import PageBanner from '../../components/PageBanner'
 import SectionHeading from '../../components/SectionHeading'
 import VisaCountryCard, { Flag } from '../../components/VisaCountryCard'
@@ -11,10 +12,7 @@ import './Visa.css'
 
 export default function RequiredDocuments() {
   const [query, setQuery] = useState('')
-  usePageTitle(
-    'Visa Required Documents',
-    'Visa and e-visa document checklists for Indian passport holders, by country, from VConnect Holidays, Indore.',
-  )
+  usePageTitle(PAGE_META['/visa/required-documents'])
   const showSchengen = !query.trim() || 'schengen europe'.includes(query.trim().toLowerCase())
 
   return (

@@ -11,6 +11,7 @@ import TourPackages from './pages/TourPackages'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
 import GroupTours from './pages/GroupTours'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 import NotFound from './pages/NotFound'
 
 // Visa pages and search carry the ~200 KB visa dataset, so they load on demand.
@@ -46,6 +47,7 @@ export default function App() {
             <Route path="/visa/required-documents/schengen" element={<SchengenChecklist />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

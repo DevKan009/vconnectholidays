@@ -1,5 +1,6 @@
 import './Home.css'
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import Hero from '../components/Hero'
 import SectionHeading from '../components/SectionHeading'
 import TripCard from '../components/TripCard'
@@ -22,7 +23,7 @@ import aboutImg2 from '../assets/images/about-img2.jpeg'
 import testiMohakImg from '../assets/images/testi-mohak.jpeg'
 
 export default function Home() {
-  usePageTitle(null)
+  usePageTitle(PAGE_META['/'])
   const [region, setRegion] = useRegion('home')
   const featured = destinationsByRegion(region).slice(0, HOME_COUNT)
 

@@ -46,6 +46,7 @@ Built with **React 19**, **Vite 8**, and **React Router 7**, the website deliver
 | `/visa/e-visa`, `/visa/e-visa/:slug` | **E-Visa** | Country grid with search, and per-country facts and required documents |
 | `/visa/embassy-visa`, `/visa/embassy-visa/:slug` | **Visa** | Same for embassy / sticker visas |
 | `/visa/required-documents` | **Required Documents** | Every checklist, plus `/visa/required-documents/schengen` |
+| `/privacy-policy` | **Privacy Policy** | What the enquiry form and WhatsApp buttons collect, and visitors' choices |
 | `/search?q=` | **Search** | Header search across destinations, visa countries and services |
 | `/contact` | **Contact** | Context-aware enquiry form (`?service=hotels`, `?service=visa&country=france`, …) that saves leads to a Google Sheet, emails the team and offers WhatsApp |
 | `*` | **404 Not Found** | Custom styled error page with redirect to home |
@@ -171,14 +172,36 @@ All site content is decoupled from components and stored centrally in **[`src/da
 
 ## 🚢 Deployment
 
-To deploy the website to production (Vercel, Netlify, Cloudflare Pages, etc.):
+The site is hosted on **HostingRaja (cPanel, LiteSpeed)** at `vconnectholidays.com`. Email and DNS also live there and are not touched by deploys.
 
-1. Run the build script:
-   ```bash
-   npm run build
-   ```
-2. The generated assets will be located in the `dist/` folder.
-3. Configure your hosting provider to serve Single-Page Applications (SPA) by redirecting all requests to `/index.html`.
+**Build:**
+
+```bash
+npm run build
+```
+
+`vite build` is followed by `scripts/prerender-meta.mjs`. That script writes one HTML file per page (149 pages: title, description, canonical, Open Graph tags and share image), plus `sitemap.xml`, `robots.txt` and `__spa-fallback.html`. This gives WhatsApp, Facebook and LinkedIn a correct preview for every link. `public/.htaccess` (copied into `dist/`) handles HTTPS, non-www, trailing slashes, old WordPress URLs (301/410), the SPA fallback and cache headers.
+
+Set `VITE_LEADS_ENDPOINT` and `VITE_LEADS_TOKEN` in `.env.local` **before** building; they are baked into the bundle.
+
+**Upload (cPanel File Manager):**
+
+1. Zip the *contents* of `dist/`, including the hidden `.htaccess`.
+2. Upload the zip into the site's document root and extract it there.
+3. Check that `.htaccess` is present (enable "Show Hidden Files" in File Manager settings).
+4. Purge the LiteSpeed cache if the LiteSpeed Cache plugin or the server cache was on.
+
+**Staging:** create the subdomain `new.vconnectholidays.com` in cPanel → Domains, and deploy there first. The `.htaccess` sends `X-Robots-Tag: noindex` on any `new.` host, so staging stays out of Google.
+
+**First launch (replacing WordPress):**
+
+1. Take a full cPanel backup (Files + Databases) and download it. Export the MetForm entries from WordPress.
+2. Move the WordPress files out of `public_html` into a dated folder outside the web root.
+3. Upload the build as above, then check: an old URL like `/sample-page/` returns 410, `/destination/` redirects to `/destinations/`, a refresh on `/visa/e-visa/thailand/` works, and email still sends and receives.
+4. Search Console: add the property, submit `https://vconnectholidays.com/sitemap.xml`, and watch the Pages report for two weeks.
+5. Re-scrape link previews with the Facebook Sharing Debugger. For WhatsApp, test with `?v=2` on the URL, because WhatsApp caches previews.
+
+**Helper scripts:** `node scripts/optimize-images.mjs` re-encodes images over 300 KB in place. `node scripts/make-og-default.mjs` rebuilds `public/og-default.jpg`.
 
 ### Lead capture (Google Apps Script)
 

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FaCalendarCheck, FaUserTie, FaTags, FaRoute, FaArrowRight } from 'react-icons/fa6'
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import Button from '../components/Button'
@@ -20,10 +21,7 @@ const FEATURES = [
 ]
 
 export default function GroupTours() {
-  usePageTitle(
-    'Group Tours (Coming Soon)',
-    'VConnect Holidays group tours are coming soon: fixed-departure trips with a tour manager. Register your interest or plan a private group trip today.',
-  )
+  usePageTitle(PAGE_META['/group-tours'])
   const onClick = (via) => track('group_tours_click', { via })
 
   return (

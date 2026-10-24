@@ -1,4 +1,5 @@
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_META } from '../data/seo'
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import TripCard from '../components/TripCard'
@@ -12,12 +13,7 @@ import './TourPackages.css'
 
 export default function TourPackages() {
   const [region, setRegion] = useRegion('tour_packages')
-  usePageTitle(
-    region === 'domestic' ? 'Domestic Tour Packages' : 'International Tour Packages',
-    region === 'domestic'
-      ? 'Domestic holiday packages across India, from Kashmir and Kerala to Goa and the Andamans, planned by VConnect Holidays, Indore.'
-      : 'International holiday packages to Dubai, Thailand, Bali, Singapore, Maldives, Europe and more, with visas handled by VConnect Holidays, Indore.',
-  )
+  usePageTitle(PAGE_META[region === 'domestic' ? '/tour-packages?region=domestic' : '/tour-packages'])
 
   return (
     <>
