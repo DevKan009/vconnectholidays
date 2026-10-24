@@ -3,6 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa6'
 import CoverImage from './CoverImage'
 import { tripLine } from '../data/destinations'
 import { bookLink, whatsappLink, track } from '../utils/enquiry'
+import { logWhatsAppClick } from '../utils/leads'
 import './TripCard.css'
 
 export default function TripCard({ destination: d, hideOnPhone = false, source = 'card' }) {
@@ -26,7 +27,10 @@ export default function TripCard({ destination: d, hideOnPhone = false, source =
             rel="noreferrer"
             className="trip-card__btn trip-card__btn--wa"
             aria-label={`Enquire about ${d.place} on WhatsApp`}
-            onClick={() => track('whatsapp_click', params)}
+            onClick={() => {
+              track('whatsapp_click', params)
+              logWhatsAppClick(`Trip card: ${d.place}`)
+            }}
           >
             <FaWhatsapp />
           </a>

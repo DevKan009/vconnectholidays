@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { FaPhone, FaEnvelope, FaWhatsapp, FaXmark } from 'react-icons/fa6'
 import Button from './Button'
 import { contactInfo } from '../data/content'
+import { logWhatsAppClick } from '../utils/leads'
 import heroRiga from '../assets/images/hero-riga.jpg'
 import heroHeritage from '../assets/images/hero-heritage.jpg'
 import heroNyc from '../assets/images/hero-nyc.jpg'
@@ -97,6 +98,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hero__dropdown-whatsapp"
+                  onClick={() => logWhatsAppClick('Hero: Chat on WhatsApp')}
                 >
                   <FaWhatsapp />
                   <div className="hero__dropdown-whatsapp-text">

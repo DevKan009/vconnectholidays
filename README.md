@@ -25,7 +25,7 @@ Built with **React 19**, **Vite 8**, and **React Router 7**, the website deliver
 - ✈️ **Curated Tour Packages**: Detailed holiday packages with durations, transparent pricing estimates, and direct inquiry hooks (Bali, Singapore, Thailand, Phuket & Krabi, Seychelles, South Korea, Paris & Swiss, etc.).
 - 💬 **Traveler Testimonials**: Interactive slider showcasing real customer reviews and honeymoon stories.
 - ❓ **Interactive FAQ Accordions**: Multi-category collapsible FAQs covering travel queries, bookings, refunds, and transportation.
-- 📊 **Animated Stat Counters**: Highlight milestones (25k+ Happy Travelers, 100+ Destinations, 7+ Years in Business).
+- 📊 **Animated Stat Counters**: Highlight milestones (25000+ Happy Travelers, 100+ Destinations, 8+ Years in Business).
 - 📱 **Fully Responsive Experience**: Tailored layouts for mobile, tablet, and desktop with a slide-out hamburger navigation drawer.
 - ✉️ **Inquiry & Contact Form**: Validated contact forms with instant feedback, interactive social links, and physical office details.
 - 🎯 **SEO & UX Focused**: Dynamic document titles (`usePageTitle`), smooth `ScrollToTop` upon page navigation, and semantic HTML5.
@@ -40,7 +40,14 @@ Built with **React 19**, **Vite 8**, and **React Router 7**, the website deliver
 | `/about` | **About Us** | Agency story since 2018, core benefits, leadership team, photo gallery, and categorized FAQs |
 | `/destination` | **Destinations** | Comprehensive catalogue of dream international & domestic destinations |
 | `/tour-packages` | **Tour Packages** | Complete list of curated packages with pricing and durations |
-| `/contact` | **Contact** | Inquiry form, office address in Indore, direct email, phone numbers, and socials |
+| `/services` | **Services** | Hotels, flights, visas, SIM cards, insurance and group tours, with the "Only need a hotel? We do that too." band |
+| `/group-tours` | **Group Tours** | Coming Soon page; every CTA forwards to Contact |
+| `/visa` | **Visa hub** | Choose E-Visa or embassy Visa, visa FAQs |
+| `/visa/e-visa`, `/visa/e-visa/:slug` | **E-Visa** | Country grid with search, and per-country facts and required documents |
+| `/visa/embassy-visa`, `/visa/embassy-visa/:slug` | **Visa** | Same for embassy / sticker visas |
+| `/visa/required-documents` | **Required Documents** | Every checklist, plus `/visa/required-documents/schengen` |
+| `/search?q=` | **Search** | Header search across destinations, visa countries and services |
+| `/contact` | **Contact** | Context-aware enquiry form (`?service=hotels`, `?service=visa&country=france`, …) that saves leads to a Google Sheet, emails the team and offers WhatsApp |
 | `*` | **404 Not Found** | Custom styled error page with redirect to home |
 
 ---
@@ -172,6 +179,32 @@ To deploy the website to production (Vercel, Netlify, Cloudflare Pages, etc.):
    ```
 2. The generated assets will be located in the `dist/` folder.
 3. Configure your hosting provider to serve Single-Page Applications (SPA) by redirecting all requests to `/index.html`.
+
+### Lead capture (Google Apps Script)
+
+Enquiries and WhatsApp clicks go to a Google Apps Script web app that writes them to a Google Sheet, emails the team and sends the visitor a confirmation.
+
+1. Create a Google Sheet, open **Extensions → Apps Script** and paste `scripts/apps-script/Code.gs`.
+2. In **Project Settings → Script properties** add `NOTIFY_EMAILS` (comma-separated) and `SITE_TOKEN` (any random string).
+3. **Deploy → New deployment → Web app**, Execute as *Me*, access *Anyone*. Authorize it (Advanced → Go to project).
+4. Copy the `/exec` URL. Set `VITE_LEADS_ENDPOINT` (that URL) and `VITE_LEADS_TOKEN` (same as `SITE_TOKEN`) in `.env.local` and in Vercel → Environment Variables, then redeploy. See `.env.example`.
+5. After editing the script: **Manage deployments → Edit → New version** keeps the same URL.
+
+Full details: `scripts/apps-script/README.md`. Without the endpoint, the form shows a friendly error and offers WhatsApp.
+
+### Visa content
+
+Visa data in `src/data/visas/*.json` is generated, not hand-edited:
+
+```bash
+node scripts/extract-visa-data.mjs
+```
+
+```bash
+node scripts/normalize-visa-data.mjs
+```
+
+The first fetches the reference pages into `scripts/out/` (git-ignored). The second cleans them (with hand fixes in `scripts/visa-overrides.mjs`) and rewrites `docs/visa-content-changelog.md`, which lists every dropped, corrected and fact-checked line.
 
 ---
 

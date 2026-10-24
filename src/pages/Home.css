@@ -186,3 +186,22 @@
     display: none;
   }
 }
+
+.home-services__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .home-services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .home-services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}

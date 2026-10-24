@@ -32,6 +32,10 @@ export default function Footer() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/tour-packages">Packages</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/visa">Visa</Link></li>
+            <li><Link to="/visa/required-documents">Required Documents</Link></li>
+            <li><Link to="/group-tours">Group Tours</Link></li>
             <li><Link to="/#faq">FAQ</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>

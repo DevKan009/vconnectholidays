@@ -209,16 +209,21 @@ export const aboutBenefits = [
   },
 ]
 
+// Company was established in 2018; experience calculates dynamically
+const COMPANY_START_YEAR = 2018
+export const companyYears = Math.max(8, new Date().getFullYear() - COMPANY_START_YEAR)
+export const founderYears = 18
+
 export const stats = {
-  travellers: 25,
+  travellers: 25000,
   destinations: 100,
-  years: 7,
+  years: companyYears,
 }
 
 export const aboutStats = {
-  travellers: 25,
+  travellers: 25000,
   destinations: 100,
-  years: 7,
+  years: companyYears,
 }
 
 export const contactInfo = {

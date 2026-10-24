@@ -1,0 +1,1342 @@
+[
+  {
+    "slug": "armenia",
+    "name": "Armenia",
+    "kind": "e-visa",
+    "iso": "am",
+    "schengen": false,
+    "embassy": [
+      "D-133, Armenia Street, Block D, Anand Niketan, New Delhi, Delhi 110021 · Phone: 011 2411 2851"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Passport copy ( Front and Back)",
+          "Photos with white background",
+          "Ticket and Hotel Confirmation",
+          "Cover letter mentioning duration of stay and applicant's contact ( mobile number and e-mail id also mentioning the designation of the applicant)",
+          "Invitation letter"
+        ],
+        "notes": []
+      },
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport copy ( Front and Back)",
+          "Photos with white background",
+          "Ticket and Hotel Confirmation",
+          "Cover letter mentioning duration of stay and applicant's contact ( mobile number and e-mail id, also mentioning the designation of the applicant)"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "30 days",
+      "processing": "3–4 working days"
+    },
+    "currency": "Dram"
+  },
+  {
+    "slug": "australia",
+    "name": "Australia",
+    "kind": "e-visa",
+    "iso": "au",
+    "schengen": false,
+    "embassy": [
+      "Australian High commission1/50 G, Shantipath, Chanakyapuri, New Delhi, Delhi 110021VFS Global Services Pvt. Ltd.Urmi Axis Building, Behind Famous Studio, Opp. E Moses Road, Mahalaxmi (West), Mumbai – 400 011"
+    ],
+    "notes": [
+      "Please be informed that with immediate effect as per the new changes in Australia online visa process for Indian Nationals, Applicant has to submit at least one preferred ID proof (other than Passport). You must provide a certified copy of your national identity card/s – Aadhaar Card/ PAN Card /Driving License or Voter ID. The copy of the identity proof will be required at the time for processing the online application"
+    ],
+    "sections": [
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Two colour photo 35x45mm 80% face white background",
+          "1415 visa application form duly filled & signed by applicant only",
+          "Original Detail Covering letter on Indian company letterhead",
+          "Invitation letter copy from Australia",
+          "Personal bank statement copy for last 3 months of applicant",
+          "Personal income tax returns (ITR) copy for last 3 years of applicant",
+          "Company incorporation certificate copy if having own business",
+          "Company bank statement copy for last 3 months of applicant if having own business",
+          "Company income tax returns (ITR) copy for last 3 years of applicant if having own business",
+          "Copy of Government ID proof (Eg Aadhaar Card/ PAN Card /Driving License or Voter ID)",
+          "Last 3 months salary slip"
+        ],
+        "notes": []
+      },
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Two colour photo 35x45mm 80% face white background",
+          "1419 visa application form duly filled & signed by applicant only",
+          "Original Detail Covering letter from applicants on Business letterhead if having own Business",
+          "Original Detail Covering letter from applicants on plain paper if working in a company",
+          "Original Leave letter from company on letterhead with leave dates if working in a company",
+          "Personal bank statement copy for last 3 months of applicant",
+          "Personal income tax returns (ITR) copy for last 3 years of applicant",
+          "Company incorporation certificate copy if having own business",
+          "Company bank statement copy for last 3 months of applicant if having own business",
+          "Company income tax returns (ITR) copy for last 3 years of applicant if having own business",
+          "Copy of Government ID proof (Eg Aadhaar Card/ PAN Card /Driving License or Voter ID)",
+          "Last 3 months salary slip"
+        ],
+        "notes": []
+      },
+      {
+        "id": "family-visit",
+        "title": "Family Visit",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Two colour photo 35x45mm 80% face white background",
+          "1419 visa application form duly filled & signed by applicant only",
+          "Original Detail Covering letter from applicants on Business letterhead if having own Business",
+          "Original Detail Covering letter from applicants on plain paper if working in a company",
+          "Original Leave letter from company on letterhead with exact leave dates if working in a company",
+          "Invitation letter from Invitee of Australia",
+          "Passport copy & Australia work permit card copy of Invitee of Australia",
+          "Employment proof copy of Invitee of Australia",
+          "Personal bank statement copy for last 3 months of Invitee of Australia",
+          "Personal bank statement copy for last 3 months of applicant",
+          "Personal income tax returns (ITR) copy for last 3 years of applicant",
+          "Company incorporation certificate copy if having own business",
+          "Company bank statement copy for last 3 months of applicant if having own business",
+          "Company income tax returns (ITR) copy for last 3 years of applicant if having own business",
+          "Copy of Government ID proof (Eg. Aadhaar Card/ PAN Card /Driving License or Voter ID)",
+          "Last 3 months' salary slip"
+        ],
+        "notes": []
+      },
+      {
+        "id": "transit",
+        "title": "Transit",
+        "items": [
+          "Original valid passport at least for 6 months & passport first page, last page & all the pages in passport with Notary by Advocate",
+          "Two colour photo 35x45mm 80% face white background",
+          "876 visa application form duly filled & signed by applicant only",
+          "Original Detail Covering letter with mentioning purpose of travel",
+          "Ticket itinerary",
+          "Copy of Government ID proof (E.g Aadhaar Card/ PAN Card /Driving License or Voter ID)",
+          "Last 3 months Salary slip"
+        ],
+        "notes": []
+      },
+      {
+        "id": "honeymoon",
+        "title": "Honeymoon",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Two colour photo 35x45mm 80% face white background",
+          "1419 visa application form duly filled & signed by applicant only",
+          "Detail Original Covering letter mentioning engagement details, wedding details & travel details on company letterhead if having own business from both applicants",
+          "Detail Original Covering letter mentioning engagement details, wedding details & travel details on plain paper if working in a company from both applicants",
+          "Original Leave letter with exact leave dates on company letterhead if working in a company for both applicants",
+          "Personal bank statement copy for last 3 months with sufficient funds of both applicants",
+          "Personal income tax returns (ITR) for last 3 year of both applicants",
+          "Sponsorship letter from father",
+          "Father passport copies",
+          "Father Personal bank statement for last 3 months with sufficient funds",
+          "Father Personal income tax returns (ITR) for last 3 year",
+          "NOC Letter from parents of girl",
+          "Parents passport copies of girl",
+          "Original Engagement photographs",
+          "Original Wedding Cards",
+          "Ticket itinerary",
+          "Company incorporation certificate copy if having own business",
+          "Company bank statement copy for last 3 months of applicant if having own business",
+          "Company income tax returns (ITR) copy for last 3 years of applicant if having own business",
+          "Copy of Government ID proof (Eg. Aadhaar Card/ PAN Card /Driving License or Voter ID)",
+          "Last 3 months salary slip"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "30 days",
+      "processing": "3–4 working days"
+    },
+    "currency": "Australian Dollar"
+  },
+  {
+    "slug": "azerbaijan",
+    "name": "Azerbaijan",
+    "kind": "e-visa",
+    "iso": "az",
+    "schengen": false,
+    "embassy": [
+      "Address: 41, Paschimi Marg, Vasant Vihar, New Delhi – 110057 · Tel.: +91 11 26152228 · Fax: +91 11 26152227E- mail: newdelhi@mission.mfa.gov.az"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [],
+        "notes": [
+          "For Azerbaijan E visa required passport copy, confirm travel date and hotel details"
+        ]
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "30 days",
+      "processing": "4–5 working days"
+    },
+    "currency": "Manat"
+  },
+  {
+    "slug": "bahrain",
+    "name": "Bahrain",
+    "kind": "e-visa",
+    "iso": "bh",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Copy Front and Back",
+          "Recent Photo",
+          "Bank Statement with stamp and sign and balance should be above 90,000/- for last 6 months",
+          "Pan Card copy",
+          "Return tickets (a provisional booking is fine)",
+          "Hotel voucher or host information in Bahrain. (a provisional booking is fine)"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3–4 working days"
+    },
+    "currency": "Bahraini Dinar"
+  },
+  {
+    "slug": "cambodia",
+    "name": "Cambodia",
+    "kind": "e-visa",
+    "iso": "kh",
+    "schengen": false,
+    "embassy": [
+      "Address: W-112, Greater Kailash II, New Delhi, Delhi 110048 · Phone: 011 2921 4435"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Photo Scan copy",
+          "Return Ticket confirm"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "3 months",
+      "processing": "3 working days"
+    },
+    "currency": "Riel"
+  },
+  {
+    "slug": "uae",
+    "name": "Dubai (UAE)",
+    "kind": "e-visa",
+    "iso": "ae",
+    "schengen": false,
+    "embassy": [
+      "Address: Bunglow No.7, Jolly Maker, Apartment No. 1, Cuffe Parade, Colaba, Mumbai, Maharashtra 400005 · Phone: 022 6634 5566"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport copy scanned 1st & last page",
+          "Photo scanned",
+          "PAN Card scanned"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [
+      "30 days extension"
+    ],
+    "facts": {
+      "processing": "2–3 working days"
+    },
+    "currency": "Dirham"
+  },
+  {
+    "slug": "east-africa",
+    "name": "East Africa",
+    "kind": "e-visa",
+    "iso": "ke",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy: First and Last Page",
+          "Photo Scan Copy 50mm x 50mm 80% Face",
+          "Yellow Fever Vaccination Certificate",
+          "Return Ticket",
+          "Travel Itinerary"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "90 days"
+    },
+    "currency": "Kenyan shilling, Ugandan shilling, Rwandan franc"
+  },
+  {
+    "slug": "egypt",
+    "name": "Egypt",
+    "kind": "e-visa",
+    "iso": "eg",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Scan 6 month valid Passport",
+          "Photo 35 x 45 mm white background 80% face",
+          "Travel date",
+          "Guarantee letter from Egypt ( DMC/ Local Tour Agent )"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "5 working days"
+    },
+    "currency": "Egyptian Pound"
+  },
+  {
+    "slug": "ethiopia",
+    "name": "Ethiopia",
+    "kind": "e-visa",
+    "iso": "et",
+    "schengen": false,
+    "embassy": [
+      "Office No. 806, 8th floor, Naman Midtown, B Wing, Plot no. 616, Senapati Bapat Marg, Elphinstone (W), (Near India Bulls Financial Center) Mumbai, 400 013, India · Tel: +9124382258/ +9124386625 · Fax: +9124386627"
+    ],
+    "notes": [
+      "Kindly Note Currently, They Only allow travellers with e-Visa to enter Ethiopia via Addis Ababa"
+    ],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Photo Scan Copy 50mm x 50mm 80% Face",
+          "Hotel Booking",
+          "Return Ticket"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {},
+    "currency": "Ethiopian Birr"
+  },
+  {
+    "slug": "georgia",
+    "name": "Georgia",
+    "kind": "e-visa",
+    "iso": "ge",
+    "schengen": false,
+    "embassy": [
+      "Consulate-Address: 169 Jor Bagh, New Delhi – 110003 · Phone: (+91)-11-4949-6000 · Fax: (+91)-11-4059-2604VFS-Urmi Axis Building, Third floor, Behind Famous Studio, Opp. E Moses Road, Mahalaxmi (West), Mumbai – 400 011. · Phone: 022 – 67866040"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Photo Scan Copy 35mm x 45 mm 80% Face"
+        ],
+        "notes": []
+      },
+      {
+        "id": "at-the-border",
+        "title": "At the border",
+        "items": [
+          "Travel Document/Passport",
+          "Document proving purpose of travel",
+          "Proof of accommodation",
+          "Travel and health insurance",
+          "Document proving sufficient financial means"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "30 days",
+      "processing": "5 working days"
+    },
+    "currency": "Lari"
+  },
+  {
+    "slug": "guinea-bissau",
+    "name": "Guinea-Bissau",
+    "kind": "e-visa",
+    "iso": "gw",
+    "schengen": false,
+    "embassy": [
+      "Address: B – 3/24, B – Block, Vasant Vihar, New Delhi, Delhi 110057 · Phone: 011 4654 0211"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Photo Scan Copy 50mm x 50mm 80% Face",
+          "Hotel Booking",
+          "Return Ticket"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3 days",
+      "stay": "30 days"
+    },
+    "currency": "West African CFA franc"
+  },
+  {
+    "slug": "hong-kong",
+    "name": "Hong Kong",
+    "kind": "e-visa",
+    "iso": "hk",
+    "schengen": false,
+    "embassy": [],
+    "notes": [
+      "We have to do online pre approval for Indian national. Please note we can do All over India Passport Pre Arrival online in Mumbai itself"
+    ],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport first & last page copy",
+          "Applicant company Name, address & telephone number",
+          "Hotel address in detail & Flight details",
+          "Travel History with travel dates of last 5 years",
+          "Validity of the visa will be of 6 Months Multiple Entry and in Each Entry applicant can stay up to 14 Days only"
+        ],
+        "notes": []
+      },
+      {
+        "id": "transit",
+        "title": "Transit",
+        "items": [
+          "Passport first & last page copy",
+          "Applicant company Name, address & telephone number",
+          "Hotel address in detail & Flight details",
+          "Travel History with travel dates of last 5 years",
+          "Validity of the visa will be of 6 Months Multiple Entry, applicant can only do Airport transit"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "1 working day"
+    },
+    "currency": "Hong Kong Dollar"
+  },
+  {
+    "slug": "indonesia",
+    "name": "Indonesia",
+    "kind": "e-visa",
+    "iso": "id",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Photo Copy Of Six-Month Valid Passport",
+          "Photograph: 35 x 45 mm, Red background, 80% face",
+          "Confirm Hotel Booking",
+          "Ticket itinerary"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "2 working days"
+    },
+    "currency": "Indonesian rupiah"
+  },
+  {
+    "slug": "kenya",
+    "name": "Kenya",
+    "kind": "e-visa",
+    "iso": "ke",
+    "schengen": false,
+    "embassy": [
+      "Address: D-1/27, Vasant Vihar New Delhi, 110057 India.Telephone 91-11-26146537/38/40 · Fax: 91-11-26146550"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Valid passport copy",
+          "Photograph",
+          "Return ticket",
+          "Hotel confirmation",
+          "Applicant contact number, Email Id & Emergency contact number & Name of the person"
+        ],
+        "notes": [
+          "Issued for single entry to persons whose nationalities require visa to enter Kenya either for business, tourism or medical reasons.validity. A single entry visa is valid for 3 months before you travel. Present yourself to immigration control at the port of entry; you may be issued with a stay"
+        ]
+      },
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Passport copy",
+          "1 recent white background Photo",
+          "Covering Letter",
+          "Invitation Letter",
+          "Host signature id copy",
+          "Incorporation certificate of Kenya company",
+          "Ticket",
+          "Applicant contact number, Email Id & Emergency contact number & Name of the person"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "90 days"
+    },
+    "currency": "Shilling"
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "kind": "e-visa",
+    "iso": "kg",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Colour passport scan copy of the first and last pages",
+          "Colour Photo Scan Copy"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3–4 working days"
+    },
+    "currency": "Som"
+  },
+  {
+    "slug": "malaysia",
+    "name": "Malaysia",
+    "kind": "e-visa",
+    "iso": "my",
+    "schengen": false,
+    "embassy": [
+      "5th Floor, Notan Classic Building, 24th Road, Off Turner Road, Bandra West, Mumbai, Maharashtra 400050VFS Global Services Pvt. Ltd.Urmi Axis Building, Behind Famous Studio, Opp. E Moses Road, Mahalaxmi (West), Mumbai – 400 011. · Tel: 22 67866032"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist-family-business",
+        "title": "Tourist, family visit & business",
+        "items": [
+          "Passport copy of first and last page",
+          "Photo as per specification 35 by 45 80% face white background",
+          "Confirm hotel confirmation",
+          "If going to family visit required invitation letter from invitee and invitee passport copy and residence permit copy",
+          "Personal bank statement for last 3 month minimum balance of Rs 50,000 per person",
+          "Confirm ticket as per travel date",
+          "For child required birth certificate copy",
+          "Copy of covering letter on company letterhead and invitation letter from Malaysia company on letterhead with seal sign (if going for business purpose)"
+        ],
+        "notes": [
+          "30-day single-entry e-visa. Multiple-entry e-visas are not available yet."
+        ]
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "7–8 working days",
+      "stay": "30 days",
+      "entries": "Single"
+    },
+    "currency": "Malaysian Ringgit"
+  },
+  {
+    "slug": "morocco",
+    "name": "Morocco",
+    "kind": "e-visa",
+    "iso": "ma",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Clear Passport copy 1st and last page",
+          "Clear photo, 35x45mm, 80% face-white background",
+          "Clear Invitation scan copy with mention all detail",
+          "VALIDITY: A visa is valid for 3 months from the date of issue",
+          "Duration of stay: 30 days from the date of entry"
+        ],
+        "notes": []
+      },
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Clear Passport copy 1st and last page",
+          "Clear photo,,, 35x45mm, 80% face white background",
+          "VALIDITY: A visa is valid for 3 months from the Date of issue",
+          "Duration of stay: 30 days from the date of entry"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "4–5 working days",
+      "stay": "30 days"
+    },
+    "currency": "Moroccan Dirham"
+  },
+  {
+    "slug": "myanmar",
+    "name": "Myanmar",
+    "kind": "e-visa",
+    "iso": "mm",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Photo Scan Copy 50mm x 50mm 80% Face",
+          "Hotel Booking",
+          "Return Ticket"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "28 days",
+      "processing": "3 days"
+    },
+    "currency": "Burmese kyat"
+  },
+  {
+    "slug": "new-zealand",
+    "name": "New Zealand",
+    "kind": "e-visa",
+    "iso": "nz",
+    "schengen": false,
+    "embassy": [
+      "Consulate AddressLevel 2, Maker Maxity, 3rd North Avenue, Bandra Kurla Complex, Mumbai, Maharashtra 400051",
+      "TT SERVICES: #105, 1st Floor, Hallmark Business Plaza, Guru Nanak Hospital Road, Bandra (E), Mumbai 400051 · Tel.: 6630 3708; 6630 3944 / 45"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Full passport photocopy",
+          "Two-color photo, 35x45 mm, 80% face, white background",
+          "Visa application form duly filled & signed by applicant for family",
+          "Original Detail Covering letter from applicants on business letterhead if having their own business",
+          "Original Detail Covering letter from applicants on plain paper if working in a company",
+          "Original Leave letter from company on letterhead with leave dates if working in a company",
+          "Personal bank statement for last 3 months of applicant with minimum balance 3 to 4 lakhs with bank seal & sign on each page",
+          "Personal income tax returns (ITR) copy for the last 3 years of the applicant with school I D card copy for child",
+          "Company bank statement copy for last 3 months of applicant with bank seal & sign on each page if having own business",
+          "Copy of company income tax returns (ITR) for last 3 years of applicant if having own business",
+          "Company incorporation certificate copy if have your own business",
+          "Last 3-month salary slip copy"
+        ],
+        "notes": []
+      },
+      {
+        "id": "family-visit",
+        "title": "Family Visit",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Full passport photocopy",
+          "Two-color photo, 35x45 mm, 80% face, white background",
+          "Visa application form duly filled & signed by applicant for family",
+          "Original Detail Covering letter from applicants on business letterhead if having their own business",
+          "Original Detail: Covering letter from applicants on plain paper if working in a company",
+          "Original leave letter from the company on letterhead with leave dates if working in a company",
+          "Invitation letter copy from Invitee of New Zealand",
+          "Passport copy & New Zealand visa copy of the invitee from New Zealand",
+          "Employment proof copy of the invitee from New Zealand",
+          "Invitee bank statement copy for the last 3 months from New Zealand",
+          "Personal bank statement for the last 3 months of the applicant with a minimum balance of 3 to 4 lakhs with a bank seal & signature on each page",
+          "Personal income tax returns (ITR) copy for the last 3 years of the applicant",
+          "School ID card copy for child",
+          "Company bank statement copy for last 3 months of applicant with bank seal & sign on each page if have their own business",
+          "Copy of company income tax returns (ITR) for last 3 years of the applicant if having own business",
+          "A company incorporation certificate copy if you have your own business",
+          "Last 3-month salary slip copy"
+        ],
+        "notes": []
+      },
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Original valid passport at least for 6 months & two-color photos 35x45 mm, 80% face white background",
+          "Full passport photocopy",
+          "Visa application form duly filled & signed by applicant only",
+          "Original Covering letter on Indian company letterhead",
+          "Invitation letter copy from New Zealand",
+          "Personal bank statement of applicants for the last 3 months with bank seal & sign on each page",
+          "Income tax returns (ITR) for the last 3 years",
+          "Company bank statement copy for last 3 months of applicant with bank seal & sign on each page if having own business",
+          "Copy of company income tax returns (ITR) for last 3 years of applicant if having own business",
+          "Company incorporation certificate copy if have your own business",
+          "Last 3-month salary slip copy"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "30–35 working days",
+      "stay": "28 days"
+    },
+    "currency": "New Zealand Dollar"
+  },
+  {
+    "slug": "oman",
+    "name": "Oman",
+    "kind": "e-visa",
+    "iso": "om",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport copy scanned (1st & last page)",
+          "Photo scanned",
+          "PAN Card scanned"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "4–5 working days"
+    },
+    "currency": "Omani Riyal"
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "kind": "e-visa",
+    "iso": "qa",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Color-scan a passport copy",
+          "Studio-click a digital photo with a white background",
+          "Pan card copy",
+          "Applicant's mobile number"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3–4 working days",
+      "stay": "30 days"
+    },
+    "currency": "Qatari Riyal"
+  },
+  {
+    "slug": "rwanda",
+    "name": "Rwanda",
+    "kind": "e-visa",
+    "iso": "rw",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Colour Passport Scan Copy First and Last Page",
+          "Hotel Booking",
+          "Ticket itinerary"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "30 days",
+      "processing": "3 days"
+    },
+    "currency": "Franc"
+  },
+  {
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "kind": "e-visa",
+    "iso": "sa",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Valid passport for min 6 months & passport size photo scan copy",
+          "Valid USA / UK / Schengen Visa & should be travelled on same",
+          "Visa validity will be given for 1 year & 90 days stay along with Insurance"
+        ],
+        "notes": []
+      },
+      {
+        "id": "umrah",
+        "title": "Umrah (groups & individuals)",
+        "items": [
+          "E-visa",
+          "Airport transfers both ways (groups only)",
+          "Mecca to Medina transfer by coach (groups only)",
+          "Ziyarat in Mecca and Medina by coach (groups only)",
+          "Insurance",
+          "Group rates need a minimum of 35 travellers",
+          "Individual travellers get the visa and insurance only, without transport or ziyarat",
+          "90 days validity and 90 days stay"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {},
+    "currency": "Saudi Riyal"
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "kind": "e-visa",
+    "iso": "sg",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Visa Application form signed by applicant only with blue pen as per Passport",
+          "For children take signature of both parents",
+          "2 colour photo 35mm x 45mm, 80% face white background",
+          "Original Covering letter with applicant reachable contact no and email-id on Indian company letterhead",
+          "Invitation letter copy from Singapore",
+          "Confirm ticket with e-ticket number & Bank statement copy for last 3 month"
+        ],
+        "notes": [
+          "Please note: Write the name and passport number behind the Photos, which are send for the visa stamping"
+        ]
+      },
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Original valid passport at least for 6 months",
+          "Visa Application form signed by applicant only with blue pen as per the passport; for children, take the signatures of both parents",
+          "Colour photo 35x45 mm, 80% face white background, matt finish",
+          "The covering letter requires the husband & wife's signatures on it if traveling as a family, along with the head of the family's contact number",
+          "A cover letter should mention { travel date / passport details / business or working details with company name, address & contact number / hotel address in Singapore with name",
+          "Confirm the issued ticket with an e-ticket number & a bank statement copy for the last 3 months with a balance of above Rs. 50,000/- & a visiting card copy of the applicant",
+          "Please provide us occupation & qualification details to fill in the visa application form"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "4 working days"
+    },
+    "currency": "Singapore Dollar"
+  },
+  {
+    "slug": "south-africa",
+    "name": "South Africa",
+    "kind": "e-visa",
+    "iso": "za",
+    "schengen": false,
+    "embassy": [],
+    "notes": [],
+    "sections": [
+      {
+        "id": "application-form-sections",
+        "title": "Application form sections",
+        "items": [
+          "Principal Application Details",
+          "Personal Details",
+          "SA Physical Address",
+          "Home Physical Address",
+          "Citizenship Details",
+          "Marital Status Details",
+          "Principal Applicant's Parent Details: Parent A",
+          "Principal Applicant's Parent Details: Parent B",
+          "Details of The 5 Most Recent Visas Issued to You, Valid or Expired, In The Last 5 Years",
+          "Details of Other Addresses Where You Have Lived Before / During the Last 10 Years Other than Your Current Address",
+          "Asylum Seeker / Refugee Status",
+          "Contact Person in Your Country of Residence",
+          "Details Regarding Contact Persons in the Republic of South Africa",
+          "Intentions / Proposed Duration of Stay in the Republic of South Africa",
+          "Financial Declaration",
+          "Employment Record of Applicant",
+          "Security / Health Questionnaire"
+        ],
+        "notes": [
+          "The online form asks for the following details. Keep them ready before you apply."
+        ]
+      }
+    ],
+    "options": [],
+    "facts": {},
+    "currency": "Rand"
+  },
+  {
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
+    "kind": "e-visa",
+    "iso": "lk",
+    "schengen": false,
+    "embassy": [
+      "Address: 34, Ground Floor, Mulla House, Homi Modi Street, Opposite Central Bank Head Office, Mumbai, Maharashtra 400001 · Phone: 022 2204 5861"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport first & last page copy",
+          "Travel date",
+          "Indian company and Sri Lankan company address, contact no., and email ID (if applicable in Business Category)",
+          "Online ETA application through the official portal (eta.gov.lk)"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3–4 working days"
+    },
+    "currency": "Sri Lankan Rupee"
+  },
+  {
+    "slug": "taiwan",
+    "name": "Taiwan",
+    "kind": "e-visa",
+    "iso": "tw",
+    "schengen": false,
+    "embassy": [
+      "Address: No. 34, Paschimi Marg, Vasant Vihar, New Delhi, Delhi 110057 · Phone: 011 4607 7777"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "basic-requirements",
+        "title": "Basic requirements",
+        "items": [
+          "To be eligible for an ROC Travel Authorization Certificate, the following three basic requirements must be met:",
+          "Passport copy",
+          "Hotel Booking",
+          "Return Ticket"
+        ],
+        "notes": []
+      },
+      {
+        "id": "additional-requirements",
+        "title": "Additional requirements",
+        "items": [
+          "In addition to the aforementioned basic requirements, one of the following requirements must also be met:",
+          "The applicant possesses at least one of the following documents issued by Australia, Canada, Japan, Korea, New Zealand, any of the Schengen countries, the United Kingdom, or the United States:",
+          "Valid resident or permanent resident card",
+          "Valid entry visa (may be electronic visa)",
+          "Resident card or visa that has expired less than 10 years prior to the date of arrival in Taiwan"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "1 working day",
+      "stay": "14 days"
+    },
+    "currency": "New Taiwan dollar"
+  },
+  {
+    "slug": "tajikistan",
+    "name": "Tajikistan",
+    "kind": "e-visa",
+    "iso": "tj",
+    "schengen": false,
+    "embassy": [
+      "Address: A2/6, Vasant Vihar, New Delhi, Delhi 110057 · Phone: 011 2615 4282"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Return Ticket"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "45 days",
+      "processing": "2 working days"
+    },
+    "currency": "Somoni"
+  },
+  {
+    "slug": "tanzania",
+    "name": "Tanzania",
+    "kind": "e-visa",
+    "iso": "tz",
+    "schengen": false,
+    "embassy": [
+      "High Commission of the United Republic of Tanzania in New Delhi, IndiaEP-15C, ChanakyapuriNew Delhi, 110021, India"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "A passport valid for at least six months after the return date",
+          "A fully completed visa application form",
+          "A bank statement which shows the financial status of the applicant. The document must prove that you are financially stable enough to cover your expenses while in Tanzania",
+          "A clean criminal record",
+          "An accommodation proof"
+        ],
+        "notes": []
+      },
+      {
+        "id": "online-application",
+        "title": "Online application",
+        "items": [
+          "Digital copy of the passport biographical page",
+          "Passport-style photograph of Indian applicant",
+          "Digital copy of the return/onward ticket",
+          "Credit/debit card to pay the e-Visa processing fee",
+          "Current email address to receive communication and the approved e-visa",
+          "The visa is valid for 3 months from the date of issue",
+          "Duration of stay: 30 days from the date of entry"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "3 months",
+      "processing": "5–10 working days"
+    },
+    "currency": "Tanzanian Shilling"
+  },
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "kind": "e-visa",
+    "iso": "th",
+    "schengen": false,
+    "embassy": [
+      "Express Tower, 12th Floor, Nariman Point, Mumbai – 400021. · Tel: 2282 3535; 2282 2269; 2282 1628; 2282 2061"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport first page, last page, and passport cover pages copy",
+          "Photo as per specification: 35 by 45, 80% face, white background",
+          "Confirm hotel confirmation as per travel date",
+          "Confirm return ticket"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3–4 working days"
+    },
+    "currency": "Thai Baht"
+  },
+  {
+    "slug": "turkey",
+    "name": "Turkey",
+    "kind": "e-visa",
+    "iso": "tr",
+    "schengen": false,
+    "embassy": [
+      "embassy address: 51, Jamnalal Bajaj Rd, Nariman Point, Mumbai, Maharashtra 400021 · Phone: 022 2204 0365Vfs Address: VFS Global Services Pvt. Ltd Urmi Axis Building, Second Floor, Behind Famous Studio, Opp. E Moses Road, Mahalaxmi (West), Mumbai – 400 011"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Valid US/UK/Schengen Visa Scan Copy",
+          "Ticket itinerary"
+        ],
+        "notes": [
+          "Kindly Note US/UK/Schengen visa should be valid at the time of Enter to Turkey"
+        ]
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "30 days",
+      "processing": "1 day",
+      "validity": "90 days",
+      "entries": "Single"
+    },
+    "currency": "Turkish Lira"
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "kind": "e-visa",
+    "iso": "ug",
+    "schengen": false,
+    "embassy": [
+      "Address: B3/14, Sector B 1, Vasant Vihar, New Delhi, Delhi 110057 · Phone: 011 4936 3636"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport First & Last page copy (bio-data page)",
+          "Recent Passport-size Photograph",
+          "Applicant's working/business details",
+          "Hotel Address",
+          "Air ticket",
+          "Vaccination Certificate (Yellow Fever)"
+        ],
+        "notes": []
+      },
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Passport First & Last page copy (bio-data page)",
+          "Recent Passport-size Photograph",
+          "Applicant's working/business details",
+          "Invitation letter from Uganda",
+          "Hotel Address",
+          "Air ticket",
+          "Vaccination Certificate (Yellow Fever)"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3–4 working days"
+    },
+    "currency": "Ugandan Shilling"
+  },
+  {
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
+    "kind": "e-visa",
+    "iso": "uz",
+    "schengen": false,
+    "embassy": [
+      "Ministry of Foreign Affairs of the Republic of Uzbekistan. Consular department. 3A, Amir Temur Street, Tashkent, 100047. · Phone: (+998 71) 236-27-7"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Valid passport issued by an eligible country",
+          "Digital copy of the passport data page",
+          "Digital copy of a passport-sized photograph",
+          "Active email address to receive the approved eVisa",
+          "Method of payment (credit or debit card)",
+          "ONLINE FORM LINK: https://e-visa.gov.uz/application"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "validity": "3 months",
+      "stay": "30 days",
+      "processing": "4–5 working days"
+    },
+    "currency": "Uzbekistani Som"
+  },
+  {
+    "slug": "vietnam",
+    "name": "Vietnam",
+    "kind": "e-visa",
+    "iso": "vn",
+    "schengen": false,
+    "embassy": [
+      "Unit 805, 8th Floor, Powai Plaza, Hiranandani Gardens, Central Avenue, Powai, Mumbai 400 076 · Tel: 022 2673 6688 · Fax: 022 2673 6633"
+    ],
+    "notes": [
+      "For Vietnam Business visa, work visa and dependant visa Please arrange approval letter from Vietnam Ministry and send it to us so will check and revert you"
+    ],
+    "sections": [
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport first and last page copy",
+          "Photo as per 35 by 45 80% face, white background",
+          "Travel date",
+          "Entry & Exit Airport name"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "processing": "3 working days"
+    },
+    "currency": "Dong"
+  },
+  {
+    "slug": "zambia",
+    "name": "Zambia",
+    "kind": "e-visa",
+    "iso": "zm",
+    "schengen": false,
+    "embassy": [
+      "Zambian Honorary Consulate in Mumbai, India 1 Jaitirath Mansion 6-A Barrack Road Dhobitao Mumbai 400 020 India · Phone (+91) 22 2200 0442"
+    ],
+    "notes": [],
+    "sections": [
+      {
+        "id": "e-visa",
+        "title": "E-Visa",
+        "items": [
+          "Passport Scan Copy First and Last Page",
+          "Return Ticket"
+        ],
+        "notes": []
+      },
+      {
+        "id": "tourist",
+        "title": "Tourist",
+        "items": [
+          "Passport sized photo",
+          "Passport copy of applicant",
+          "Cover letter from applicant addressed to the Director General of Immigration which must be signed by the author",
+          "Hotel booking",
+          "Copy of return air ticket"
+        ],
+        "notes": []
+      },
+      {
+        "id": "business",
+        "title": "Business",
+        "items": [
+          "Passport sized photo",
+          "Passport copy of applicant",
+          "Cover letter on company letterhead with full address and contact numbers addressed to the Director General of Immigration",
+          "Invitation from host company",
+          "Certified copy of certificate of incorporation for host company"
+        ],
+        "notes": []
+      }
+    ],
+    "options": [],
+    "facts": {
+      "stay": "90 days",
+      "processing": "4–5 working days"
+    },
+    "currency": "Kwacha"
+  }
+]

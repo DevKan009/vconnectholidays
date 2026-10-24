@@ -77,7 +77,7 @@ export default function About() {
 
             <StatCounter
               items={[
-                { value: aboutStats.travellers, suffix: ' K+', label: 'Happy Travelers' },
+                { value: aboutStats.travellers, suffix: ' +', label: 'Happy Travelers' },
                 { value: aboutStats.destinations, suffix: ' +', label: 'Curated Destinations' },
                 { value: aboutStats.years, suffix: ' +', label: 'Years of Excellence' },
               ]}

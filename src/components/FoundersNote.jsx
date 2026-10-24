@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { FaQuoteLeft, FaWhatsapp, FaArrowRight, FaCheck } from 'react-icons/fa6'
 import founderImg from '../assets/images/founder.png'
+import { founderYears } from '../data/content'
+import { logWhatsAppClick } from '../utils/leads'
 import './FoundersNote.css'
 
 // `compact` is the short home-page version; the full note lives on the About page.
@@ -33,7 +35,7 @@ export default function FoundersNote({ compact = false }) {
             </div>
 
             <div className="founders-note-trust-tag">
-              <span className="founders-trust-years">7+ Years</span>
+              <span className="founders-trust-years">{founderYears}+ Years</span>
               <span className="founders-trust-sub">Crafting Bespoke Holidays</span>
             </div>
             </>
@@ -86,7 +88,7 @@ export default function FoundersNote({ compact = false }) {
                 <FaCheck className="founders-pill-icon" aria-hidden="true" /> 24/7 Dedicated On-Trip Care
               </span>
               <span className="founders-pill">
-                <FaCheck className="founders-pill-icon" aria-hidden="true" /> 25,000+ Happy Travelers
+                <FaCheck className="founders-pill-icon" aria-hidden="true" /> 25000+ Happy Travelers
               </span>
             </div>
               </>
@@ -106,6 +108,7 @@ export default function FoundersNote({ compact = false }) {
                   rel="noreferrer"
                   className="btn btn--founder-whatsapp"
                   aria-label="Chat with Vanita Jain on WhatsApp"
+                  onClick={() => logWhatsAppClick("Founder's note: Chat with Vanita")}
                 >
                   <FaWhatsapp className="btn-icon" aria-hidden="true" />
                   <span>Chat With Vanita</span>

@@ -1,0 +1,95 @@
+.only-band {
+  background: var(--color-dark);
+  color: var(--color-light-gray);
+  padding: 70px 0;
+}
+
+.only-band__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.only-band__eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold-start);
+}
+
+.only-band h2 {
+  color: var(--color-white);
+  font-size: 44px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.only-band h2 .accent {
+  color: var(--color-gold-start);
+}
+
+.only-band p {
+  font-size: 17px;
+  max-width: 520px;
+}
+
+.only-band__chips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.only-band__chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 14px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 500;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.only-band__chip svg {
+  color: var(--color-gold-start);
+  flex-shrink: 0;
+}
+
+.only-band__chip:hover {
+  border-color: var(--color-gold-start);
+  background: rgba(206, 165, 33, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .only-band__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .only-band h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 560px) {
+  .only-band {
+    padding: 56px 0;
+  }
+
+  .only-band h2 {
+    font-size: 28px;
+  }
+
+  .only-band__chip {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+}

@@ -65,7 +65,7 @@ const international = [
     priceFrom: 42999,
     summary:
       'Turquoise bays, limestone cliffs and lively night markets. Phuket and Krabi are perfect for honeymooners, families and friends looking for beaches with plenty to do.',
-    facts: { bestTime: 'Nov – Apr', entry: 'Visa-free for short stays', travel: '4 – 5 hrs flight', idealDays: '6 – 7 days' },
+    facts: { bestTime: 'Nov – Apr', entry: 'Visa-free 30 days + TDAC form', travel: '4 – 5 hrs flight', idealDays: '6 – 7 days' },
     places: [
       place('Phi Phi Islands', 'Krabi', 'Speedboat to crystal lagoons, Maya Bay and snorkelling spots.'),
       place('Railay Beach', 'Krabi', 'A cliff-ringed beach reachable only by longtail boat.'),
@@ -193,7 +193,7 @@ const international = [
     duration: { days: 6, nights: 5 },
     priceFrom: null,
     summary: 'Modern city lights in Kuala Lumpur and island calm in Langkawi, with great food and easy entry for Indians.',
-    facts: { bestTime: 'Dec – Apr', entry: 'Visa-free for short stays', travel: '5 – 6 hrs flight', idealDays: '5 – 6 days' },
+    facts: { bestTime: 'Dec – Apr', entry: 'Visa-free 30 days + MDAC form', travel: '5 – 6 hrs flight', idealDays: '5 – 6 days' },
     places: [
       place('Petronas Twin Towers', 'Kuala Lumpur', 'The skybridge and city views from the iconic towers.'),
       place('Batu Caves', 'Kuala Lumpur', 'Rainbow steps up to a cave temple guarded by Lord Murugan.'),
@@ -210,7 +210,7 @@ const international = [
     duration: { days: 6, nights: 5 },
     priceFrom: 71800,
     summary: 'Tea hills, ancient temples and golden beaches, all within a few hours of each other and a short hop from India.',
-    facts: { bestTime: 'Dec – Apr', entry: 'ETA (online)', travel: '2 – 3 hrs flight', idealDays: '6 – 7 days' },
+    facts: { bestTime: 'Dec – Apr', entry: 'Free ETA (apply online)', travel: '2 – 3 hrs flight', idealDays: '6 – 7 days' },
     places: [
       place('Temple of the Tooth', 'Kandy', 'The sacred Buddhist temple beside Kandy Lake.'),
       place('Sigiriya Rock', 'Dambulla', 'Climb the ancient rock fortress for a stunning view.'),
@@ -343,7 +343,7 @@ const international = [
     duration: { days: 7, nights: 6 },
     priceFrom: null,
     summary: 'Granite boulders, powder-white beaches and giant tortoises. Seychelles is a quiet, luxurious island escape.',
-    facts: { bestTime: 'Apr – May, Oct – Nov', entry: 'Visitor permit on arrival', travel: '4 – 5 hrs flight', idealDays: '6 – 7 days' },
+    facts: { bestTime: 'Apr – May, Oct – Nov', entry: 'No visa; online travel authorisation', travel: '4 – 5 hrs flight', idealDays: '6 – 7 days' },
     places: [
       place('Anse Source d’Argent', 'La Digue', 'One of the most photographed beaches in the world.'),
       place('Vallée de Mai', 'Praslin', 'A UNESCO palm forest, home to the coco de mer.'),

@@ -1,0 +1,145 @@
+.group-intro__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.group-intro__badge {
+  font-size: 14px;
+  padding: 7px 18px;
+}
+
+.group-intro h2 {
+  font-size: 50px;
+  line-height: 1.15;
+}
+
+.group-intro p {
+  max-width: 620px;
+  font-size: 17px;
+}
+
+.group-intro__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.group-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  border: 1px solid transparent;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.group-feature:hover {
+  border-color: var(--color-gold-start);
+  transform: translateY(-3px);
+}
+
+.group-feature__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-gold-gradient);
+  color: var(--color-white);
+  font-size: 20px;
+}
+
+.group-feature h3 {
+  font-size: 22px;
+}
+
+.group-feature p {
+  font-size: 15px;
+}
+
+.group-feature__cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.group-private {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 44px 50px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(120deg, #fffaf0, var(--color-white));
+  transition: border-color 0.25s ease;
+}
+
+.group-private:hover {
+  border-color: var(--color-gold-start);
+}
+
+.group-private__eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold-end);
+}
+
+.group-private h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  .group-intro h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .group-private {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+  }
+
+  .group-private h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 560px) {
+  .group-intro h2 {
+    font-size: 30px;
+  }
+
+  .group-intro__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .group-intro__actions .btn {
+    justify-content: center;
+  }
+
+  .group-private .btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+  }
+}

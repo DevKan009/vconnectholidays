@@ -103,3 +103,130 @@
     font-size: 28px;
   }
 }
+
+/* ---- Context-aware enquiry form ---- */
+
+.contact-context {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--color-gold-start);
+  border-radius: 0 10px 10px 0;
+  background: rgba(206, 165, 33, 0.1);
+}
+
+.contact-context strong {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--color-dark);
+  font-size: 16px;
+}
+
+.contact-context span:not(.badge-soon) {
+  font-size: 15px;
+}
+
+.contact-needs {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contact-needs legend {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.contact-needs__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contact-form .chip {
+  align-self: auto;
+}
+
+.contact-form__row--extras {
+  padding: 18px;
+  border-radius: 12px;
+  background: var(--color-white);
+}
+
+.contact-form__optional {
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.contact-form__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.contact-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-form__actions .btn[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.contact-form__status--error {
+  background: rgba(200, 50, 50, 0.08);
+  border-color: rgba(200, 50, 50, 0.35);
+}
+
+.contact-form__status a {
+  text-decoration: underline;
+}
+
+.contact-success {
+  align-items: flex-start;
+}
+
+.contact-success__icon {
+  font-size: 40px;
+  color: #25a55a;
+}
+
+.contact-success h3 {
+  font-size: 28px;
+}
+
+@media (max-width: 640px) {
+  .contact-form {
+    padding: 24px 18px;
+  }
+
+  .contact-form__actions {
+    flex-direction: column;
+  }
+
+  .contact-form__actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* WhatsApp is the faster channel on phones. */
+  .contact-form__actions .btn--whatsapp {
+    order: -1;
+  }
+}
+
+/* Arriving from a service link: on phones and tablets, the form comes first. */
+@media (max-width: 1024px) {
+  .contact-grid--focus .contact-form {
+    order: -1;
+  }
+}

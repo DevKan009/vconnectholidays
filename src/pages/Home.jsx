@@ -9,6 +9,8 @@ import GoogleReviews from '../components/GoogleReviews'
 import Accordion from '../components/Accordion'
 import Button from '../components/Button'
 import FoundersNote from '../components/FoundersNote'
+import ServiceCard from '../components/ServiceCard'
+import { services } from '../data/services'
 import useRegion from '../hooks/useRegion'
 import { destinationsByRegion, HOME_COUNT, HOME_COUNT_PHONE } from '../data/destinations'
 import {
@@ -51,6 +53,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section home-services" id="services">
+        <div className="container">
+          <SectionHeading
+            before="Need Just One Thing?"
+            highlight="We Do That Too."
+            description="Hotels only, flights only, a visa or insurance. No package required."
+          />
+          <div className="home-services__grid">
+            {services.map((s) => (
+              <ServiceCard key={s.id} service={s} compact source="home" />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* <section className="section about-teaser">
         <div className="container about-teaser__grid">
           <div className="about-teaser__media">
@@ -76,9 +93,9 @@ export default function Home() {
             </Button>
             <StatCounter
               items={[
-                { value: stats.travellers, suffix: ' K+', label: 'Happy Traveller' },
+                { value: stats.travellers, suffix: ' +', label: 'Happy Travelers' },
                 { value: stats.destinations, suffix: ' +', label: 'Travel Destinations' },
-                { value: stats.years, suffix: ' +', label: 'Year Of Service' },
+                { value: stats.years, suffix: ' +', label: 'Years of Service' },
               ]}
             />
           </div>

@@ -15,6 +15,7 @@ import {
   formatDuration,
 } from '../data/destinations'
 import { bookLink, whatsappLink, track } from '../utils/enquiry'
+import { logWhatsAppClick } from '../utils/leads'
 import bannerFallback from '../assets/images/page-banner-default.jpg'
 import './DestinationDetail.css'
 
@@ -159,7 +160,10 @@ export default function DestinationDetail() {
                 target="_blank"
                 rel="noreferrer"
                 className="btn dest-bookbar__wa"
-                onClick={() => track('whatsapp_click', params)}
+                onClick={() => {
+                  track('whatsapp_click', params)
+                  logWhatsAppClick(`Destination: ${d.place}`)
+                }}
               >
                 <FaWhatsapp aria-hidden="true" />
                 <span>WhatsApp</span>

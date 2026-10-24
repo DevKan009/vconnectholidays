@@ -26,11 +26,11 @@
 }
 
 .stat__suffix {
-  margin-left: 3px;
-  font-size: 0.5em;
-  font-weight: 600;
+  margin-left: 2px;
+  font-size: 0.72em;
+  font-weight: 700;
   letter-spacing: 0;
-  line-height: 1.2;
+  line-height: 1;
   color: var(--color-gold-start);
 }
 
@@ -47,15 +47,16 @@
 @media (max-width: 640px) {
   .stat-counter {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 16px;
+    column-gap: 12px;
   }
 
   .stat__value {
-    font-size: 34px;
+    font-size: clamp(24px, 5.2vw, 34px);
+    white-space: nowrap;
   }
 
   .stat__label {
     font-size: 10.5px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
 }
